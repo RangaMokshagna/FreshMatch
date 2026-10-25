@@ -1,0 +1,95 @@
+{
+  "desktop": [
+    {
+      "page": "Out-of-Stock Simulator",
+      "documentWidth": 1280,
+      "errors": 0,
+      "mainScrollWidth": 970,
+      "mainWidth": 970,
+      "width": 1280
+    },
+    {
+      "page": "Product Explorer",
+      "documentWidth": 1280,
+      "errors": 0,
+      "mainScrollWidth": 970,
+      "mainWidth": 970,
+      "width": 1280
+    },
+    {
+      "page": "Relationship Explorer",
+      "documentWidth": 1280,
+      "errors": 0,
+      "mainScrollWidth": 970,
+      "mainWidth": 970,
+      "width": 1280
+    },
+    {
+      "page": "Model Performance",
+      "documentWidth": 1280,
+      "errors": 0,
+      "mainScrollWidth": 970,
+      "mainWidth": 970,
+      "width": 1280
+    },
+    {
+      "page": "About",
+      "documentWidth": 1280,
+      "errors": 0,
+      "mainScrollWidth": 970,
+      "mainWidth": 970,
+      "width": 1280
+    }
+  ],
+  "mobile": [
+    {
+      "page": "Find Substitutes",
+      "documentWidth": 375,
+      "errors": 0,
+      "mainScrollWidth": 365,
+      "mainWidth": 365,
+      "width": 375
+    },
+    {
+      "page": "Out-of-Stock Simulator",
+      "documentWidth": 375,
+      "errors": 0,
+      "mainScrollWidth": 365,
+      "mainWidth": 365,
+      "width": 375
+    },
+    {
+      "page": "Product Explorer",
+      "documentWidth": 375,
+      "errors": 0,
+      "mainScrollWidth": 365,
+      "mainWidth": 365,
+      "width": 375
+    },
+    {
+      "page": "Relationship Explorer",
+      "documentWidth": 375,
+      "errors": 0,
+      "mainScrollWidth": 365,
+      "mainWidth": 365,
+      "width": 375
+    },
+    {
+      "page": "Model Performance",
+      "documentWidth": 375,
+      "errors": 0,
+      "mainScrollWidth": 365,
+      "mainWidth": 365,
+      "width": 375
+    },
+    {
+      "page": "About",
+      "documentWidth": 375,
+      "errors": 0,
+      "mainScrollWidth": 365,
+      "mainWidth": 365,
+      "width": 375
+    }
+  ],
+  "consoleErrors": []
+}

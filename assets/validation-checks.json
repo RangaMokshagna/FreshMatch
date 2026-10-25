@@ -1,0 +1,32 @@
+{
+  "passed": 26,
+  "checks": [
+    "Product-disjoint outer split",
+    "Product-disjoint CV fold 0",
+    "Product-disjoint CV fold 1",
+    "Product-disjoint CV fold 2",
+    "Six models with all requested metrics",
+    "Same-category eligibility",
+    "Complement exclusion",
+    "Local explanations finite",
+    "Probabilities bounded",
+    "Random Forest recomputed held-out metrics",
+    "Gradient Boosting recomputed held-out metrics",
+    "Logistic Regression recomputed held-out metrics",
+    "XGBoost recomputed held-out metrics",
+    "MLPClassifier recomputed held-out metrics",
+    "Soft Voting (RF + GB + XGB) recomputed held-out metrics",
+    "Final scores equal deployed calibrated probabilities",
+    "Winner marked correctly",
+    "Page 0 renders",
+    "Example product and explanation render",
+    "Self excluded",
+    "Page 1 renders",
+    "Page 2 renders",
+    "Page 3 renders",
+    "Page 4 renders",
+    "App comparison equals saved table",
+    "Page 5 renders"
+  ],
+  "selected_model": "Random Forest"
+}
