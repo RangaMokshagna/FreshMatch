@@ -1,0 +1,289 @@
+product_id,name,category,aisle,department,brand,price,need_id,mission,idx,popularity,support,reorder_rate
+0,Harvest Whole milk,Milk,Milk,Dairy,Harvest,2.73,0,0,0,621,0.025875,0.15780998389694043
+1,Everyday Whole milk,Milk,Milk,Dairy,Everyday,2.94,0,0,1,575,0.023958333,0.13217391304347825
+2,Green Valley Whole milk,Milk,Milk,Dairy,Green Valley,3.61,0,0,2,464,0.019333333,0.15732758620689655
+3,Orchard Whole milk,Milk,Milk,Dairy,Orchard,3.91,0,0,3,353,0.014708334,0.11048158640226628
+4,Purely Whole milk,Milk,Milk,Dairy,Purely,3.81,0,0,4,267,0.011125,0.1348314606741573
+5,Market House Whole milk,Milk,Milk,Dairy,Market House,4.97,0,0,5,174,0.00725,0.08620689655172414
+6,Harvest Low fat milk,Milk,Milk,Dairy,Harvest,2.72,0,0,6,609,0.025375,0.15599343185550082
+7,Everyday Low fat milk,Milk,Milk,Dairy,Everyday,3.15,0,0,7,573,0.023875,0.15706806282722513
+8,Green Valley Low fat milk,Milk,Milk,Dairy,Green Valley,3.12,0,0,8,452,0.018833334,0.14823008849557523
+9,Orchard Low fat milk,Milk,Milk,Dairy,Orchard,3.72,0,0,9,340,0.014166667,0.10882352941176471
+10,Purely Low fat milk,Milk,Milk,Dairy,Purely,4.04,0,0,10,276,0.0115,0.10507246376811594
+11,Market House Low fat milk,Milk,Milk,Dairy,Market House,4.93,0,0,11,172,0.0071666664,0.05813953488372093
+12,Harvest Oat drink,Milk,Milk,Dairy,Harvest,2.66,1,0,12,584,0.024333334,0.1284246575342466
+13,Everyday Oat drink,Milk,Milk,Dairy,Everyday,3.17,1,0,13,581,0.024208333,0.13941480206540446
+14,Green Valley Oat drink,Milk,Milk,Dairy,Green Valley,3.33,1,0,14,414,0.01725,0.14251207729468598
+15,Orchard Oat drink,Milk,Milk,Dairy,Orchard,3.55,1,0,15,321,0.013375,0.08411214953271028
+16,Purely Oat drink,Milk,Milk,Dairy,Purely,4.19,1,0,16,288,0.012,0.11805555555555555
+17,Market House Oat drink,Milk,Milk,Dairy,Market House,4.14,1,0,17,183,0.007625,0.06557377049180328
+18,Harvest Almond drink,Milk,Milk,Dairy,Harvest,2.75,1,0,18,585,0.024375,0.13333333333333333
+19,Everyday Almond drink,Milk,Milk,Dairy,Everyday,3.05,1,0,19,585,0.024375,0.16923076923076924
+20,Green Valley Almond drink,Milk,Milk,Dairy,Green Valley,3.54,1,0,20,459,0.019125,0.1394335511982571
+21,Orchard Almond drink,Milk,Milk,Dairy,Orchard,3.65,1,0,21,316,0.013166667,0.10759493670886076
+22,Purely Almond drink,Milk,Milk,Dairy,Purely,4.54,1,0,22,265,0.011041666,0.12075471698113208
+23,Market House Almond drink,Milk,Milk,Dairy,Market House,4.9,1,0,23,188,0.007833334,0.0851063829787234
+24,Harvest Rolled oats,Cereal,Cereal,Breakfast,Harvest,3.69,2,0,24,628,0.026166666,0.15605095541401273
+25,Everyday Rolled oats,Cereal,Cereal,Breakfast,Everyday,3.78,2,0,25,571,0.023791667,0.1436077057793345
+26,Green Valley Rolled oats,Cereal,Cereal,Breakfast,Green Valley,4.52,2,0,26,477,0.019875,0.16561844863731656
+27,Orchard Rolled oats,Cereal,Cereal,Breakfast,Orchard,4.62,2,0,27,319,0.013291666,0.10344827586206896
+28,Purely Rolled oats,Cereal,Cereal,Breakfast,Purely,5.22,2,0,28,298,0.012416666,0.10738255033557047
+29,Market House Rolled oats,Cereal,Cereal,Breakfast,Market House,6.37,2,0,29,190,0.007916667,0.07368421052631578
+30,Harvest Granola,Cereal,Cereal,Breakfast,Harvest,3.67,2,0,30,610,0.025416667,0.1557377049180328
+31,Everyday Granola,Cereal,Cereal,Breakfast,Everyday,4.4,2,0,31,563,0.023458334,0.16341030195381884
+32,Green Valley Granola,Cereal,Cereal,Breakfast,Green Valley,4.4,2,0,32,416,0.017333332,0.11778846153846154
+33,Orchard Granola,Cereal,Cereal,Breakfast,Orchard,4.95,2,0,33,360,0.015,0.12222222222222222
+34,Purely Granola,Cereal,Cereal,Breakfast,Purely,5.58,2,0,34,290,0.012083333,0.1103448275862069
+35,Market House Granola,Cereal,Cereal,Breakfast,Market House,5.76,2,0,35,170,0.0070833336,0.09411764705882353
+36,Harvest Corn flakes,Cereal,Cereal,Breakfast,Harvest,3.24,3,0,36,604,0.025166666,0.15066225165562913
+37,Everyday Corn flakes,Cereal,Cereal,Breakfast,Everyday,4.01,3,0,37,568,0.023666667,0.1602112676056338
+38,Green Valley Corn flakes,Cereal,Cereal,Breakfast,Green Valley,4.31,3,0,38,452,0.018833334,0.12389380530973451
+39,Orchard Corn flakes,Cereal,Cereal,Breakfast,Orchard,5.26,3,0,39,306,0.01275,0.0915032679738562
+40,Purely Corn flakes,Cereal,Cereal,Breakfast,Purely,5.54,3,0,40,273,0.011375,0.09523809523809523
+41,Market House Corn flakes,Cereal,Cereal,Breakfast,Market House,6.55,3,0,41,159,0.006625,0.06289308176100629
+42,Harvest Bran flakes,Cereal,Cereal,Breakfast,Harvest,3.64,3,0,42,593,0.024708332,0.1433389544688027
+43,Everyday Bran flakes,Cereal,Cereal,Breakfast,Everyday,3.87,3,0,43,590,0.024583334,0.17796610169491525
+44,Green Valley Bran flakes,Cereal,Cereal,Breakfast,Green Valley,4.86,3,0,44,397,0.016541667,0.12846347607052896
+45,Orchard Bran flakes,Cereal,Cereal,Breakfast,Orchard,5.39,3,0,45,367,0.015291667,0.1335149863760218
+46,Purely Bran flakes,Cereal,Cereal,Breakfast,Purely,5.49,3,0,46,265,0.011041666,0.1018867924528302
+47,Market House Bran flakes,Cereal,Cereal,Breakfast,Market House,5.88,3,0,47,188,0.007833334,0.09574468085106383
+48,Harvest Whole wheat loaf,Bread,Bread,Bakery,Harvest,2.76,4,0,48,625,0.026041666,0.1344
+49,Everyday Whole wheat loaf,Bread,Bread,Bakery,Everyday,2.84,4,0,49,633,0.026375,0.14533965244865718
+50,Green Valley Whole wheat loaf,Bread,Bread,Bakery,Green Valley,3.26,4,0,50,453,0.018875,0.13024282560706402
+51,Orchard Whole wheat loaf,Bread,Bread,Bakery,Orchard,3.49,4,0,51,331,0.013791666,0.10876132930513595
+52,Purely Whole wheat loaf,Bread,Bread,Bakery,Purely,4.52,4,0,52,270,0.01125,0.09259259259259259
+53,Market House Whole wheat loaf,Bread,Bread,Bakery,Market House,4.83,4,0,53,186,0.00775,0.06989247311827956
+54,Harvest Rye loaf,Bread,Bread,Bakery,Harvest,2.77,4,0,54,625,0.026041666,0.1616
+55,Everyday Rye loaf,Bread,Bread,Bakery,Everyday,3.23,4,0,55,589,0.024541667,0.14261460101867574
+56,Green Valley Rye loaf,Bread,Bread,Bakery,Green Valley,3.44,4,0,56,453,0.018875,0.10596026490066225
+57,Orchard Rye loaf,Bread,Bread,Bakery,Orchard,3.92,4,0,57,357,0.014875,0.13165266106442577
+58,Purely Rye loaf,Bread,Bread,Bakery,Purely,3.96,4,0,58,274,0.011416666,0.11313868613138686
+59,Market House Rye loaf,Bread,Bread,Bakery,Market House,4.31,4,0,59,160,0.006666667,0.0375
+60,Harvest Sourdough loaf,Bread,Bread,Bakery,Harvest,2.75,5,0,60,604,0.025166666,0.15894039735099338
+61,Everyday Sourdough loaf,Bread,Bread,Bakery,Everyday,3.04,5,0,61,561,0.023375,0.1497326203208556
+62,Green Valley Sourdough loaf,Bread,Bread,Bakery,Green Valley,3.51,5,0,62,400,0.016666668,0.115
+63,Orchard Sourdough loaf,Bread,Bread,Bakery,Orchard,4.07,5,0,63,327,0.013625,0.11926605504587157
+64,Purely Sourdough loaf,Bread,Bread,Bakery,Purely,4.39,5,0,64,268,0.011166667,0.11567164179104478
+65,Market House Sourdough loaf,Bread,Bread,Bakery,Market House,4.72,5,0,65,209,0.008708334,0.10526315789473684
+66,Harvest White loaf,Bread,Bread,Bakery,Harvest,2.69,5,0,66,606,0.02525,0.16666666666666666
+67,Everyday White loaf,Bread,Bread,Bakery,Everyday,2.94,5,0,67,593,0.024708332,0.16020236087689713
+68,Green Valley White loaf,Bread,Bread,Bakery,Green Valley,3.14,5,0,68,426,0.01775,0.11971830985915492
+69,Orchard White loaf,Bread,Bread,Bakery,Orchard,3.82,5,0,69,370,0.015416667,0.1
+70,Purely White loaf,Bread,Bread,Bakery,Purely,4.03,5,0,70,234,0.00975,0.06837606837606838
+71,Market House White loaf,Bread,Bread,Bakery,Market House,4.59,5,0,71,172,0.0071666664,0.0872093023255814
+72,Harvest Ground coffee,Coffee,Coffee,Beverages,Harvest,6.35,6,0,72,586,0.024416666,0.1825938566552901
+73,Everyday Ground coffee,Coffee,Coffee,Beverages,Everyday,6.46,6,0,73,589,0.024541667,0.1697792869269949
+74,Green Valley Ground coffee,Coffee,Coffee,Beverages,Green Valley,7.04,6,0,74,440,0.018333333,0.1318181818181818
+75,Orchard Ground coffee,Coffee,Coffee,Beverages,Orchard,8.24,6,0,75,361,0.015041667,0.10249307479224377
+76,Purely Ground coffee,Coffee,Coffee,Beverages,Purely,9.12,6,0,76,288,0.012,0.1284722222222222
+77,Market House Ground coffee,Coffee,Coffee,Beverages,Market House,10.75,6,0,77,190,0.007916667,0.07894736842105263
+78,Harvest Espresso beans,Coffee,Coffee,Beverages,Harvest,6.0,6,0,78,627,0.026125,0.16108452950558214
+79,Everyday Espresso beans,Coffee,Coffee,Beverages,Everyday,7.21,6,0,79,550,0.022916667,0.14545454545454545
+80,Green Valley Espresso beans,Coffee,Coffee,Beverages,Green Valley,7.98,6,0,80,462,0.01925,0.13636363636363635
+81,Orchard Espresso beans,Coffee,Coffee,Beverages,Orchard,8.46,6,0,81,341,0.014208334,0.10263929618768329
+82,Purely Espresso beans,Coffee,Coffee,Beverages,Purely,10.11,6,0,82,280,0.011666667,0.11071428571428571
+83,Market House Espresso beans,Coffee,Coffee,Beverages,Market House,9.72,6,0,83,179,0.0074583334,0.09497206703910614
+84,Harvest Decaf ground coffee,Coffee,Coffee,Beverages,Harvest,5.36,7,0,84,624,0.026,0.17147435897435898
+85,Everyday Decaf ground coffee,Coffee,Coffee,Beverages,Everyday,6.27,7,0,85,566,0.023583334,0.13427561837455831
+86,Green Valley Decaf ground coffee,Coffee,Coffee,Beverages,Green Valley,8.07,7,0,86,462,0.01925,0.15151515151515152
+87,Orchard Decaf ground coffee,Coffee,Coffee,Beverages,Orchard,8.55,7,0,87,377,0.015708333,0.14854111405835543
+88,Purely Decaf ground coffee,Coffee,Coffee,Beverages,Purely,8.87,7,0,88,262,0.010916667,0.09541984732824428
+89,Market House Decaf ground coffee,Coffee,Coffee,Beverages,Market House,10.42,7,0,89,189,0.007875,0.07407407407407407
+90,Harvest Decaf instant coffee,Coffee,Coffee,Beverages,Harvest,5.52,7,0,90,585,0.024375,0.11965811965811966
+91,Everyday Decaf instant coffee,Coffee,Coffee,Beverages,Everyday,7.09,7,0,91,589,0.024541667,0.16129032258064516
+92,Green Valley Decaf instant coffee,Coffee,Coffee,Beverages,Green Valley,7.64,7,0,92,441,0.018375,0.1383219954648526
+93,Orchard Decaf instant coffee,Coffee,Coffee,Beverages,Orchard,8.41,7,0,93,299,0.012458334,0.13712374581939799
+94,Purely Decaf instant coffee,Coffee,Coffee,Beverages,Purely,9.14,7,0,94,288,0.012,0.09375
+95,Market House Decaf instant coffee,Coffee,Coffee,Beverages,Market House,10.68,7,0,95,184,0.0076666665,0.07065217391304347
+96,Harvest Spaghetti,Pasta,Pasta,Pantry,Harvest,1.92,8,1,96,642,0.02675,0.16822429906542055
+97,Everyday Spaghetti,Pasta,Pasta,Pantry,Everyday,2.09,8,1,97,584,0.024333334,0.1523972602739726
+98,Green Valley Spaghetti,Pasta,Pasta,Pantry,Green Valley,2.38,8,1,98,446,0.018583333,0.11434977578475336
+99,Orchard Spaghetti,Pasta,Pasta,Pantry,Orchard,3.14,8,1,99,344,0.014333333,0.10755813953488372
+100,Purely Spaghetti,Pasta,Pasta,Pantry,Purely,3.43,8,1,100,257,0.010708333,0.0933852140077821
+101,Market House Spaghetti,Pasta,Pasta,Pantry,Market House,3.61,8,1,101,164,0.0068333335,0.054878048780487805
+102,Harvest Linguine,Pasta,Pasta,Pantry,Harvest,1.88,8,1,102,669,0.027875,0.15695067264573992
+103,Everyday Linguine,Pasta,Pasta,Pantry,Everyday,2.49,8,1,103,578,0.024083333,0.14186851211072665
+104,Green Valley Linguine,Pasta,Pasta,Pantry,Green Valley,2.72,8,1,104,424,0.017666666,0.11320754716981132
+105,Orchard Linguine,Pasta,Pasta,Pantry,Orchard,3.0,8,1,105,350,0.014583333,0.10571428571428572
+106,Purely Linguine,Pasta,Pasta,Pantry,Purely,3.14,8,1,106,245,0.010208333,0.12653061224489795
+107,Market House Linguine,Pasta,Pasta,Pantry,Market House,3.31,8,1,107,176,0.007333333,0.0625
+108,Harvest Penne,Pasta,Pasta,Pantry,Harvest,1.82,9,1,108,595,0.024791667,0.16302521008403362
+109,Everyday Penne,Pasta,Pasta,Pantry,Everyday,2.46,9,1,109,644,0.026833333,0.15372670807453417
+110,Green Valley Penne,Pasta,Pasta,Pantry,Green Valley,2.55,9,1,110,430,0.017916666,0.1558139534883721
+111,Orchard Penne,Pasta,Pasta,Pantry,Orchard,2.7,9,1,111,337,0.014041667,0.08011869436201781
+112,Purely Penne,Pasta,Pasta,Pantry,Purely,3.05,9,1,112,296,0.0123333335,0.09121621621621621
+113,Market House Penne,Pasta,Pasta,Pantry,Market House,3.53,9,1,113,224,0.009333333,0.09821428571428571
+114,Harvest Fusilli,Pasta,Pasta,Pantry,Harvest,1.85,9,1,114,580,0.024166666,0.1396551724137931
+115,Everyday Fusilli,Pasta,Pasta,Pantry,Everyday,2.44,9,1,115,581,0.024208333,0.15834767641996558
+116,Green Valley Fusilli,Pasta,Pasta,Pantry,Green Valley,2.71,9,1,116,447,0.018625,0.1319910514541387
+117,Orchard Fusilli,Pasta,Pasta,Pantry,Orchard,3.0,9,1,117,332,0.013833334,0.10240963855421686
+118,Purely Fusilli,Pasta,Pasta,Pantry,Purely,3.13,9,1,118,264,0.011,0.10227272727272728
+119,Market House Fusilli,Pasta,Pasta,Pantry,Market House,3.56,9,1,119,182,0.007583333,0.08791208791208792
+120,Harvest Tomato basil sauce,Sauce,Sauce,Pantry,Harvest,3.09,10,1,120,661,0.027541667,0.16944024205748864
+121,Everyday Tomato basil sauce,Sauce,Sauce,Pantry,Everyday,3.6,10,1,121,585,0.024375,0.13162393162393163
+122,Green Valley Tomato basil sauce,Sauce,Sauce,Pantry,Green Valley,3.63,10,1,122,461,0.019208333,0.1193058568329718
+123,Orchard Tomato basil sauce,Sauce,Sauce,Pantry,Orchard,4.35,10,1,123,330,0.01375,0.1
+124,Purely Tomato basil sauce,Sauce,Sauce,Pantry,Purely,4.43,10,1,124,306,0.01275,0.10784313725490197
+125,Market House Tomato basil sauce,Sauce,Sauce,Pantry,Market House,5.33,10,1,125,182,0.007583333,0.09340659340659341
+126,Harvest Marinara sauce,Sauce,Sauce,Pantry,Harvest,2.94,10,1,126,609,0.025375,0.16912972085385877
+127,Everyday Marinara sauce,Sauce,Sauce,Pantry,Everyday,3.25,10,1,127,603,0.025125,0.12935323383084577
+128,Green Valley Marinara sauce,Sauce,Sauce,Pantry,Green Valley,3.65,10,1,128,431,0.017958334,0.1136890951276102
+129,Orchard Marinara sauce,Sauce,Sauce,Pantry,Orchard,4.5,10,1,129,344,0.014333333,0.0755813953488372
+130,Purely Marinara sauce,Sauce,Sauce,Pantry,Purely,4.56,10,1,130,270,0.01125,0.09259259259259259
+131,Market House Marinara sauce,Sauce,Sauce,Pantry,Market House,5.79,10,1,131,159,0.006625,0.06289308176100629
+132,Harvest Pesto sauce,Sauce,Sauce,Pantry,Harvest,3.09,11,1,132,593,0.024708332,0.15851602023608768
+133,Everyday Pesto sauce,Sauce,Sauce,Pantry,Everyday,3.39,11,1,133,613,0.025541667,0.16802610114192496
+134,Green Valley Pesto sauce,Sauce,Sauce,Pantry,Green Valley,4.03,11,1,134,469,0.019541666,0.10021321961620469
+135,Orchard Pesto sauce,Sauce,Sauce,Pantry,Orchard,4.0,11,1,135,339,0.014125,0.10914454277286136
+136,Purely Pesto sauce,Sauce,Sauce,Pantry,Purely,5.33,11,1,136,282,0.01175,0.10283687943262411
+137,Market House Pesto sauce,Sauce,Sauce,Pantry,Market House,5.32,11,1,137,192,0.008,0.09375
+138,Harvest Creamy basil sauce,Sauce,Sauce,Pantry,Harvest,3.21,11,1,138,575,0.023958333,0.1391304347826087
+139,Everyday Creamy basil sauce,Sauce,Sauce,Pantry,Everyday,3.21,11,1,139,591,0.024625,0.18612521150592218
+140,Green Valley Creamy basil sauce,Sauce,Sauce,Pantry,Green Valley,3.95,11,1,140,447,0.018625,0.17002237136465326
+141,Orchard Creamy basil sauce,Sauce,Sauce,Pantry,Orchard,4.41,11,1,141,321,0.013375,0.11838006230529595
+142,Purely Creamy basil sauce,Sauce,Sauce,Pantry,Purely,5.31,11,1,142,276,0.0115,0.10507246376811594
+143,Market House Creamy basil sauce,Sauce,Sauce,Pantry,Market House,5.42,11,1,143,205,0.008541667,0.07317073170731707
+144,Harvest Chicken breast,Protein,Protein,Chilled,Harvest,4.91,12,1,144,619,0.025791667,0.16639741518578352
+145,Everyday Chicken breast,Protein,Protein,Chilled,Everyday,5.42,12,1,145,589,0.024541667,0.1494057724957555
+146,Green Valley Chicken breast,Protein,Protein,Chilled,Green Valley,6.22,12,1,146,423,0.017625,0.1276595744680851
+147,Orchard Chicken breast,Protein,Protein,Chilled,Orchard,7.21,12,1,147,330,0.01375,0.11818181818181818
+148,Purely Chicken breast,Protein,Protein,Chilled,Purely,7.83,12,1,148,267,0.011125,0.09363295880149813
+149,Market House Chicken breast,Protein,Protein,Chilled,Market House,7.85,12,1,149,190,0.007916667,0.042105263157894736
+150,Harvest Turkey slices,Protein,Protein,Chilled,Harvest,5.26,12,1,150,652,0.027166666,0.1687116564417178
+151,Everyday Turkey slices,Protein,Protein,Chilled,Everyday,6.14,12,1,151,578,0.024083333,0.1695501730103806
+152,Green Valley Turkey slices,Protein,Protein,Chilled,Green Valley,5.97,12,1,152,482,0.020083332,0.15975103734439833
+153,Orchard Turkey slices,Protein,Protein,Chilled,Orchard,7.26,12,1,153,365,0.015208334,0.12054794520547946
+154,Purely Turkey slices,Protein,Protein,Chilled,Purely,7.31,12,1,154,313,0.013041667,0.08945686900958466
+155,Market House Turkey slices,Protein,Protein,Chilled,Market House,8.98,12,1,155,165,0.006875,0.10303030303030303
+156,Harvest Firm tofu,Protein,Protein,Chilled,Harvest,4.72,13,1,156,590,0.024583334,0.14576271186440679
+157,Everyday Firm tofu,Protein,Protein,Chilled,Everyday,5.87,13,1,157,601,0.025041666,0.13311148086522462
+158,Green Valley Firm tofu,Protein,Protein,Chilled,Green Valley,6.73,13,1,158,441,0.018375,0.1292517006802721
+159,Orchard Firm tofu,Protein,Protein,Chilled,Orchard,7.57,13,1,159,359,0.014958333,0.11142061281337047
+160,Purely Firm tofu,Protein,Protein,Chilled,Purely,7.31,13,1,160,258,0.01075,0.06976744186046512
+161,Market House Firm tofu,Protein,Protein,Chilled,Market House,9.4,13,1,161,175,0.0072916667,0.07428571428571429
+162,Harvest Black bean patties,Protein,Protein,Chilled,Harvest,4.67,13,1,162,632,0.026333334,0.16139240506329114
+163,Everyday Black bean patties,Protein,Protein,Chilled,Everyday,5.16,13,1,163,635,0.026458334,0.18740157480314962
+164,Green Valley Black bean patties,Protein,Protein,Chilled,Green Valley,6.51,13,1,164,445,0.018541666,0.14606741573033707
+165,Orchard Black bean patties,Protein,Protein,Chilled,Orchard,7.0,13,1,165,352,0.014666666,0.13352272727272727
+166,Purely Black bean patties,Protein,Protein,Chilled,Purely,8.45,13,1,166,269,0.011208333,0.12639405204460966
+167,Market House Black bean patties,Protein,Protein,Chilled,Market House,9.21,13,1,167,197,0.0082083335,0.08121827411167512
+168,Harvest Baby spinach,Vegetables,Vegetables,Produce,Harvest,2.34,14,1,168,632,0.026333334,0.17721518987341772
+169,Everyday Baby spinach,Vegetables,Vegetables,Produce,Everyday,3.05,14,1,169,573,0.023875,0.17102966841186737
+170,Green Valley Baby spinach,Vegetables,Vegetables,Produce,Green Valley,3.04,14,1,170,410,0.017083334,0.16097560975609757
+171,Orchard Baby spinach,Vegetables,Vegetables,Produce,Orchard,3.55,14,1,171,325,0.013541667,0.1076923076923077
+172,Purely Baby spinach,Vegetables,Vegetables,Produce,Purely,3.71,14,1,172,277,0.011541666,0.04332129963898917
+173,Market House Baby spinach,Vegetables,Vegetables,Produce,Market House,4.64,14,1,173,211,0.0087916665,0.04739336492890995
+174,Harvest Mixed greens,Vegetables,Vegetables,Produce,Harvest,2.27,14,1,174,675,0.028125,0.1674074074074074
+175,Everyday Mixed greens,Vegetables,Vegetables,Produce,Everyday,2.55,14,1,175,600,0.025,0.15
+176,Green Valley Mixed greens,Vegetables,Vegetables,Produce,Green Valley,3.13,14,1,176,469,0.019541666,0.13646055437100213
+177,Orchard Mixed greens,Vegetables,Vegetables,Produce,Orchard,3.88,14,1,177,354,0.01475,0.09887005649717515
+178,Purely Mixed greens,Vegetables,Vegetables,Produce,Purely,4.21,14,1,178,289,0.012041667,0.10034602076124567
+179,Market House Mixed greens,Vegetables,Vegetables,Produce,Market House,4.48,14,1,179,188,0.007833334,0.06914893617021277
+180,Harvest Broccoli florets,Vegetables,Vegetables,Produce,Harvest,2.62,15,1,180,594,0.02475,0.15151515151515152
+181,Everyday Broccoli florets,Vegetables,Vegetables,Produce,Everyday,3.02,15,1,181,604,0.025166666,0.16390728476821192
+182,Green Valley Broccoli florets,Vegetables,Vegetables,Produce,Green Valley,3.18,15,1,182,445,0.018541666,0.14382022471910114
+183,Orchard Broccoli florets,Vegetables,Vegetables,Produce,Orchard,3.41,15,1,183,336,0.014,0.12797619047619047
+184,Purely Broccoli florets,Vegetables,Vegetables,Produce,Purely,4.12,15,1,184,255,0.010625,0.08627450980392157
+185,Market House Broccoli florets,Vegetables,Vegetables,Produce,Market House,4.41,15,1,185,196,0.008166667,0.061224489795918366
+186,Harvest Green beans,Vegetables,Vegetables,Produce,Harvest,2.37,15,1,186,587,0.024458334,0.16183986371379896
+187,Everyday Green beans,Vegetables,Vegetables,Produce,Everyday,2.57,15,1,187,554,0.023083333,0.148014440433213
+188,Green Valley Green beans,Vegetables,Vegetables,Produce,Green Valley,3.32,15,1,188,490,0.020416666,0.11428571428571428
+189,Orchard Green beans,Vegetables,Vegetables,Produce,Orchard,3.37,15,1,189,333,0.013875,0.08108108108108109
+190,Purely Green beans,Vegetables,Vegetables,Produce,Purely,4.25,15,1,190,289,0.012041667,0.08304498269896193
+191,Market House Green beans,Vegetables,Vegetables,Produce,Market House,4.05,15,1,191,210,0.00875,0.09047619047619047
+192,Harvest Sea salt crisps,Snacks,Snacks,Snacks,Harvest,2.53,16,2,192,511,0.021291668,0.15264187866927592
+193,Everyday Sea salt crisps,Snacks,Snacks,Snacks,Everyday,3.36,16,2,193,534,0.02225,0.15730337078651685
+194,Green Valley Sea salt crisps,Snacks,Snacks,Snacks,Green Valley,3.32,16,2,194,374,0.015583334,0.12566844919786097
+195,Orchard Sea salt crisps,Snacks,Snacks,Snacks,Orchard,3.72,16,2,195,300,0.0125,0.10666666666666667
+196,Purely Sea salt crisps,Snacks,Snacks,Snacks,Purely,4.48,16,2,196,234,0.00975,0.08547008547008547
+197,Market House Sea salt crisps,Snacks,Snacks,Snacks,Market House,5.17,16,2,197,168,0.007,0.07142857142857142
+198,Harvest Corn tortilla chips,Snacks,Snacks,Snacks,Harvest,2.57,16,2,198,521,0.021708334,0.13051823416506717
+199,Everyday Corn tortilla chips,Snacks,Snacks,Snacks,Everyday,3.03,16,2,199,486,0.02025,0.14609053497942387
+200,Green Valley Corn tortilla chips,Snacks,Snacks,Snacks,Green Valley,3.76,16,2,200,391,0.016291667,0.1432225063938619
+201,Orchard Corn tortilla chips,Snacks,Snacks,Snacks,Orchard,4.35,16,2,201,300,0.0125,0.1
+202,Purely Corn tortilla chips,Snacks,Snacks,Snacks,Purely,4.39,16,2,202,209,0.008708334,0.09090909090909091
+203,Market House Corn tortilla chips,Snacks,Snacks,Snacks,Market House,4.46,16,2,203,144,0.006,0.04861111111111111
+204,Harvest Rice crackers,Snacks,Snacks,Snacks,Harvest,2.47,17,2,204,499,0.020791667,0.12424849699398798
+205,Everyday Rice crackers,Snacks,Snacks,Snacks,Everyday,2.98,17,2,205,457,0.019041667,0.12472647702407003
+206,Green Valley Rice crackers,Snacks,Snacks,Snacks,Green Valley,3.3,17,2,206,351,0.014625,0.09971509971509972
+207,Orchard Rice crackers,Snacks,Snacks,Snacks,Orchard,4.12,17,2,207,265,0.011041666,0.09056603773584905
+208,Purely Rice crackers,Snacks,Snacks,Snacks,Purely,4.06,17,2,208,254,0.010583334,0.0984251968503937
+209,Market House Rice crackers,Snacks,Snacks,Snacks,Market House,4.81,17,2,209,162,0.00675,0.06790123456790123
+210,Harvest Roasted nuts,Snacks,Snacks,Snacks,Harvest,2.84,17,2,210,458,0.019083334,0.12008733624454149
+211,Everyday Roasted nuts,Snacks,Snacks,Snacks,Everyday,3.2,17,2,211,496,0.020666666,0.1350806451612903
+212,Green Valley Roasted nuts,Snacks,Snacks,Snacks,Green Valley,3.35,17,2,212,370,0.015416667,0.12432432432432433
+213,Orchard Roasted nuts,Snacks,Snacks,Snacks,Orchard,4.22,17,2,213,293,0.012208333,0.10580204778156997
+214,Purely Roasted nuts,Snacks,Snacks,Snacks,Purely,4.58,17,2,214,221,0.009208334,0.09049773755656108
+215,Market House Roasted nuts,Snacks,Snacks,Snacks,Market House,5.04,17,2,215,160,0.006666667,0.075
+216,Harvest Mild salsa,Dips,Dips,Chilled,Harvest,2.96,18,2,216,557,0.023208333,0.1436265709156194
+217,Everyday Mild salsa,Dips,Dips,Chilled,Everyday,3.4,18,2,217,519,0.021625,0.13872832369942195
+218,Green Valley Mild salsa,Dips,Dips,Chilled,Green Valley,4.51,18,2,218,389,0.016208334,0.11825192802056556
+219,Orchard Mild salsa,Dips,Dips,Chilled,Orchard,4.55,18,2,219,272,0.011333333,0.10661764705882353
+220,Purely Mild salsa,Dips,Dips,Chilled,Purely,4.92,18,2,220,233,0.009708334,0.04721030042918455
+221,Market House Mild salsa,Dips,Dips,Chilled,Market House,5.59,18,2,221,161,0.0067083333,0.07453416149068323
+222,Harvest Guacamole,Dips,Dips,Chilled,Harvest,3.3,18,2,222,502,0.020916667,0.12350597609561753
+223,Everyday Guacamole,Dips,Dips,Chilled,Everyday,4.01,18,2,223,480,0.02,0.12291666666666666
+224,Green Valley Guacamole,Dips,Dips,Chilled,Green Valley,3.98,18,2,224,373,0.015541667,0.13404825737265416
+225,Orchard Guacamole,Dips,Dips,Chilled,Orchard,5.04,18,2,225,311,0.012958333,0.12540192926045016
+226,Purely Guacamole,Dips,Dips,Chilled,Purely,4.64,18,2,226,226,0.009416667,0.07964601769911504
+227,Market House Guacamole,Dips,Dips,Chilled,Market House,5.67,18,2,227,133,0.005541667,0.03759398496240601
+228,Harvest Classic hummus,Dips,Dips,Chilled,Harvest,3.28,19,2,228,482,0.020083332,0.11410788381742738
+229,Everyday Classic hummus,Dips,Dips,Chilled,Everyday,3.39,19,2,229,512,0.021333333,0.142578125
+230,Green Valley Classic hummus,Dips,Dips,Chilled,Green Valley,3.86,19,2,230,392,0.016333334,0.14030612244897958
+231,Orchard Classic hummus,Dips,Dips,Chilled,Orchard,4.57,19,2,231,278,0.011583333,0.1079136690647482
+232,Purely Classic hummus,Dips,Dips,Chilled,Purely,5.6,19,2,232,217,0.009041667,0.06912442396313365
+233,Market House Classic hummus,Dips,Dips,Chilled,Market House,5.71,19,2,233,149,0.006208333,0.10067114093959731
+234,Harvest Yogurt dip,Dips,Dips,Chilled,Harvest,3.47,19,2,234,516,0.0215,0.14922480620155038
+235,Everyday Yogurt dip,Dips,Dips,Chilled,Everyday,3.9,19,2,235,471,0.019625,0.11889596602972399
+236,Green Valley Yogurt dip,Dips,Dips,Chilled,Green Valley,4.13,19,2,236,340,0.014166667,0.13529411764705881
+237,Orchard Yogurt dip,Dips,Dips,Chilled,Orchard,4.91,19,2,237,275,0.011458334,0.09818181818181818
+238,Purely Yogurt dip,Dips,Dips,Chilled,Purely,4.63,19,2,238,221,0.009208334,0.09954751131221719
+239,Market House Yogurt dip,Dips,Dips,Chilled,Market House,5.17,19,2,239,158,0.0065833335,0.03164556962025317
+240,Harvest Red apples,Fruit,Fruit,Produce,Harvest,2.43,20,3,240,548,0.022833332,0.13503649635036497
+241,Everyday Red apples,Fruit,Fruit,Produce,Everyday,2.78,20,3,241,607,0.025291666,0.13509060955518945
+242,Green Valley Red apples,Fruit,Fruit,Produce,Green Valley,2.81,20,3,242,400,0.016666668,0.115
+243,Orchard Red apples,Fruit,Fruit,Produce,Orchard,3.34,20,3,243,317,0.013208333,0.13249211356466878
+244,Purely Red apples,Fruit,Fruit,Produce,Purely,3.74,20,3,244,262,0.010916667,0.10687022900763359
+245,Market House Red apples,Fruit,Fruit,Produce,Market House,4.3,20,3,245,184,0.0076666665,0.09239130434782608
+246,Harvest Green apples,Fruit,Fruit,Produce,Harvest,2.33,20,3,246,583,0.024291666,0.17152658662092624
+247,Everyday Green apples,Fruit,Fruit,Produce,Everyday,2.58,20,3,247,540,0.0225,0.1574074074074074
+248,Green Valley Green apples,Fruit,Fruit,Produce,Green Valley,2.9,20,3,248,391,0.016291667,0.11508951406649616
+249,Orchard Green apples,Fruit,Fruit,Produce,Orchard,3.27,20,3,249,343,0.014291666,0.10495626822157435
+250,Purely Green apples,Fruit,Fruit,Produce,Purely,3.77,20,3,250,248,0.010333333,0.10080645161290322
+251,Market House Green apples,Fruit,Fruit,Produce,Market House,4.3,20,3,251,173,0.0072083334,0.06358381502890173
+252,Harvest Cavendish bananas,Fruit,Fruit,Produce,Harvest,2.26,21,3,252,562,0.023416666,0.16548042704626334
+253,Everyday Cavendish bananas,Fruit,Fruit,Produce,Everyday,2.49,21,3,253,566,0.023583334,0.15547703180212014
+254,Green Valley Cavendish bananas,Fruit,Fruit,Produce,Green Valley,2.81,21,3,254,396,0.0165,0.12373737373737374
+255,Orchard Cavendish bananas,Fruit,Fruit,Produce,Orchard,3.48,21,3,255,336,0.014,0.11607142857142858
+256,Purely Cavendish bananas,Fruit,Fruit,Produce,Purely,3.89,21,3,256,244,0.0101666665,0.0860655737704918
+257,Market House Cavendish bananas,Fruit,Fruit,Produce,Market House,3.69,21,3,257,181,0.0075416667,0.055248618784530384
+258,Harvest Navel oranges,Fruit,Fruit,Produce,Harvest,2.08,21,3,258,566,0.023583334,0.1413427561837456
+259,Everyday Navel oranges,Fruit,Fruit,Produce,Everyday,2.67,21,3,259,578,0.024083333,0.17128027681660898
+260,Green Valley Navel oranges,Fruit,Fruit,Produce,Green Valley,2.76,21,3,260,413,0.017208334,0.14043583535108958
+261,Orchard Navel oranges,Fruit,Fruit,Produce,Orchard,3.53,21,3,261,312,0.013,0.09615384615384616
+262,Purely Navel oranges,Fruit,Fruit,Produce,Purely,3.52,21,3,262,253,0.010541666,0.12648221343873517
+263,Market House Navel oranges,Fruit,Fruit,Produce,Market House,3.72,21,3,263,171,0.007125,0.07017543859649122
+264,Harvest Plain Greek yogurt,Yogurt,Yogurt,Dairy,Harvest,3.38,22,3,264,599,0.024958333,0.14858096828046743
+265,Everyday Plain Greek yogurt,Yogurt,Yogurt,Dairy,Everyday,3.35,22,3,265,545,0.022708334,0.11743119266055047
+266,Green Valley Plain Greek yogurt,Yogurt,Yogurt,Dairy,Green Valley,3.88,22,3,266,404,0.016833333,0.11138613861386139
+267,Orchard Plain Greek yogurt,Yogurt,Yogurt,Dairy,Orchard,4.22,22,3,267,338,0.014083333,0.10059171597633136
+268,Purely Plain Greek yogurt,Yogurt,Yogurt,Dairy,Purely,4.62,22,3,268,253,0.010541666,0.07509881422924901
+269,Market House Plain Greek yogurt,Yogurt,Yogurt,Dairy,Market House,4.95,22,3,269,205,0.008541667,0.06341463414634146
+270,Harvest Vanilla Greek yogurt,Yogurt,Yogurt,Dairy,Harvest,2.84,22,3,270,592,0.024666667,0.14189189189189189
+271,Everyday Vanilla Greek yogurt,Yogurt,Yogurt,Dairy,Everyday,3.35,22,3,271,569,0.023708334,0.14235500878734622
+272,Green Valley Vanilla Greek yogurt,Yogurt,Yogurt,Dairy,Green Valley,3.7,22,3,272,408,0.017,0.09803921568627451
+273,Orchard Vanilla Greek yogurt,Yogurt,Yogurt,Dairy,Orchard,4.61,22,3,273,325,0.013541667,0.11076923076923077
+274,Purely Vanilla Greek yogurt,Yogurt,Yogurt,Dairy,Purely,5.18,22,3,274,226,0.009416667,0.10176991150442478
+275,Market House Vanilla Greek yogurt,Yogurt,Yogurt,Dairy,Market House,5.36,22,3,275,200,0.008333334,0.06
+276,Harvest Strawberry yogurt,Yogurt,Yogurt,Dairy,Harvest,3.0,23,3,276,579,0.024125,0.16062176165803108
+277,Everyday Strawberry yogurt,Yogurt,Yogurt,Dairy,Everyday,3.59,23,3,277,606,0.02525,0.15016501650165018
+278,Green Valley Strawberry yogurt,Yogurt,Yogurt,Dairy,Green Valley,4.36,23,3,278,388,0.016166667,0.09536082474226804
+279,Orchard Strawberry yogurt,Yogurt,Yogurt,Dairy,Orchard,4.85,23,3,279,334,0.013916667,0.09580838323353294
+280,Purely Strawberry yogurt,Yogurt,Yogurt,Dairy,Purely,4.55,23,3,280,285,0.011875,0.11228070175438597
+281,Market House Strawberry yogurt,Yogurt,Yogurt,Dairy,Market House,5.12,23,3,281,177,0.007375,0.05649717514124294
+282,Harvest Coconut yogurt,Yogurt,Yogurt,Dairy,Harvest,2.95,23,3,282,518,0.021583334,0.13513513513513514
+283,Everyday Coconut yogurt,Yogurt,Yogurt,Dairy,Everyday,3.41,23,3,283,532,0.022166668,0.12218045112781954
+284,Green Valley Coconut yogurt,Yogurt,Yogurt,Dairy,Green Valley,4.12,23,3,284,420,0.0175,0.14285714285714285
+285,Orchard Coconut yogurt,Yogurt,Yogurt,Dairy,Orchard,4.45,23,3,285,306,0.01275,0.09477124183006536
+286,Purely Coconut yogurt,Yogurt,Yogurt,Dairy,Purely,4.55,23,3,286,267,0.011125,0.10112359550561797
+287,Market House Coconut yogurt,Yogurt,Yogurt,Dairy,Market House,5.34,23,3,287,164,0.0068333335,0.09146341463414634

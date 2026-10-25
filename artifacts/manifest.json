@@ -1,0 +1,63 @@
+{
+  "version": "3.0",
+  "seed": 42,
+  "source": "Synthetic grocery simulation",
+  "fallback_reason": "No extracted Instacart CSVs or configured Kaggle credentials found.",
+  "model_cache_hit": true,
+  "software_versions": {
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.9.0",
+    "xgboost": "3.2.0",
+    "mlxtend": "0.23.4"
+  },
+  "products": 288,
+  "history_baskets": 24000,
+  "future_baskets": 3000,
+  "events": 3194,
+  "selected_model": "Random Forest",
+  "proposed_models": [
+    "Random Forest",
+    "Gradient Boosting"
+  ],
+  "comparison_models": [
+    "Logistic Regression",
+    "XGBoost",
+    "MLPClassifier",
+    "Soft Voting (RF + GB + XGB)"
+  ],
+  "selection_criterion": "Highest training-CV average precision; held-out metrics are reporting only",
+  "training_time_definition": "Grid search + refit + sigmoid calibration, including component fits for the voter; original timings retained on cache hits",
+  "importance_method": "Permutation decrease in held-out PR-AUC, 3 repeats; post-selection diagnostic",
+  "price_note": "Synthetic USD prices",
+  "brand_note": "Simulated brands",
+  "support": 0.0015,
+  "weak_pairs": 7437,
+  "test_pairs": 443,
+  "elapsed_seconds": 21.04,
+  "limitations": [
+    "Weak labels are heuristic; test accuracy is not expert validation.",
+    "Both product endpoints are disjoint across supervised splits; historical context remains shared (transductive).",
+    "Next-order benchmark is conditional on observed switches, not all stockouts.",
+    "Scores estimate weak-label suitability, not customer acceptance or dietary safety.",
+    "No causal claim of recovered revenue; prices are synthetic or estimated."
+  ],
+  "sha256": {
+    "comparison.csv": "b2a3922414d131b6dfe7b01c9ea036978875b5d53f845b45478911d10da9b997",
+    "comparison_chart.json": "25c92c0a72ab828c62bbd615f0908e32f94d4890df739b8490d737dcb103e1e5",
+    "curves.json": "42b37c25bbce9687dbbced9143e225109960cbb726f232fc187fbc9a222959b7",
+    "cv_results.json": "29a78badd329eaee227210c258f6337ce7cb876a4d51c513a3996a547f3cf03d",
+    "evaluation_split.npz": "99387f1c90e4d314590f2e7398d3907acb47132db74aef67a9de9be780de2230",
+    "importance.csv": "c84a3a45fff74ef82f33647acf79e48f2f06068f28c2d76da9311c52726552c7",
+    "labelled_pairs.csv": "ea90475c74d5e1cbfecb6ef715f932f5089eb3a16d0b2b13c7f03f335d645136",
+    "matrices.npz": "6f02f448b763b35c56baf0d7911366d013d0defe6eb0c4024028379b1487b400",
+    "mining_compare.csv": "dec70d383d8b5f7e96a2281a7064f73f906888879e73dca7f137f3bddf35c9a8",
+    "models.joblib": "e97e3c14f65e498f4541013fa5de3744ad00d269a35228b195342ca084d27a1e",
+    "model_metrics.csv": "c61f2c17c091f6089be87b83f1a79eab58b5910d9a0154125a35dadc1128ecfa",
+    "model_ranking_metrics.csv": "9552027d0baf705dbcc1c4d96f753d571d78807387eb026bbd5b9ef506b90a8e",
+    "products.csv": "58ccd0f5800a91bed447fa56d3aeb6807e8a12b4c7c15357620e0d6ffce32f6f",
+    "ranking_metrics.csv": "4f43625bddd0ff5efc446560eaaedda2bfdbd2e1f173dd256b1879ad1796193c",
+    "rules.csv": "ee5322598bd62f1cfd92c8b6fde878be3498405d4f06b77e8124258b59e628b5",
+    "switch_events.csv": "a3e00790de55fc055f344fddb34dca6ea819e0f71a8767c8d69bbefc39e098ce"
+  }
+}

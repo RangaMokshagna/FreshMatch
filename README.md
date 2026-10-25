@@ -39,7 +39,7 @@ No API key or uploaded data is required for synthetic mode. Package downloads an
 
 Use Python 3.11 (the verified environment). Create a virtual environment and install `python -m pip install -r requirements.txt`. Open `product_substitution.ipynb` in Jupyter or VS Code, select that environment, and run all cells. The launcher starts `http://localhost:8501`. After running the notebook, `python -m streamlit run app.py` reopens the generated app.
 
-For automated runs set `FRESHMATCH_SKIP_LAUNCH=1`. The notebook remains the source of truth; `app.py`, theme settings, models and data are generated and ignored by Git. Clear `.cache_freshmatch/` for a cold fit. Random seeds are fixed at **42**, while machine-dependent training times can vary.
+For automated runs set `FRESHMATCH_SKIP_LAUNCH=1`. The notebook remains the source of truth and writes `app.py`; the generated app and the small set of catalogue, score-matrix and evaluation artifacts it needs are tracked so Streamlit Community Cloud can deploy directly. Set the Cloud main file to `streamlit_app.py`. Model binaries, caches, private data and local Streamlit settings remain ignored by Git. Clear `.cache_freshmatch/` for a cold fit. Random seeds are fixed at **42**, while machine-dependent training times can vary.
 
 ## Data and scientific boundaries
 
