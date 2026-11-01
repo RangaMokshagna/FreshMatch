@@ -1,0 +1,32 @@
+[
+  {
+    "page": "Out-of-Stock Simulator",
+    "exception_count": 0,
+    "screenshot": "02-stockout.png"
+  },
+  {
+    "page": "Product Explorer",
+    "exception_count": 0,
+    "screenshot": "03-products.png"
+  },
+  {
+    "page": "Relationship Explorer",
+    "exception_count": 0,
+    "screenshot": "04-relationships.png"
+  },
+  {
+    "page": "Model Performance",
+    "exception_count": 0,
+    "screenshot": "05-models.png"
+  },
+  {
+    "page": "ML Lab",
+    "exception_count": 0,
+    "screenshot": "06-ml-lab.png"
+  },
+  {
+    "page": "About",
+    "exception_count": 0,
+    "screenshot": "07-about.png"
+  }
+]

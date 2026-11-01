@@ -1,0 +1,18 @@
+{
+  "slides": 10,
+  "screenshots": 7,
+  "data_source": "Instacart",
+  "source_commit": "62f5f78a9299f9a7940742c4a77bb4133726fd5f",
+  "advanced_report_sha256": "0c5e7b81c13b8b16adeb91c26e6694f1dd8cd8d7b09871aa94690e768eedc0fc",
+  "screenshots_sha256": {
+    "01-find-substitutes.png": "f42a6e3b6ce27eec1eca6273fa83fd48128b23381dca5721dd04762eda36d7da",
+    "02-stockout.png": "9feb9a83432aabc60a29177680916d9eee8f6a8f7db60f3d09dce1317e03a8cf",
+    "03-products.png": "c58370b3efd41f572680329975a7f509468cd3533a295a326124172a64161546",
+    "04-relationships.png": "6074616edd1b83173ee098f6b08624c7576485c0fd7a4e54505565b3d6ef37ee",
+    "05-models.png": "df27fd5f09367242df0da55b6197a97b1c95b3ccda36d223d6cc4735cfaf1f78",
+    "06-ml-lab.png": "79c6cfd2a5e3d87f236f4fbe1c058f4efa2ac6d528735412a444c590f0268bba",
+    "07-about.png": "43c3d98ff971cf38019c757231c9d1c64d3a2cd9dd7ab11234e41777fd8dd570"
+  },
+  "format": "Editable PPTX with notes; matching SVG-rendered PDF preview",
+  "canva_status": "PPTX prepared for import; Canva service unavailable in this session"
+}
