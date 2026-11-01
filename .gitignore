@@ -33,3 +33,8 @@ artifacts/*
 !artifacts/advanced_report.json
 !artifacts/advanced_scores.npz
 !artifacts/advanced_test_events.csv
+
+# Keep the data folder visible while excluding the downloaded dataset.
+!instacart/
+instacart/*
+!instacart/README.md
