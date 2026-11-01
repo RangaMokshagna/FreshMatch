@@ -34,7 +34,7 @@
   "support": 0.0015,
   "weak_pairs": 7437,
   "test_pairs": 443,
-  "elapsed_seconds": 21.04,
+  "elapsed_seconds": 7.29,
   "limitations": [
     "Weak labels are heuristic; test accuracy is not expert validation.",
     "Both product endpoints are disjoint across supervised splits; historical context remains shared (transductive).",
@@ -43,21 +43,31 @@
     "No causal claim of recovered revenue; prices are synthetic or estimated."
   ],
   "sha256": {
-    "comparison.csv": "b2a3922414d131b6dfe7b01c9ea036978875b5d53f845b45478911d10da9b997",
-    "comparison_chart.json": "25c92c0a72ab828c62bbd615f0908e32f94d4890df739b8490d737dcb103e1e5",
-    "curves.json": "42b37c25bbce9687dbbced9143e225109960cbb726f232fc187fbc9a222959b7",
-    "cv_results.json": "29a78badd329eaee227210c258f6337ce7cb876a4d51c513a3996a547f3cf03d",
-    "evaluation_split.npz": "99387f1c90e4d314590f2e7398d3907acb47132db74aef67a9de9be780de2230",
-    "importance.csv": "c84a3a45fff74ef82f33647acf79e48f2f06068f28c2d76da9311c52726552c7",
-    "labelled_pairs.csv": "ea90475c74d5e1cbfecb6ef715f932f5089eb3a16d0b2b13c7f03f335d645136",
-    "matrices.npz": "6f02f448b763b35c56baf0d7911366d013d0defe6eb0c4024028379b1487b400",
-    "mining_compare.csv": "dec70d383d8b5f7e96a2281a7064f73f906888879e73dca7f137f3bddf35c9a8",
-    "models.joblib": "e97e3c14f65e498f4541013fa5de3744ad00d269a35228b195342ca084d27a1e",
-    "model_metrics.csv": "c61f2c17c091f6089be87b83f1a79eab58b5910d9a0154125a35dadc1128ecfa",
-    "model_ranking_metrics.csv": "9552027d0baf705dbcc1c4d96f753d571d78807387eb026bbd5b9ef506b90a8e",
-    "products.csv": "58ccd0f5800a91bed447fa56d3aeb6807e8a12b4c7c15357620e0d6ffce32f6f",
-    "ranking_metrics.csv": "4f43625bddd0ff5efc446560eaaedda2bfdbd2e1f173dd256b1879ad1796193c",
-    "rules.csv": "ee5322598bd62f1cfd92c8b6fde878be3498405d4f06b77e8124258b59e628b5",
-    "switch_events.csv": "a3e00790de55fc055f344fddb34dca6ea819e0f71a8767c8d69bbefc39e098ce"
+    "products.csv": "e0c9f37edf3dc7f9a79f77a27eaa0f4405950f855af4239821960cbe4eb23058",
+    "mining_compare.csv": "4b386d271a466f5556f5f82de046099b7aad7ce686510eade06d8f432c97ef9b",
+    "cv_results.json": "81a603d712ff6877d5707efccc6e782278fdb504a1859d1c5df3f2698fb8dc7f",
+    "comparison_chart.json": "1d2a847c1fe0645b34ec54dcb154aa68936e168d55fa96d1ce6e0c7907ad4191",
+    "matrices.npz": "3a594fe279452ba77544a19e7ae4ed4afde112e9c1894925142f1b3b1cb63eb6",
+    "evaluation_split.npz": "aaa5c59fb797ded8399f37be18a86662aaae9c790d84f829cd848bf4a69b38bf",
+    "advanced_report.json": "b1d6d4cd03b23075392633aaaf7777d5112fd4806d3dc9a7cf80d5d241358bba",
+    "advanced_test_events.csv": "e7cb9bc9df822d615965166d7f3fef2177abb02eec983a8af2e736e8ea7f65a1",
+    "comparison.csv": "19508343a767c2a64fc4809faf91ce7e9d790551cce6b47863044778c382c41c",
+    "model_ranking_metrics.csv": "413b43bfc0e95ffb1f6a9d259f04670eca43befb41d304b73614c9d94ea89f6c",
+    "importance.csv": "1476b54cabf180063f041a068eca648a1e8775a8256bfc636a5fc0594858e897",
+    "models.joblib": "8f7a0aff2f79e845f54d6f769c7fea4e4a64f2b5dd99767ec6bdfe1ff7c471aa",
+    "ranking_metrics.csv": "3e29b923c017bf06673523af2650970bdd7c1e6bd095e880aa73102bc5b0c7d8",
+    "curves.json": "d026a4e024cf8f4a7746fe2aa6d627f8f3a0721a3fa5430a55a01f7733bb8d4b",
+    "labelled_pairs.csv": "66c5431be70a9aa964a02eb76364f823438912e49e7cf3bb4bf54684c718e7ca",
+    "model_metrics.csv": "fcbc1c2029f10c9ebcfd9ddfa31feb426780479d832564a4dc32e1f640589368",
+    "advanced_scores.npz": "09f7ed029f74dce5d0b943c8256b2497d3a773c8f21fd6323a5e2997abddf550",
+    "behavioral_ranker.ubj": "4821913db86b963f465e3bac6b4601dbfd3ac0ee4a69ecf19a714cad2e26ce0c",
+    "rules.csv": "333891d0a5182a8575ff32041f9c1613920230af39cc61977d9e7b3ccd8af4a5",
+    "switch_events.csv": "9fe4b954c521ab0ae4cac2e32030a5cd39e2a569ff6d96e96b0c365da670f269"
+  },
+  "advanced_experiment": {
+    "report": "advanced_report.json",
+    "scores": "advanced_scores.npz",
+    "objective": "Behavioral LambdaMART / rank:ndcg",
+    "selection": "Validation-household final-order NDCG@5"
   }
 }

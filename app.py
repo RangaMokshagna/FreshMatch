@@ -258,8 +258,8 @@ def cards(result,original_price):
     st.markdown('<div class="product-grid">'+''.join(rendered)+'</div>',unsafe_allow_html=True)
     st.download_button('↓ Download alternatives',result[['name','category','brand','price','score','reason','model_explanation']].to_csv(index=False).encode(),file_name='freshmatch_alternatives.csv',mime='text/csv')
 
-PAGES=['Find Substitutes','Out-of-Stock Simulator','Product Explorer','Relationship Explorer','Model Performance','About']
-NAV_ICONS=['🔎','🛒','🧺','🔗','📊','🌱']
+PAGES=['Find Substitutes','Out-of-Stock Simulator','Product Explorer','Relationship Explorer','Model Performance','ML Lab','About']
+NAV_ICONS=['🔎','🛒','🧺','🔗','📊','🧪','🌱']
 if st.session_state.get('freshmatch_page') not in PAGES:
     st.session_state['freshmatch_page']=PAGES[0]
 with st.sidebar:
@@ -450,9 +450,93 @@ elif page=='Model Performance':
     st.caption(f'{int(row.events):,} observed switching events · future target eligible in {row.target_coverage:.1%} of events · top-5 hit rate {row.hit_rate:.1%}, 95% household-bootstrap interval {row.hit_ci_low:.1%}–{row.hit_ci_high:.1%}.')
     with st.expander('Evaluation details and limitations'):
         for limitation in meta['limitations']: st.write('• '+limitation)
-        st.write('Training and test pairs have disjoint unordered pair IDs. Products may occur in both. Feature construction uses only historical baskets; final orders are held out. Model selection uses training CV, not test scores. Future switching events need at least one observed alternative, so the measured hit rate should not be generalized to every stockout.')
+        st.write('Both product endpoints are disjoint across training and test pairs; boundary-crossing pairs are purged. Feature construction uses only historical baskets; final orders are held out. Model selection uses training CV, not test scores. Future switching events need at least one observed alternative, so the measured hit rate should not be generalized to every stockout.')
         st.write('Prices are estimates; offline revenue is a proxy. All candidate products compete without inserting the future target. The same candidate policy is applied to all three ranking systems.')
     st.download_button('↓ Download ranking evaluation',rm.to_csv(index=False).encode(),file_name='ranking_metrics.csv',mime='text/csv')
+
+elif page=='ML Lab':
+    title('BEHAVIORAL LEARNING TO RANK','From suitability to observed choices.','Compare a LambdaMART ranker with four baselines on held-out households.')
+    report_path=ART/'advanced_report.json'
+    score_path=ART/'advanced_scores.npz'
+    if not report_path.exists() or not score_path.exists():
+        st.info('Run the notebook or python scripts/train.py to generate the behavioral experiment.')
+    else:
+        @st.cache_data(show_spinner=False)
+        def load_advanced(report_time,score_time):
+            report=json.loads(report_path.read_text())
+            with np.load(score_path,allow_pickle=False) as data:
+                scores=data['scores']
+            if scores.shape!=matrices['eligible'].shape or not np.isfinite(scores).all():
+                raise ValueError('Behavioral scores do not match the catalogue. Regenerate the experiment.')
+            return report,scores
+        advanced,rank_scores=load_advanced(report_path.stat().st_mtime_ns,score_path.stat().st_mtime_ns)
+        st.info(advanced['source']+' · historical transitions train the ranker; validation households select its configuration; separate test households supply the reported final-order outcomes. Historical catalogue features remain transductive.')
+        split=advanced['split']
+        c1,c2,c3=st.columns(3)
+        c1.metric('Historical training groups',f"{split['train_groups']:,}")
+        c2.metric('Validation events',f"{split['validation_events']:,}")
+        c3.metric('Test events',f"{split['test_events']:,}")
+        tabs=st.tabs(['Ranking evidence','Try the ranker','Ablations and features','Probability calibration'])
+        with tabs[0]:
+            frame=pd.DataFrame(advanced['test_metrics'])
+            st.subheader('Held-out household results · K = 5')
+            fig=go.Figure(go.Bar(x=frame.model,y=frame.ndcg_at_k,
+                error_y=dict(type='data',symmetric=False,array=frame.ndcg_ci_high-frame.ndcg_at_k,
+                             arrayminus=frame.ndcg_at_k-frame.ndcg_ci_low)))
+            fig.update_layout(title='NDCG@5 with 95% household-bootstrap intervals',yaxis_title='NDCG@5')
+            chart(fig,key='advanced_ndcg')
+            st.dataframe(frame,hide_index=True,width='stretch')
+            delta=advanced['paired_comparison']
+            st.caption(f"Paired NDCG@5 difference vs weak-label classifier: {delta['mean_delta']:+.4f}; 95% household-bootstrap interval [{delta['ci_low']:+.4f}, {delta['ci_high']:+.4f}]. An interval spanning zero does not establish an improvement.")
+            st.subheader('Category slices')
+            st.dataframe(pd.DataFrame(advanced['category_slices']),hide_index=True,width='stretch')
+            st.caption('Small category samples have uncertain estimates. All baselines share candidate pools; ineligible targets remain in recall denominators.')
+            st.download_button('Download behavioral experiment',report_path.read_bytes(),file_name='advanced_report.json',mime='application/json')
+        with tabs[1]:
+            q=st.selectbox('Compare alternatives for',list(names),format_func=lambda i:names[i],key='lab_query')
+            outages=st.multiselect('Remove unavailable alternatives',list(names),format_func=lambda i:names[i],key='lab_outages')
+            price_cap=st.number_input('Ranker price cap ($)',min_value=.1,value=float(np.ceil(products.price.max())),step=.5)
+            ids=np.flatnonzero(matrices['eligible'][q] & (products.price.to_numpy()<=price_cap))
+            ids=ids[~np.isin(ids,[q]+outages)]
+            left,right=st.columns(2)
+            for container,label,values in [(left,'Behavioral LambdaMART',rank_scores),(right,'Weak-label suitability',matrices['scores'])]:
+                with container:
+                    st.subheader(label)
+                    top=ids[np.argsort(-values[q,ids],kind='stable')][:5]
+                    if not len(top):
+                        st.info('No alternatives meet these availability and price filters.')
+                    else:
+                        shown=products.iloc[top][['name','category','price']].copy()
+                        shown['rank_score' if label=='Behavioral LambdaMART' else 'suitability']=values[q,top]
+                        st.dataframe(shown,hide_index=True,width='stretch')
+            st.caption('LambdaMART scores order candidates for a query. They are not percentages, confidence intervals or purchase probabilities. This experimental ranker does not replace the main suitability cards.')
+        with tabs[2]:
+            st.caption('Four configurations are compared on validation NDCG@5. The best configuration is then fixed before test evaluation.')
+            st.dataframe(pd.DataFrame(advanced['trials']),hide_index=True,width='stretch')
+            st.subheader('Feature removal · validation only')
+            st.dataframe(pd.DataFrame(advanced['ablations']),hide_index=True,width='stretch')
+            importance=pd.DataFrame({'feature':list(advanced['gain_importance']), 'gain':list(advanced['gain_importance'].values())}).sort_values('gain')
+            chart(px.bar(importance,x='gain',y='feature',orientation='h',title='LambdaMART gain importance'),key='ranker_gain')
+            st.caption('Gain importance and feature removal describe model dependence; neither measures a causal effect.')
+        with tabs[3]:
+            st.caption('These probabilities belong to the six weak-label classifiers, evaluated on product-disjoint pairs. They do not calibrate behavioral rank scores or shopper acceptance.')
+            chosen=st.selectbox('Calibration model',list(advanced['calibration']),key='calibration_model')
+            diagnostic=advanced['calibration'][chosen]
+            c1,c2,c3=st.columns(3)
+            c1.metric('Brier loss',f"{diagnostic['brier']:.4f}")
+            c2.metric('Log loss',f"{diagnostic['log_loss']:.4f}")
+            c3.metric('ECE · 10 equal-width bins',f"{diagnostic['ece']:.4f}")
+            reliability=pd.DataFrame(diagnostic['reliability'])
+            fig=px.scatter(reliability,x='mean_probability',y='observed_frequency',size='count',hover_data=['count'],title='Reliability diagram · weak labels')
+            fig.add_trace(go.Scatter(x=[0,1],y=[0,1],mode='lines',name='Perfect calibration',line=dict(dash='dash')))
+            fig.update_xaxes(range=[0,1]); fig.update_yaxes(range=[0,1])
+            chart(fig,key='reliability')
+            st.dataframe(reliability,hide_index=True,width='stretch')
+            st.caption('ECE is the sample-weighted absolute gap between mean probability and observed frequency. Empty bins are omitted; small samples make calibration estimates noisy.')
+        with st.expander('Protocol and limitations'):
+            st.json({'objective':advanced['objective'],'selection':advanced['selection'], 'selected_parameters':advanced['selected_parameters'],
+                     'households':{key:len(value) for key,value in split['households'].items()},'feature_sha256':advanced['feature_sha256']})
+            for limitation in advanced['limitations']: st.write('• '+limitation)
 
 elif page=='About':
     title('PURPOSE BUILT','A better alternative to an empty basket.','AI-Powered Product Substitution Discovery and Intelligent Alternative Recommendation Using Machine Learning')

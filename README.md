@@ -6,7 +6,7 @@
 
 [Open in Colab](https://colab.research.google.com/github/RangaMokshagna/FreshMatch/blob/main/product_substitution.ipynb) · [Notebook](product_substitution.ipynb) · [Measured results](RESULTS.md) · [Validation](VALIDATION.md) · [MIT License](LICENSE)
 
-One executable notebook builds the dataset, mines complement relationships, tunes six classifiers, calibrates suitability scores, evaluates future switching, writes the complete Streamlit app with `%%writefile app.py`, and launches it. No separate Python source is needed.
+One executable notebook builds the dataset, mines complement relationships, tunes six classifiers, calibrates suitability scores, evaluates future switching, writes the complete Streamlit app and behavioral ranking module, and launches it. The notebook embeds the Python sources for self-contained Colab execution; editable Python files and automated tests also support local development.
 
 ## Experience
 
@@ -15,6 +15,7 @@ One executable notebook builds the dataset, mines complement relationships, tune
 - **Product Explorer:** category search, popularity and price views.
 - **Relationship Explorer:** Apriori/FP-Growth complements, context-based alternatives and interactive relationship graphs.
 - **Model Performance:** identical six-model table and interactive metric chart, deployed winner, diagnostics, calibration Brier loss, global permutation importance and independent ranking baselines.
+- **ML Lab:** behavioral LambdaMART, household-held-out ranking comparisons, paired confidence intervals, category slices, feature ablations, reliability diagrams and a filtered ranker demo.
 - **About:** methodology, limitations and team.
 
 Mint background, brand green `#0F7B5F`, amber accents, Inter, 8px spacing tokens, white controls, visible keyboard focus, contrast-aware text, custom sidebar pills, skeleton loading and reduced-motion support. Cards use three columns on desktop and one on mobile. Each card includes a plain-English explanation and expandable model feature sensitivity.
@@ -41,6 +42,29 @@ Use Python 3.11 (the verified environment). Create a virtual environment and ins
 
 For automated runs set `FRESHMATCH_SKIP_LAUNCH=1`. The notebook remains the source of truth and writes `app.py`; the generated app and the small set of catalogue, score-matrix and evaluation artifacts it needs are tracked so Streamlit Community Cloud can deploy directly. Set the Cloud main file to `streamlit_app.py`. Model binaries, caches, private data and local Streamlit settings remain ignored by Git. Clear `.cache_freshmatch/` for a cold fit. Random seeds are fixed at **42**, while machine-dependent training times can vary.
 
+## Advanced ML workflow
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python scripts/train.py
+python -m unittest discover -s tests -v
+python -m streamlit run streamlit_app.py --server.headless=true --browser.gatherUsageStats=false
+```
+
+The runner verifies exact dependencies, executes the notebook without package reinstallation or a public tunnel, and saves the executed notebook under `.cache_freshmatch/`. Training intentionally regenerates `app.py`, inference artifacts and `RESULTS.md`. To edit Python sources, run `python scripts/sync_notebook.py` before training; the synchronization test prevents drift between Python and notebook implementations. Python 3.12 is validated alongside the earlier documented Python 3.11 run. CI runs training and tests on Python 3.12.
+
+**Behavioral LambdaMART** (`XGBRanker`, `rank:ndcg`) learns from observed historical adjacent-order switches rather than the heuristic pair labels. A seeded household split assigns 70% to training, 15% to validation and 15% to testing. Training uses historical transitions only. Four tree configurations compete on validation-household final-order NDCG@5; the selected configuration is fixed for test evaluation. Three feature-removal studies use validation only. The original six-model weak-label experiment remains available for comparison.
+
+**Measured synthetic test subset:** 474 final-order events from 278 households. LambdaMART reaches **NDCG@5 0.4067** and **64.1% hit rate**, versus **0.3580** and **56.5%** for the weak-label classifier on exactly those events. The paired NDCG difference is **+0.0488**, with a 95% household-bootstrap interval **[+0.0102, +0.0865]**. Content, shopping-context and popularity baselines use identical candidate pools. These subset results differ from the original 3,194-event benchmark and must not be compared as though the populations were identical.
+
+Open **ML Lab** to explore the results, category sample counts, validation ablations, ranker gain importance and classifier reliability diagrams (Brier loss, log loss and equal-width-bin ECE). The ranker demo respects price and availability filters. Its relative scores are not probabilities. The main recommendation cards continue to use calibrated weak-label suitability; the experimental ranker is presented separately for comparison.
+
+Catalogue features use all historical households, so the evaluation is **transductive**, even though training, validation and test households are disjoint. Final orders never fit features. Observed switches are proxy relevance, synthetic need IDs define relevance but are excluded from model features, and none of these results establishes real stockout recovery or shopper acceptance. Feature ablations can improve validation performance; they are reported without using test scores to change the selected model.
+
+Artifacts: `artifacts/advanced_report.json`, `advanced_scores.npz` and `advanced_test_events.csv` are portable inference/audit outputs. The fitted `behavioral_ranker.ubj` remains local and can be regenerated. The app uses safe numeric arrays and JSON, without unpickling a ranker.
+
 ## Data and scientific boundaries
 
 The notebook checks `instacart/` (or `FRESHMATCH_DATA_DIR`) for original Instacart files, then configured Kaggle credentials, then falls back automatically to **288 products, 12 categories, six brands, 24,000 history baskets and 3,000 future baskets**. Set credentials outside notebook source and accept the [Instacart competition rules](https://www.kaggle.com/c/instacart-market-basket-analysis/data) yourself before downloading.
@@ -62,7 +86,7 @@ flowchart LR
     H --> I[Same-category eligible scores + local explanations]
     B --> J[Future-switch ranking benchmark]
     I --> J
-    I --> K[Notebook writes six-page Streamlit app]
+    I --> K[Notebook writes seven-page Streamlit app]
 ```
 
 **Complements are not substitutes.** Both mining algorithms use the same historical baskets, support 0.0015 and itemsets up to length two, and must agree. Substitution features combine same-category/aisle/department/brand, TF-IDF name cosine, co-purchase-context cosine, smoothed log lift, symmetric price/popularity ratios and reorder similarity. Eligible alternatives must share category, have lift below 1.5, fit filters and be available; self-matches and all declared outages are excluded.
@@ -79,12 +103,12 @@ Classification: **443 product-disjoint test pairs**. Rankings: **3,194 independe
 
 | Model | ROC-AUC | PR-AUC | F1 | Precision@5 | Recall@5 | NDCG@5 | MAP@5 | Training time (s) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Random Forest | 1.0000 | 1.0000 | 0.9928 | 0.1054 | 0.5269 | 0.3238 | 0.2577 | 8.6515 |
-| Gradient Boosting | 0.9985 | 0.9949 | 0.9855 | 0.0989 | 0.4944 | 0.2920 | 0.2267 | 6.3029 |
-| Logistic Regression | 1.0000 | 1.0000 | 1.0000 | 0.1212 | 0.6058 | 0.3778 | 0.3034 | 0.1559 |
-| XGBoost | 0.9977 | 0.9933 | 0.9855 | 0.1059 | 0.5297 | 0.3242 | 0.2576 | 2.2667 |
-| MLPClassifier | 1.0000 | 1.0000 | 1.0000 | 0.1090 | 0.5451 | 0.3436 | 0.2776 | 4.0440 |
-| Soft Voting (RF + GB + XGB) | 1.0000 | 1.0000 | 0.9855 | 0.1066 | 0.5332 | 0.3249 | 0.2570 | 7.9429 |
+| Random Forest | 1.0000 | 1.0000 | 0.9928 | 0.1054 | 0.5269 | 0.3238 | 0.2577 | 3.4402 |
+| Gradient Boosting | 0.9985 | 0.9949 | 0.9855 | 0.0989 | 0.4944 | 0.2920 | 0.2267 | 2.9571 |
+| Logistic Regression | 1.0000 | 1.0000 | 1.0000 | 0.1212 | 0.6058 | 0.3778 | 0.3034 | 0.0981 |
+| XGBoost | 0.9978 | 0.9935 | 0.9855 | 0.1093 | 0.5466 | 0.3280 | 0.2572 | 0.2734 |
+| MLPClassifier | 1.0000 | 1.0000 | 1.0000 | 0.1090 | 0.5451 | 0.3436 | 0.2776 | 1.3460 |
+| Soft Voting (RF + GB + XGB) | 1.0000 | 1.0000 | 0.9855 | 0.1066 | 0.5332 | 0.3260 | 0.2586 | 3.7266 |
 
 **Deployed: Random Forest**, selected by training CV, with sigmoid-calibrated scores. LR has the strongest future ranking here; the reporting benchmark does not override the predeclared selection policy. Training time includes search, refit and calibration; ensemble timing includes component fits. Cache hits retain original measured times. The notebook and app consume the same comparison table; the chart dropdown keeps seconds separate from quality scores.
 
@@ -96,9 +120,9 @@ The simulator uses covered demand × a user-controlled acceptance assumption, mu
 
 ## Reproducibility and validation
 
-- End-to-end notebook execution completed locally with exact pinned dependencies; meaningful interactive chart outputs are retained.
+- End-to-end notebook execution completed locally with exact pinned dependencies; interactive charts are generated during execution. The source notebook has cleared outputs; the local runner saves an executed copy in `.cache_freshmatch/executed.ipynb`.
 - Product-disjoint outer/CV assertions, six recomputed test metrics, winner-derived score probabilities, category/lift eligibility and local explanations pass automated checks.
-- All six pages render under Streamlit AppTest and browser inspection at **1280px desktop and 375px mobile**, with no page-width overflow or browser console errors. Wide comparison tables scroll internally.
+- The original six pages were checked with Streamlit AppTest and browser inspection at **1280px desktop and 375px mobile**, with no page-width overflow or browser console errors. Wide comparison tables scroll internally.
 - Checked example selection, detailed explanation expansion, CSV availability, loading states and the shared performance table. See [VALIDATION.md](VALIDATION.md) for scope and remaining limitations.
 
 ## Repository map
@@ -106,6 +130,9 @@ The simulator uses covered demand × a user-controlled acceptance assumption, mu
 | File | Purpose |
 | --- | --- |
 | `product_substitution.ipynb` | Complete executable project, embedded app, chart outputs and launcher |
+| `advanced_ml.py` | Behavioral ranking, clustered uncertainty and calibration diagnostics |
+| `scripts/` | Notebook training and Python/notebook synchronization |
+| `tests/` | Metric, split, artifact and seven-page app tests |
 | `requirements.txt` | Exact tested dependency pins |
 | `RESULTS.md` | Full measured tables generated by the notebook |
 | `assets/` | Banner, actual desktop/mobile screenshots, comparison CSV and validation evidence |

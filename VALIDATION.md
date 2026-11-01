@@ -1,6 +1,29 @@
-# FreshMatch — Submission validation
+# FreshMatch — Validation
 
-The current notebook executed end to end locally in Python 3.11 with requirements pinned to the installed tested versions. The launch cell was intentionally skipped via `FRESHMATCH_SKIP_LAUNCH=1` for automated execution; the generated app was inspected on the already running localhost Streamlit server. A Google Colab live session and public tunnel were not independently tested in this pass.
+## Advanced extension · current local validation
+
+Validated in an isolated Python 3.12.14 virtual environment with the exact pinned dependencies. `python scripts/train.py` completed all notebook cells, generated behavioral ranking artifacts and passed the original notebook integrity assertions. `python -m pip check` reported no broken requirements.
+
+`python -m unittest discover -s tests -v`: **12 tests passed**. These cover deterministic disjoint household assignment, adjacent-order relevance, ranker candidate/label grouping, ineligible-target metric denominators, stable ranking ties and empty pools, clustered bootstrapping, calibration boundary bins, embedded-source synchronization, artifact checksums, independently recomputed test metrics and paired confidence intervals. The app test renders all **seven pages**, changes the ranker query and calibration model, excludes every same-category alternative through availability controls, and checks the original recommendation CSV control.
+
+The behavioral experiment trains on 15,545 groups / 357,535 candidate rows from 2,100 households. Validation uses 477 events; reporting uses 474 events from 278 of the 450 reserved test households. Four configurations are selected using validation NDCG@5 only; three feature-removal models are evaluated on validation only. Test targets never train the ranker. Historical feature construction remains shared across households, so this is transductive.
+
+NDCG@5 is 0.4067 versus 0.3580 for the weak-label baseline on identical test events; the paired 95% household-bootstrap difference interval is [+0.0102, +0.0865]. Results are synthetic and conditional on observed switches. The new ML Lab was checked through Streamlit AppTest; new desktop/mobile browser inspection and a remote GitHub Actions run were **not** performed. Earlier browser screenshots below describe the original six pages, not the added page.
+
+Reproduce:
+
+```bash
+python scripts/train.py
+python -m unittest discover -s tests -v
+```
+
+The lightweight advanced report, numeric score matrix and per-event audit table are included with the project. Fitted models and the fully executed notebook remain ignored local outputs. The source notebook has cleared outputs to avoid shipping stale results; tests ensure its embedded Python matches the editable files.
+
+## Original submission evidence
+
+The following records describe the earlier project version and are retained as historical evidence.
+
+The original notebook executed end to end locally in Python 3.11 with requirements pinned to the installed tested versions. The launch cell was intentionally skipped via `FRESHMATCH_SKIP_LAUNCH=1` for automated execution; the generated app was inspected on the already running localhost Streamlit server. A Google Colab live session and public tunnel were not independently tested in this pass.
 
 ## Automated checks
 

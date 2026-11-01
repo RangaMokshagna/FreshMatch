@@ -1,0 +1,2371 @@
+user,query,category,precision_at_k,recall_at_k,ndcg_at_k,map_at_k,hit_rate,target_coverage,model
+5,2,Milk,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+5,169,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+41,128,Sauce,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+41,175,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+42,54,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+42,251,Fruit,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+49,121,Sauce,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+58,286,Yogurt,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+63,169,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+65,237,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+76,2,Milk,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+76,197,Snacks,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+76,217,Dips,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+81,108,Pasta,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+89,62,Bread,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+93,58,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+105,111,Pasta,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+118,40,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+118,92,Coffee,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+145,147,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+149,200,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+162,268,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+167,249,Fruit,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+182,144,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+182,192,Snacks,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+182,221,Dips,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+190,170,Vegetables,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+261,4,Milk,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+261,47,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+264,179,Vegetables,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+275,187,Vegetables,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+286,1,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+290,182,Vegetables,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+295,252,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+301,271,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+314,202,Snacks,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+323,208,Snacks,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+323,234,Dips,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+333,269,Yogurt,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+339,31,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+339,50,Bread,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+339,75,Coffee,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+355,114,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+355,134,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+355,190,Vegetables,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+364,249,Fruit,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+364,268,Yogurt,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+391,9,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+397,20,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+397,61,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+401,243,Fruit,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+414,118,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+414,138,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+414,165,Protein,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+414,190,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+423,92,Coffee,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+438,250,Fruit,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+440,180,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+442,13,Milk,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+442,84,Coffee,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+450,43,Cereal,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+450,262,Fruit,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+450,282,Yogurt,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+456,132,Sauce,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+458,272,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+459,214,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+462,82,Coffee,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+485,261,Fruit,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+491,6,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+499,133,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+525,48,Bread,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+525,120,Sauce,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+525,147,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+525,273,Yogurt,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+533,201,Snacks,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+533,218,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+534,260,Fruit,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+545,114,Pasta,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+545,188,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+555,190,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+564,211,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+604,200,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+633,10,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+633,25,Cereal,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+633,48,Bread,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+669,12,Milk,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+669,31,Cereal,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+669,51,Bread,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+669,72,Coffee,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+675,152,Protein,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+689,254,Fruit,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+706,177,Vegetables,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+707,118,Pasta,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+707,204,Snacks,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+721,42,Cereal,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+721,252,Fruit,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+735,32,Cereal,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+735,57,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+735,80,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+735,176,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+746,125,Sauce,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+749,264,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+760,64,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+764,115,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+764,157,Protein,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+781,108,Pasta,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+781,187,Vegetables,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+787,144,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+809,201,Snacks,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+816,33,Cereal,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+816,100,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+820,96,Pasta,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+820,141,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+820,146,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+820,177,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+830,14,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+830,36,Cereal,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+836,165,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+838,181,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+851,90,Coffee,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+851,139,Sauce,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+851,167,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+861,96,Pasta,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+861,168,Vegetables,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+861,219,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+861,273,Yogurt,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+862,148,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+867,249,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+867,266,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+886,6,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+886,59,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+886,79,Coffee,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+893,23,Milk,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+908,141,Sauce,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+915,30,Cereal,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+915,78,Coffee,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+926,49,Bread,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+938,62,Bread,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+949,72,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+949,174,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+978,270,Yogurt,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+995,138,Sauce,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+1013,286,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1039,30,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+1039,154,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1041,126,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1046,115,Pasta,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+1046,132,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1056,135,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1065,19,Milk,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1065,69,Bread,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1089,149,Protein,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+1092,114,Pasta,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+1127,21,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+1146,86,Coffee,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1161,271,Yogurt,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+1181,229,Dips,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1182,162,Protein,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+1194,30,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1194,198,Snacks,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+1199,126,Sauce,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1199,201,Snacks,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+1199,224,Dips,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+1210,127,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1210,154,Protein,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+1210,172,Vegetables,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+1219,142,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1219,184,Vegetables,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+1219,209,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1240,117,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+1240,181,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1245,113,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1245,141,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1245,162,Protein,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+1245,183,Vegetables,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+1253,110,Pasta,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+1259,246,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1275,148,Protein,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+1278,117,Pasta,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1278,133,Sauce,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1278,164,Protein,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+1286,97,Pasta,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1286,120,Sauce,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+1286,155,Protein,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+1294,48,Bread,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+1294,99,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1294,144,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+1296,138,Sauce,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1308,232,Dips,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+1315,21,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1315,37,Cereal,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1315,70,Bread,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+1315,84,Coffee,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+1316,193,Snacks,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+1316,217,Dips,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1324,188,Vegetables,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+1349,175,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1353,146,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1353,242,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1353,271,Yogurt,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+1356,135,Sauce,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+1356,158,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1363,72,Coffee,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+1363,121,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1365,135,Sauce,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+1365,158,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1365,263,Fruit,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1371,2,Milk,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1371,30,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+1371,55,Bread,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1393,68,Bread,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+1393,214,Snacks,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+1408,73,Coffee,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+1408,103,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1409,97,Pasta,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+1420,265,Yogurt,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+1442,237,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1465,253,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1499,97,Pasta,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1507,0,Milk,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+1507,154,Protein,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1508,6,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1508,54,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1508,240,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1513,194,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1513,235,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1513,245,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1524,112,Pasta,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+1524,141,Sauce,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+1524,164,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+1524,254,Fruit,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+1526,13,Milk,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+1526,57,Bread,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+1527,0,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1527,199,Snacks,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+1528,19,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+1534,134,Sauce,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+1540,243,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1540,274,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1544,72,Coffee,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1564,258,Fruit,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+1564,282,Yogurt,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1572,67,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1572,109,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+1573,38,Cereal,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1579,258,Fruit,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+1579,283,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1595,110,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1602,279,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1610,26,Cereal,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1610,194,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1621,103,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1621,128,Sauce,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+1621,144,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1623,176,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1623,272,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1630,100,Pasta,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+1630,153,Protein,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+1630,174,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1633,115,Pasta,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1633,132,Sauce,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+1633,162,Protein,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1633,186,Vegetables,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1649,89,Coffee,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+1661,235,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1679,212,Snacks,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+1697,135,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1732,191,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1733,139,Sauce,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+1733,231,Dips,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1733,258,Fruit,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+1735,37,Cereal,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1742,269,Yogurt,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+1775,122,Sauce,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+1786,36,Cereal,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1786,67,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1786,254,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1793,115,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+1802,84,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1809,176,Vegetables,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1809,220,Dips,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1810,145,Protein,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+1815,35,Cereal,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1824,206,Snacks,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+1824,230,Dips,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+1836,120,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1842,45,Cereal,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1842,156,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+1856,46,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1856,65,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1856,88,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1861,147,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1861,170,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1885,193,Snacks,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+1896,48,Bread,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1901,176,Vegetables,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+1911,46,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+1915,34,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1915,76,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+1941,251,Fruit,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1941,270,Yogurt,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1949,235,Dips,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+1950,211,Snacks,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1951,135,Sauce,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+1954,240,Fruit,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+1987,117,Pasta,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+1992,204,Snacks,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+1992,232,Dips,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+2015,259,Fruit,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+2042,100,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2042,170,Vegetables,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+2042,194,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2044,201,Snacks,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+2044,225,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2061,180,Vegetables,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+2064,112,Pasta,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+2064,132,Sauce,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+2064,156,Protein,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+2067,78,Coffee,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+2082,276,Yogurt,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+2085,118,Pasta,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+2085,157,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2087,19,Milk,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+2087,43,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2087,67,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2097,169,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2097,270,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2111,248,Fruit,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2121,118,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2132,72,Coffee,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+2132,200,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2150,187,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2154,159,Protein,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+2154,187,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2156,261,Fruit,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+2170,104,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2170,150,Protein,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+2170,169,Vegetables,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+2213,241,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2229,108,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2229,165,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2237,49,Bread,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+2237,268,Yogurt,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2248,4,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2248,49,Bread,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2248,73,Coffee,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+2253,113,Pasta,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+2253,133,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2253,163,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2253,188,Vegetables,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+2258,37,Cereal,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+2258,70,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2258,90,Coffee,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2260,138,Sauce,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+2263,37,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2263,88,Coffee,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+2275,92,Coffee,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2290,44,Cereal,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+2290,87,Coffee,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2290,280,Yogurt,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+2294,194,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2299,172,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2299,241,Fruit,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+2318,97,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2318,145,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2318,175,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2318,241,Fruit,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+2328,144,Protein,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+2361,241,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2377,197,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2383,218,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2396,30,Cereal,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+2396,51,Bread,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+2396,146,Protein,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+2410,75,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2410,127,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2423,30,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2431,236,Dips,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2455,154,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2464,78,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2471,183,Vegetables,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+2476,19,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2476,109,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2476,163,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2476,283,Yogurt,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2480,67,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2480,180,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2499,247,Fruit,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+2499,270,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2500,64,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2500,161,Protein,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+2513,192,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2513,220,Dips,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+2535,136,Sauce,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2548,14,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2548,64,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2548,236,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2567,270,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2571,99,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2572,41,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2572,52,Bread,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2572,76,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2583,194,Snacks,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+2591,114,Pasta,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+2591,123,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2607,13,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2608,159,Protein,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+2611,1,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2614,17,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2614,89,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2616,102,Pasta,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+2622,156,Protein,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+2622,182,Vegetables,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2632,101,Pasta,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+2632,150,Protein,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+2642,13,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2645,99,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2645,256,Fruit,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+2665,122,Sauce,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+2665,144,Protein,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+2669,133,Sauce,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+2684,196,Snacks,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+2684,222,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2702,180,Vegetables,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2715,134,Sauce,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+2717,9,Milk,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+2717,77,Coffee,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+2744,266,Yogurt,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+2747,154,Protein,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+2760,232,Dips,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+2775,0,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2775,25,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2775,48,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2778,112,Pasta,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+2782,247,Fruit,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+2796,141,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2796,183,Vegetables,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+2796,255,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2798,103,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2798,122,Sauce,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2798,145,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2798,169,Vegetables,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+2811,51,Bread,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+2811,100,Pasta,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+2811,169,Vegetables,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+2853,42,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2853,90,Coffee,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+2869,1,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2869,54,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2869,81,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2871,61,Bread,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2873,147,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2873,192,Snacks,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+2876,1,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2876,31,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2880,256,Fruit,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+2884,14,Milk,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+2884,66,Bread,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+2884,86,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2884,211,Snacks,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+2889,154,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2906,204,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2906,279,Yogurt,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+2916,25,Cereal,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+2934,74,Coffee,0.2,1.0,1.0,1.0,1.0,1.0,Behavioral LambdaMART
+2947,250,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2961,187,Vegetables,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Behavioral LambdaMART
+2973,18,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2973,61,Bread,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Behavioral LambdaMART
+2973,91,Coffee,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Behavioral LambdaMART
+2978,8,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2987,42,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+2987,62,Bread,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Behavioral LambdaMART
+2994,72,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Behavioral LambdaMART
+5,2,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+5,169,Vegetables,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+41,128,Sauce,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+41,175,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+42,54,Bread,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+42,251,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+49,121,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+58,286,Yogurt,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+63,169,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+65,237,Dips,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+76,2,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+76,197,Snacks,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+76,217,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+81,108,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+89,62,Bread,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+93,58,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+105,111,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+118,40,Cereal,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+118,92,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+145,147,Protein,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+149,200,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+162,268,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+167,249,Fruit,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+182,144,Protein,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+182,192,Snacks,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+182,221,Dips,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+190,170,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+261,4,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+261,47,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+264,179,Vegetables,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+275,187,Vegetables,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+286,1,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+290,182,Vegetables,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+295,252,Fruit,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+301,271,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+314,202,Snacks,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+323,208,Snacks,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+323,234,Dips,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+333,269,Yogurt,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+339,31,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+339,50,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+339,75,Coffee,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+355,114,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+355,134,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+355,190,Vegetables,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+364,249,Fruit,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+364,268,Yogurt,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+391,9,Milk,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+397,20,Milk,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+397,61,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+401,243,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+414,118,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+414,138,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+414,165,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+414,190,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+423,92,Coffee,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+438,250,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+440,180,Vegetables,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+442,13,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+442,84,Coffee,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+450,43,Cereal,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+450,262,Fruit,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+450,282,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+456,132,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+458,272,Yogurt,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+459,214,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+462,82,Coffee,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+485,261,Fruit,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+491,6,Milk,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+499,133,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+525,48,Bread,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+525,120,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+525,147,Protein,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+525,273,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+533,201,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+533,218,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+534,260,Fruit,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+545,114,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+545,188,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+555,190,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+564,211,Snacks,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+604,200,Snacks,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+633,10,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+633,25,Cereal,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+633,48,Bread,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+669,12,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+669,31,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+669,51,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+669,72,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+675,152,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+689,254,Fruit,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+706,177,Vegetables,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+707,118,Pasta,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+707,204,Snacks,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+721,42,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+721,252,Fruit,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+735,32,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+735,57,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+735,80,Coffee,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+735,176,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+746,125,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+749,264,Yogurt,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+760,64,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+764,115,Pasta,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+764,157,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+781,108,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+781,187,Vegetables,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+787,144,Protein,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+809,201,Snacks,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+816,33,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+816,100,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+820,96,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+820,141,Sauce,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+820,146,Protein,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+820,177,Vegetables,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+830,14,Milk,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+830,36,Cereal,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+836,165,Protein,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+838,181,Vegetables,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+851,90,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+851,139,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+851,167,Protein,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+861,96,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+861,168,Vegetables,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+861,219,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+861,273,Yogurt,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+862,148,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+867,249,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+867,266,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+886,6,Milk,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+886,59,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+886,79,Coffee,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+893,23,Milk,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+908,141,Sauce,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+915,30,Cereal,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+915,78,Coffee,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+926,49,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+938,62,Bread,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+949,72,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+949,174,Vegetables,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+978,270,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+995,138,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1013,286,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1039,30,Cereal,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+1039,154,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1041,126,Sauce,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+1046,115,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1046,132,Sauce,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+1056,135,Sauce,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+1065,19,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1065,69,Bread,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+1089,149,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1092,114,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1127,21,Milk,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+1146,86,Coffee,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1161,271,Yogurt,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+1181,229,Dips,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+1182,162,Protein,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+1194,30,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1194,198,Snacks,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1199,126,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1199,201,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1199,224,Dips,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1210,127,Sauce,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1210,154,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1210,172,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1219,142,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1219,184,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1219,209,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1240,117,Pasta,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+1240,181,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1245,113,Pasta,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+1245,141,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1245,162,Protein,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+1245,183,Vegetables,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1253,110,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1259,246,Fruit,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+1275,148,Protein,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+1278,117,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1278,133,Sauce,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+1278,164,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1286,97,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1286,120,Sauce,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+1286,155,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1294,48,Bread,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+1294,99,Pasta,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+1294,144,Protein,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+1296,138,Sauce,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+1308,232,Dips,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+1315,21,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1315,37,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1315,70,Bread,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+1315,84,Coffee,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+1316,193,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1316,217,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1324,188,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1349,175,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1353,146,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1353,242,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1353,271,Yogurt,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+1356,135,Sauce,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1356,158,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1363,72,Coffee,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+1363,121,Sauce,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1365,135,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1365,158,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1365,263,Fruit,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+1371,2,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1371,30,Cereal,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+1371,55,Bread,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1393,68,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1393,214,Snacks,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+1408,73,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1408,103,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1409,97,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1420,265,Yogurt,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1442,237,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1465,253,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1499,97,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1507,0,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1507,154,Protein,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+1508,6,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1508,54,Bread,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+1508,240,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1513,194,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1513,235,Dips,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+1513,245,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1524,112,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1524,141,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1524,164,Protein,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+1524,254,Fruit,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1526,13,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1526,57,Bread,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1527,0,Milk,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+1527,199,Snacks,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1528,19,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1534,134,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1540,243,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1540,274,Yogurt,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+1544,72,Coffee,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+1564,258,Fruit,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+1564,282,Yogurt,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+1572,67,Bread,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+1572,109,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1573,38,Cereal,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+1579,258,Fruit,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+1579,283,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1595,110,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1602,279,Yogurt,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+1610,26,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1610,194,Snacks,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+1621,103,Pasta,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+1621,128,Sauce,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+1621,144,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1623,176,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1623,272,Yogurt,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1630,100,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1630,153,Protein,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+1630,174,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1633,115,Pasta,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+1633,132,Sauce,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+1633,162,Protein,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+1633,186,Vegetables,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1649,89,Coffee,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1661,235,Dips,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1679,212,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1697,135,Sauce,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+1732,191,Vegetables,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1733,139,Sauce,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+1733,231,Dips,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+1733,258,Fruit,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+1735,37,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1742,269,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1775,122,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1786,36,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1786,67,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1786,254,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1793,115,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1802,84,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1809,176,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1809,220,Dips,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+1810,145,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1815,35,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1824,206,Snacks,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+1824,230,Dips,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+1836,120,Sauce,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1842,45,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1842,156,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1856,46,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1856,65,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1856,88,Coffee,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+1861,147,Protein,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+1861,170,Vegetables,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+1885,193,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1896,48,Bread,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+1901,176,Vegetables,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+1911,46,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1915,34,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1915,76,Coffee,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+1941,251,Fruit,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+1941,270,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1949,235,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1950,211,Snacks,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+1951,135,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1954,240,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+1987,117,Pasta,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+1992,204,Snacks,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+1992,232,Dips,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+2015,259,Fruit,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+2042,100,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2042,170,Vegetables,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+2042,194,Snacks,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+2044,201,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2044,225,Dips,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+2061,180,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2064,112,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+2064,132,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2064,156,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2067,78,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2082,276,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2085,118,Pasta,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+2085,157,Protein,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+2087,19,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2087,43,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2087,67,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2097,169,Vegetables,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+2097,270,Yogurt,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+2111,248,Fruit,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+2121,118,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2132,72,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2132,200,Snacks,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+2150,187,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2154,159,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2154,187,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2156,261,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2170,104,Pasta,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+2170,150,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2170,169,Vegetables,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+2213,241,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2229,108,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2229,165,Protein,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+2237,49,Bread,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+2237,268,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2248,4,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2248,49,Bread,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+2248,73,Coffee,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+2253,113,Pasta,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+2253,133,Sauce,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+2253,163,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2253,188,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2258,37,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2258,70,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2258,90,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2260,138,Sauce,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+2263,37,Cereal,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+2263,88,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2275,92,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2290,44,Cereal,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+2290,87,Coffee,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+2290,280,Yogurt,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+2294,194,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2299,172,Vegetables,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+2299,241,Fruit,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+2318,97,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2318,145,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2318,175,Vegetables,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+2318,241,Fruit,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+2328,144,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2361,241,Fruit,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+2377,197,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2383,218,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2396,30,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+2396,51,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2396,146,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2410,75,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2410,127,Sauce,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+2423,30,Cereal,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+2431,236,Dips,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+2455,154,Protein,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+2464,78,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2471,183,Vegetables,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+2476,19,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+2476,109,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2476,163,Protein,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+2476,283,Yogurt,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+2480,67,Bread,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+2480,180,Vegetables,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+2499,247,Fruit,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+2499,270,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2500,64,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2500,161,Protein,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+2513,192,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2513,220,Dips,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+2535,136,Sauce,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+2548,14,Milk,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+2548,64,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2548,236,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2567,270,Yogurt,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+2571,99,Pasta,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+2572,41,Cereal,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+2572,52,Bread,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+2572,76,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2583,194,Snacks,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+2591,114,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+2591,123,Sauce,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+2607,13,Milk,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+2608,159,Protein,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+2611,1,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2614,17,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2614,89,Coffee,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+2616,102,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2622,156,Protein,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+2622,182,Vegetables,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+2632,101,Pasta,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+2632,150,Protein,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+2642,13,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2645,99,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+2645,256,Fruit,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+2665,122,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2665,144,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2669,133,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2684,196,Snacks,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+2684,222,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2702,180,Vegetables,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+2715,134,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2717,9,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2717,77,Coffee,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+2744,266,Yogurt,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+2747,154,Protein,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+2760,232,Dips,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+2775,0,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2775,25,Cereal,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+2775,48,Bread,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+2778,112,Pasta,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+2782,247,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2796,141,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2796,183,Vegetables,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+2796,255,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2798,103,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2798,122,Sauce,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+2798,145,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2798,169,Vegetables,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+2811,51,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2811,100,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2811,169,Vegetables,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+2853,42,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2853,90,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2869,1,Milk,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+2869,54,Bread,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+2869,81,Coffee,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+2871,61,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2873,147,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2873,192,Snacks,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+2876,1,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2876,31,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+2880,256,Fruit,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+2884,14,Milk,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+2884,66,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2884,86,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2884,211,Snacks,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+2889,154,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2906,204,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2906,279,Yogurt,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+2916,25,Cereal,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+2934,74,Coffee,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Weak-label classifier
+2947,250,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2961,187,Vegetables,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+2973,18,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Weak-label classifier
+2973,61,Bread,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+2973,91,Coffee,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Weak-label classifier
+2978,8,Milk,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+2987,42,Cereal,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Weak-label classifier
+2987,62,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Weak-label classifier
+2994,72,Coffee,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Weak-label classifier
+5,2,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+5,169,Vegetables,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+41,128,Sauce,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+41,175,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+42,54,Bread,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+42,251,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+49,121,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+58,286,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+63,169,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+65,237,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+76,2,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+76,197,Snacks,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+76,217,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+81,108,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+89,62,Bread,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+93,58,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+105,111,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+118,40,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+118,92,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+145,147,Protein,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+149,200,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+162,268,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+167,249,Fruit,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+182,144,Protein,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Content similarity
+182,192,Snacks,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+182,221,Dips,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+190,170,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+261,4,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+261,47,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+264,179,Vegetables,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+275,187,Vegetables,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+286,1,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+290,182,Vegetables,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+295,252,Fruit,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Content similarity
+301,271,Yogurt,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+314,202,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+323,208,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+323,234,Dips,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+333,269,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+339,31,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+339,50,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+339,75,Coffee,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+355,114,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+355,134,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+355,190,Vegetables,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+364,249,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+364,268,Yogurt,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+391,9,Milk,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+397,20,Milk,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+397,61,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+401,243,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+414,118,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+414,138,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+414,165,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+414,190,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+423,92,Coffee,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+438,250,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+440,180,Vegetables,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+442,13,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+442,84,Coffee,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+450,43,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+450,262,Fruit,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+450,282,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+456,132,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+458,272,Yogurt,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+459,214,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+462,82,Coffee,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+485,261,Fruit,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+491,6,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+499,133,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+525,48,Bread,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+525,120,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+525,147,Protein,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+525,273,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+533,201,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+533,218,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+534,260,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+545,114,Pasta,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+545,188,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+555,190,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+564,211,Snacks,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+604,200,Snacks,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+633,10,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+633,25,Cereal,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+633,48,Bread,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+669,12,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+669,31,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+669,51,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+669,72,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+675,152,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+689,254,Fruit,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+706,177,Vegetables,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+707,118,Pasta,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+707,204,Snacks,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+721,42,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+721,252,Fruit,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+735,32,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+735,57,Bread,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+735,80,Coffee,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+735,176,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+746,125,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+749,264,Yogurt,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+760,64,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+764,115,Pasta,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+764,157,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+781,108,Pasta,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+781,187,Vegetables,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+787,144,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+809,201,Snacks,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+816,33,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+816,100,Pasta,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+820,96,Pasta,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+820,141,Sauce,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Content similarity
+820,146,Protein,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+820,177,Vegetables,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Content similarity
+830,14,Milk,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+830,36,Cereal,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+836,165,Protein,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+838,181,Vegetables,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+851,90,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+851,139,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+851,167,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+861,96,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+861,168,Vegetables,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+861,219,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+861,273,Yogurt,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+862,148,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+867,249,Fruit,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Content similarity
+867,266,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+886,6,Milk,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Content similarity
+886,59,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+886,79,Coffee,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+893,23,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+908,141,Sauce,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+915,30,Cereal,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+915,78,Coffee,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+926,49,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+938,62,Bread,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+949,72,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+949,174,Vegetables,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+978,270,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+995,138,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1013,286,Yogurt,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Content similarity
+1039,30,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1039,154,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1041,126,Sauce,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+1046,115,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1046,132,Sauce,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+1056,135,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1065,19,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1065,69,Bread,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+1089,149,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1092,114,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1127,21,Milk,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+1146,86,Coffee,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1161,271,Yogurt,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1181,229,Dips,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1182,162,Protein,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+1194,30,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1194,198,Snacks,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+1199,126,Sauce,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1199,201,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1199,224,Dips,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1210,127,Sauce,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Content similarity
+1210,154,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1210,172,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1219,142,Sauce,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Content similarity
+1219,184,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1219,209,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1240,117,Pasta,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+1240,181,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1245,113,Pasta,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+1245,141,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1245,162,Protein,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+1245,183,Vegetables,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1253,110,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1259,246,Fruit,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+1275,148,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1278,117,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1278,133,Sauce,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1278,164,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1286,97,Pasta,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+1286,120,Sauce,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1286,155,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1294,48,Bread,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1294,99,Pasta,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Content similarity
+1294,144,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1296,138,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1308,232,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1315,21,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1315,37,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1315,70,Bread,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+1315,84,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1316,193,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1316,217,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1324,188,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1349,175,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1353,146,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1353,242,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1353,271,Yogurt,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+1356,135,Sauce,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+1356,158,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1363,72,Coffee,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Content similarity
+1363,121,Sauce,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Content similarity
+1365,135,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1365,158,Protein,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Content similarity
+1365,263,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1371,2,Milk,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+1371,30,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1371,55,Bread,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1393,68,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1393,214,Snacks,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+1408,73,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1408,103,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1409,97,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1420,265,Yogurt,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+1442,237,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1465,253,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1499,97,Pasta,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+1507,0,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1507,154,Protein,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+1508,6,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1508,54,Bread,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+1508,240,Fruit,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Content similarity
+1513,194,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1513,235,Dips,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Content similarity
+1513,245,Fruit,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+1524,112,Pasta,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+1524,141,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1524,164,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1524,254,Fruit,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+1526,13,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1526,57,Bread,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1527,0,Milk,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+1527,199,Snacks,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1528,19,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1534,134,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1540,243,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1540,274,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1544,72,Coffee,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1564,258,Fruit,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+1564,282,Yogurt,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1572,67,Bread,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+1572,109,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1573,38,Cereal,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+1579,258,Fruit,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1579,283,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1595,110,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1602,279,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1610,26,Cereal,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+1610,194,Snacks,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+1621,103,Pasta,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Content similarity
+1621,128,Sauce,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+1621,144,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1623,176,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1623,272,Yogurt,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+1630,100,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1630,153,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1630,174,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1633,115,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1633,132,Sauce,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+1633,162,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1633,186,Vegetables,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1649,89,Coffee,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+1661,235,Dips,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+1679,212,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1697,135,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1732,191,Vegetables,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+1733,139,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1733,231,Dips,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+1733,258,Fruit,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1735,37,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1742,269,Yogurt,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1775,122,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1786,36,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1786,67,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1786,254,Fruit,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Content similarity
+1793,115,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1802,84,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1809,176,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1809,220,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1810,145,Protein,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+1815,35,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1824,206,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1824,230,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1836,120,Sauce,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+1842,45,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1842,156,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1856,46,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1856,65,Bread,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+1856,88,Coffee,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+1861,147,Protein,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+1861,170,Vegetables,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+1885,193,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1896,48,Bread,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+1901,176,Vegetables,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+1911,46,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1915,34,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1915,76,Coffee,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+1941,251,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1941,270,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1949,235,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1950,211,Snacks,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1951,135,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1954,240,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+1987,117,Pasta,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+1992,204,Snacks,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+1992,232,Dips,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+2015,259,Fruit,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+2042,100,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2042,170,Vegetables,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+2042,194,Snacks,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+2044,201,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2044,225,Dips,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+2061,180,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2064,112,Pasta,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+2064,132,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2064,156,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2067,78,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2082,276,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2085,118,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+2085,157,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+2087,19,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+2087,43,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2087,67,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2097,169,Vegetables,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+2097,270,Yogurt,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+2111,248,Fruit,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+2121,118,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2132,72,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2132,200,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2150,187,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2154,159,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2154,187,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2156,261,Fruit,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+2170,104,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+2170,150,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2170,169,Vegetables,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+2213,241,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2229,108,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2229,165,Protein,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+2237,49,Bread,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+2237,268,Yogurt,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+2248,4,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2248,49,Bread,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+2248,73,Coffee,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+2253,113,Pasta,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+2253,133,Sauce,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+2253,163,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2253,188,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2258,37,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2258,70,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2258,90,Coffee,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+2260,138,Sauce,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+2263,37,Cereal,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+2263,88,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2275,92,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2290,44,Cereal,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+2290,87,Coffee,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+2290,280,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2294,194,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2299,172,Vegetables,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+2299,241,Fruit,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+2318,97,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2318,145,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2318,175,Vegetables,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+2318,241,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2328,144,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2361,241,Fruit,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Content similarity
+2377,197,Snacks,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+2383,218,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2396,30,Cereal,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+2396,51,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2396,146,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2410,75,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2410,127,Sauce,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Content similarity
+2423,30,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+2431,236,Dips,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+2455,154,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+2464,78,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2471,183,Vegetables,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+2476,19,Milk,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+2476,109,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2476,163,Protein,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Content similarity
+2476,283,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2480,67,Bread,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+2480,180,Vegetables,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+2499,247,Fruit,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+2499,270,Yogurt,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+2500,64,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2500,161,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2513,192,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2513,220,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2535,136,Sauce,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+2548,14,Milk,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+2548,64,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2548,236,Dips,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+2567,270,Yogurt,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+2571,99,Pasta,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+2572,41,Cereal,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Content similarity
+2572,52,Bread,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+2572,76,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2583,194,Snacks,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+2591,114,Pasta,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+2591,123,Sauce,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Content similarity
+2607,13,Milk,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Content similarity
+2608,159,Protein,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+2611,1,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2614,17,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2614,89,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2616,102,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2622,156,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+2622,182,Vegetables,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+2632,101,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+2632,150,Protein,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+2642,13,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2645,99,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+2645,256,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2665,122,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2665,144,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2669,133,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2684,196,Snacks,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+2684,222,Dips,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Content similarity
+2702,180,Vegetables,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+2715,134,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2717,9,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2717,77,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2744,266,Yogurt,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+2747,154,Protein,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+2760,232,Dips,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+2775,0,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+2775,25,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+2775,48,Bread,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+2778,112,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+2782,247,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2796,141,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2796,183,Vegetables,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+2796,255,Fruit,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+2798,103,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2798,122,Sauce,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+2798,145,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2798,169,Vegetables,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+2811,51,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2811,100,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2811,169,Vegetables,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+2853,42,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+2853,90,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2869,1,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2869,54,Bread,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+2869,81,Coffee,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+2871,61,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2873,147,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2873,192,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2876,1,Milk,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+2876,31,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+2880,256,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2884,14,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+2884,66,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2884,86,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2884,211,Snacks,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+2889,154,Protein,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Content similarity
+2906,204,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2906,279,Yogurt,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+2916,25,Cereal,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+2934,74,Coffee,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+2947,250,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2961,187,Vegetables,0.2,1.0,1.0,1.0,1.0,1.0,Content similarity
+2973,18,Milk,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+2973,61,Bread,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Content similarity
+2973,91,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2978,8,Milk,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Content similarity
+2987,42,Cereal,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Content similarity
+2987,62,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+2994,72,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Content similarity
+5,2,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+5,169,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+41,128,Sauce,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+41,175,Vegetables,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+42,54,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+42,251,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+49,121,Sauce,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+58,286,Yogurt,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+63,169,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+65,237,Dips,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+76,2,Milk,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+76,197,Snacks,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+76,217,Dips,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+81,108,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+89,62,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+93,58,Bread,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+105,111,Pasta,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+118,40,Cereal,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+118,92,Coffee,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+145,147,Protein,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+149,200,Snacks,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+162,268,Yogurt,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+167,249,Fruit,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+182,144,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+182,192,Snacks,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+182,221,Dips,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+190,170,Vegetables,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+261,4,Milk,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+261,47,Cereal,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+264,179,Vegetables,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+275,187,Vegetables,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+286,1,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+290,182,Vegetables,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+295,252,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+301,271,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+314,202,Snacks,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+323,208,Snacks,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+323,234,Dips,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+333,269,Yogurt,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+339,31,Cereal,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+339,50,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+339,75,Coffee,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+355,114,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+355,134,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+355,190,Vegetables,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+364,249,Fruit,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+364,268,Yogurt,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+391,9,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+397,20,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+397,61,Bread,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+401,243,Fruit,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+414,118,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+414,138,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+414,165,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+414,190,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+423,92,Coffee,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+438,250,Fruit,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+440,180,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+442,13,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+442,84,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+450,43,Cereal,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+450,262,Fruit,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+450,282,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+456,132,Sauce,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+458,272,Yogurt,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+459,214,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+462,82,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+485,261,Fruit,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+491,6,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+499,133,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+525,48,Bread,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+525,120,Sauce,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+525,147,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+525,273,Yogurt,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+533,201,Snacks,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+533,218,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+534,260,Fruit,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+545,114,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+545,188,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+555,190,Vegetables,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+564,211,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+604,200,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+633,10,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+633,25,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+633,48,Bread,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+669,12,Milk,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+669,31,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+669,51,Bread,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+669,72,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+675,152,Protein,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+689,254,Fruit,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+706,177,Vegetables,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+707,118,Pasta,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+707,204,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+721,42,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+721,252,Fruit,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+735,32,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+735,57,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+735,80,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+735,176,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+746,125,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+749,264,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+760,64,Bread,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+764,115,Pasta,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+764,157,Protein,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+781,108,Pasta,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+781,187,Vegetables,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+787,144,Protein,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+809,201,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+816,33,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+816,100,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+820,96,Pasta,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+820,141,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+820,146,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+820,177,Vegetables,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+830,14,Milk,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+830,36,Cereal,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+836,165,Protein,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+838,181,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+851,90,Coffee,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+851,139,Sauce,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+851,167,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+861,96,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+861,168,Vegetables,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+861,219,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+861,273,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+862,148,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+867,249,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+867,266,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+886,6,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+886,59,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+886,79,Coffee,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+893,23,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+908,141,Sauce,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+915,30,Cereal,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+915,78,Coffee,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+926,49,Bread,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+938,62,Bread,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+949,72,Coffee,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+949,174,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+978,270,Yogurt,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+995,138,Sauce,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+1013,286,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1039,30,Cereal,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+1039,154,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1041,126,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1046,115,Pasta,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+1046,132,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1056,135,Sauce,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+1065,19,Milk,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+1065,69,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1089,149,Protein,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+1092,114,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1127,21,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1146,86,Coffee,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+1161,271,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1181,229,Dips,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+1182,162,Protein,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+1194,30,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1194,198,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1199,126,Sauce,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+1199,201,Snacks,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+1199,224,Dips,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+1210,127,Sauce,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+1210,154,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+1210,172,Vegetables,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+1219,142,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1219,184,Vegetables,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+1219,209,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1240,117,Pasta,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+1240,181,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1245,113,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1245,141,Sauce,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+1245,162,Protein,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+1245,183,Vegetables,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+1253,110,Pasta,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+1259,246,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1275,148,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1278,117,Pasta,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+1278,133,Sauce,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+1278,164,Protein,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+1286,97,Pasta,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+1286,120,Sauce,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+1286,155,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1294,48,Bread,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+1294,99,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1294,144,Protein,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+1296,138,Sauce,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+1308,232,Dips,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+1315,21,Milk,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+1315,37,Cereal,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+1315,70,Bread,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+1315,84,Coffee,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+1316,193,Snacks,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+1316,217,Dips,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+1324,188,Vegetables,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+1349,175,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1353,146,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1353,242,Fruit,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+1353,271,Yogurt,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+1356,135,Sauce,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+1356,158,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1363,72,Coffee,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+1363,121,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1365,135,Sauce,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+1365,158,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1365,263,Fruit,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+1371,2,Milk,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+1371,30,Cereal,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+1371,55,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1393,68,Bread,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+1393,214,Snacks,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+1408,73,Coffee,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+1408,103,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1409,97,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+1420,265,Yogurt,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+1442,237,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1465,253,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1499,97,Pasta,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+1507,0,Milk,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+1507,154,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1508,6,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1508,54,Bread,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+1508,240,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1513,194,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1513,235,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1513,245,Fruit,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+1524,112,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1524,141,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1524,164,Protein,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+1524,254,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1526,13,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1526,57,Bread,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+1527,0,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1527,199,Snacks,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+1528,19,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+1534,134,Sauce,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+1540,243,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1540,274,Yogurt,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+1544,72,Coffee,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+1564,258,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1564,282,Yogurt,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+1572,67,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1572,109,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+1573,38,Cereal,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+1579,258,Fruit,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+1579,283,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1595,110,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1602,279,Yogurt,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+1610,26,Cereal,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+1610,194,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1621,103,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1621,128,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1621,144,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1623,176,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1623,272,Yogurt,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+1630,100,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+1630,153,Protein,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+1630,174,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1633,115,Pasta,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+1633,132,Sauce,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+1633,162,Protein,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+1633,186,Vegetables,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+1649,89,Coffee,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+1661,235,Dips,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+1679,212,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1697,135,Sauce,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+1732,191,Vegetables,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+1733,139,Sauce,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+1733,231,Dips,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+1733,258,Fruit,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+1735,37,Cereal,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+1742,269,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1775,122,Sauce,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+1786,36,Cereal,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+1786,67,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1786,254,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1793,115,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+1802,84,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1809,176,Vegetables,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+1809,220,Dips,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+1810,145,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1815,35,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1824,206,Snacks,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+1824,230,Dips,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+1836,120,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1842,45,Cereal,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+1842,156,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+1856,46,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1856,65,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1856,88,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1861,147,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1861,170,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1885,193,Snacks,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+1896,48,Bread,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+1901,176,Vegetables,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+1911,46,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+1915,34,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1915,76,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1941,251,Fruit,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+1941,270,Yogurt,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+1949,235,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1950,211,Snacks,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+1951,135,Sauce,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+1954,240,Fruit,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+1987,117,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+1992,204,Snacks,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+1992,232,Dips,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+2015,259,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2042,100,Pasta,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+2042,170,Vegetables,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+2042,194,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2044,201,Snacks,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+2044,225,Dips,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+2061,180,Vegetables,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+2064,112,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2064,132,Sauce,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+2064,156,Protein,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+2067,78,Coffee,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+2082,276,Yogurt,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+2085,118,Pasta,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+2085,157,Protein,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+2087,19,Milk,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+2087,43,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+2087,67,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2097,169,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2097,270,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2111,248,Fruit,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+2121,118,Pasta,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+2132,72,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2132,200,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2150,187,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2154,159,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+2154,187,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2156,261,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2170,104,Pasta,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+2170,150,Protein,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+2170,169,Vegetables,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+2213,241,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2229,108,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2229,165,Protein,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+2237,49,Bread,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+2237,268,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2248,4,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2248,49,Bread,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+2248,73,Coffee,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+2253,113,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2253,133,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2253,163,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2253,188,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2258,37,Cereal,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+2258,70,Bread,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+2258,90,Coffee,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+2260,138,Sauce,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+2263,37,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2263,88,Coffee,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+2275,92,Coffee,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+2290,44,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2290,87,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2290,280,Yogurt,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+2294,194,Snacks,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+2299,172,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2299,241,Fruit,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+2318,97,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2318,145,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2318,175,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2318,241,Fruit,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+2328,144,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+2361,241,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2377,197,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2383,218,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2396,30,Cereal,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+2396,51,Bread,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+2396,146,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+2410,75,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2410,127,Sauce,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+2423,30,Cereal,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+2431,236,Dips,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+2455,154,Protein,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+2464,78,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2471,183,Vegetables,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+2476,19,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2476,109,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+2476,163,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2476,283,Yogurt,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+2480,67,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2480,180,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2499,247,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2499,270,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2500,64,Bread,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+2500,161,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2513,192,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2513,220,Dips,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+2535,136,Sauce,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+2548,14,Milk,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+2548,64,Bread,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+2548,236,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2567,270,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2571,99,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2572,41,Cereal,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+2572,52,Bread,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+2572,76,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2583,194,Snacks,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+2591,114,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2591,123,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2607,13,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2608,159,Protein,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+2611,1,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+2614,17,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+2614,89,Coffee,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+2616,102,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+2622,156,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2622,182,Vegetables,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+2632,101,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2632,150,Protein,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+2642,13,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+2645,99,Pasta,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+2645,256,Fruit,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+2665,122,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2665,144,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+2669,133,Sauce,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+2684,196,Snacks,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+2684,222,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2702,180,Vegetables,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+2715,134,Sauce,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+2717,9,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+2717,77,Coffee,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+2744,266,Yogurt,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+2747,154,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2760,232,Dips,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+2775,0,Milk,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+2775,25,Cereal,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+2775,48,Bread,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+2778,112,Pasta,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+2782,247,Fruit,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+2796,141,Sauce,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+2796,183,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2796,255,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2798,103,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2798,122,Sauce,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+2798,145,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2798,169,Vegetables,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+2811,51,Bread,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+2811,100,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+2811,169,Vegetables,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+2853,42,Cereal,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+2853,90,Coffee,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+2869,1,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2869,54,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2869,81,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2871,61,Bread,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+2873,147,Protein,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+2873,192,Snacks,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+2876,1,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2876,31,Cereal,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+2880,256,Fruit,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+2884,14,Milk,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+2884,66,Bread,0.2,1.0,1.0,1.0,1.0,1.0,Shopping context
+2884,86,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2884,211,Snacks,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+2889,154,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2906,204,Snacks,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Shopping context
+2906,279,Yogurt,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+2916,25,Cereal,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Shopping context
+2934,74,Coffee,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+2947,250,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2961,187,Vegetables,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Shopping context
+2973,18,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2973,61,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2973,91,Coffee,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Shopping context
+2978,8,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2987,42,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2987,62,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+2994,72,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Shopping context
+5,2,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+5,169,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+41,128,Sauce,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+41,175,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+42,54,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+42,251,Fruit,0.2,1.0,1.0,1.0,1.0,1.0,Popularity
+49,121,Sauce,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Popularity
+58,286,Yogurt,0.2,1.0,1.0,1.0,1.0,1.0,Popularity
+63,169,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+65,237,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+76,2,Milk,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+76,197,Snacks,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+76,217,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+81,108,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+89,62,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+93,58,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+105,111,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+118,40,Cereal,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Popularity
+118,92,Coffee,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+145,147,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+149,200,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+162,268,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+167,249,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+182,144,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+182,192,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+182,221,Dips,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+190,170,Vegetables,0.2,1.0,1.0,1.0,1.0,1.0,Popularity
+261,4,Milk,0.2,1.0,1.0,1.0,1.0,1.0,Popularity
+261,47,Cereal,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Popularity
+264,179,Vegetables,0.2,1.0,1.0,1.0,1.0,1.0,Popularity
+275,187,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+286,1,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+290,182,Vegetables,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+295,252,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+301,271,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+314,202,Snacks,0.2,1.0,1.0,1.0,1.0,1.0,Popularity
+323,208,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+323,234,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+333,269,Yogurt,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+339,31,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Popularity
+339,50,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+339,75,Coffee,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+355,114,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+355,134,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+355,190,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+364,249,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+364,268,Yogurt,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+391,9,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+397,20,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+397,61,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+401,243,Fruit,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+414,118,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+414,138,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+414,165,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+414,190,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+423,92,Coffee,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Popularity
+438,250,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+440,180,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+442,13,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+442,84,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+450,43,Cereal,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+450,262,Fruit,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Popularity
+450,282,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+456,132,Sauce,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Popularity
+458,272,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+459,214,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+462,82,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+485,261,Fruit,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Popularity
+491,6,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+499,133,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+525,48,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+525,120,Sauce,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+525,147,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+525,273,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+533,201,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+533,218,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+534,260,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+545,114,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+545,188,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+555,190,Vegetables,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Popularity
+564,211,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+604,200,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+633,10,Milk,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+633,25,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+633,48,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+669,12,Milk,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Popularity
+669,31,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+669,51,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+669,72,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+675,152,Protein,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Popularity
+689,254,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+706,177,Vegetables,0.2,1.0,1.0,1.0,1.0,1.0,Popularity
+707,118,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+707,204,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+721,42,Cereal,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+721,252,Fruit,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Popularity
+735,32,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+735,57,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+735,80,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+735,176,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+746,125,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+749,264,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+760,64,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+764,115,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+764,157,Protein,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+781,108,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+781,187,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+787,144,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+809,201,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+816,33,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+816,100,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+820,96,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+820,141,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+820,146,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+820,177,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+830,14,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+830,36,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+836,165,Protein,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+838,181,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+851,90,Coffee,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+851,139,Sauce,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Popularity
+851,167,Protein,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+861,96,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Popularity
+861,168,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+861,219,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+861,273,Yogurt,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+862,148,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+867,249,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+867,266,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+886,6,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+886,59,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+886,79,Coffee,0.2,1.0,1.0,1.0,1.0,1.0,Popularity
+893,23,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+908,141,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+915,30,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+915,78,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+926,49,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+938,62,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+949,72,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+949,174,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+978,270,Yogurt,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+995,138,Sauce,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+1013,286,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1039,30,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1039,154,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1041,126,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1046,115,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1046,132,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1056,135,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1065,19,Milk,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+1065,69,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1089,149,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Popularity
+1092,114,Pasta,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+1127,21,Milk,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Popularity
+1146,86,Coffee,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+1161,271,Yogurt,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+1181,229,Dips,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Popularity
+1182,162,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1194,30,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1194,198,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1199,126,Sauce,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+1199,201,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1199,224,Dips,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Popularity
+1210,127,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1210,154,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1210,172,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1219,142,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1219,184,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1219,209,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1240,117,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1240,181,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1245,113,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1245,141,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1245,162,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1245,183,Vegetables,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Popularity
+1253,110,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1259,246,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1275,148,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Popularity
+1278,117,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1278,133,Sauce,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Popularity
+1278,164,Protein,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Popularity
+1286,97,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1286,120,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1286,155,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1294,48,Bread,0.2,1.0,1.0,1.0,1.0,1.0,Popularity
+1294,99,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1294,144,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1296,138,Sauce,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Popularity
+1308,232,Dips,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+1315,21,Milk,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Popularity
+1315,37,Cereal,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+1315,70,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1315,84,Coffee,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+1316,193,Snacks,0.2,1.0,1.0,1.0,1.0,1.0,Popularity
+1316,217,Dips,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Popularity
+1324,188,Vegetables,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Popularity
+1349,175,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1353,146,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1353,242,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1353,271,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1356,135,Sauce,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+1356,158,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1363,72,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1363,121,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1365,135,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1365,158,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1365,263,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1371,2,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1371,30,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1371,55,Bread,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+1393,68,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1393,214,Snacks,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Popularity
+1408,73,Coffee,0.2,1.0,1.0,1.0,1.0,1.0,Popularity
+1408,103,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1409,97,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1420,265,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1442,237,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1465,253,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1499,97,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1507,0,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1507,154,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1508,6,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1508,54,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1508,240,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1513,194,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1513,235,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1513,245,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1524,112,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1524,141,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1524,164,Protein,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+1524,254,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1526,13,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1526,57,Bread,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+1527,0,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1527,199,Snacks,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+1528,19,Milk,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Popularity
+1534,134,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1540,243,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1540,274,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1544,72,Coffee,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+1564,258,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1564,282,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1572,67,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1572,109,Pasta,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Popularity
+1573,38,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1579,258,Fruit,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+1579,283,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1595,110,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1602,279,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1610,26,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1610,194,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1621,103,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1621,128,Sauce,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Popularity
+1621,144,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1623,176,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1623,272,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1630,100,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1630,153,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Popularity
+1630,174,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1633,115,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1633,132,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1633,162,Protein,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+1633,186,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1649,89,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1661,235,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1679,212,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1697,135,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1732,191,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1733,139,Sauce,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+1733,231,Dips,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Popularity
+1733,258,Fruit,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+1735,37,Cereal,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+1742,269,Yogurt,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+1775,122,Sauce,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Popularity
+1786,36,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1786,67,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1786,254,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1793,115,Pasta,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+1802,84,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1809,176,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1809,220,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1810,145,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1815,35,Cereal,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+1824,206,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1824,230,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1836,120,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1842,45,Cereal,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Popularity
+1842,156,Protein,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+1856,46,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1856,65,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1856,88,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1861,147,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1861,170,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1885,193,Snacks,0.2,1.0,1.0,1.0,1.0,1.0,Popularity
+1896,48,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1901,176,Vegetables,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Popularity
+1911,46,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1915,34,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1915,76,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1941,251,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1941,270,Yogurt,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+1949,235,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1950,211,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1951,135,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1954,240,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1987,117,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1992,204,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+1992,232,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2015,259,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2042,100,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2042,170,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2042,194,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2044,201,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2044,225,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2061,180,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2064,112,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2064,132,Sauce,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Popularity
+2064,156,Protein,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+2067,78,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2082,276,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2085,118,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2085,157,Protein,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Popularity
+2087,19,Milk,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+2087,43,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2087,67,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2097,169,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2097,270,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2111,248,Fruit,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+2121,118,Pasta,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Popularity
+2132,72,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2132,200,Snacks,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+2150,187,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2154,159,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2154,187,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2156,261,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2170,104,Pasta,0.2,1.0,1.0,1.0,1.0,1.0,Popularity
+2170,150,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2170,169,Vegetables,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+2213,241,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2229,108,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2229,165,Protein,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+2237,49,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2237,268,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2248,4,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2248,49,Bread,0.2,1.0,1.0,1.0,1.0,1.0,Popularity
+2248,73,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2253,113,Pasta,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+2253,133,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2253,163,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2253,188,Vegetables,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+2258,37,Cereal,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Popularity
+2258,70,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2258,90,Coffee,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Popularity
+2260,138,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2263,37,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2263,88,Coffee,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Popularity
+2275,92,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2290,44,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2290,87,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2290,280,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2294,194,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2299,172,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2299,241,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2318,97,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2318,145,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2318,175,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2318,241,Fruit,0.2,1.0,1.0,1.0,1.0,1.0,Popularity
+2328,144,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Popularity
+2361,241,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2377,197,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2383,218,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2396,30,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2396,51,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2396,146,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2410,75,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2410,127,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2423,30,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2431,236,Dips,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+2455,154,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Popularity
+2464,78,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2471,183,Vegetables,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Popularity
+2476,19,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2476,109,Pasta,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Popularity
+2476,163,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2476,283,Yogurt,0.2,1.0,1.0,1.0,1.0,1.0,Popularity
+2480,67,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2480,180,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2499,247,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2499,270,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2500,64,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2500,161,Protein,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+2513,192,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2513,220,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2535,136,Sauce,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Popularity
+2548,14,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2548,64,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2548,236,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2567,270,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2571,99,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2572,41,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2572,52,Bread,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+2572,76,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2583,194,Snacks,0.2,1.0,1.0,1.0,1.0,1.0,Popularity
+2591,114,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2591,123,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2607,13,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2608,159,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2611,1,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2614,17,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2614,89,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2616,102,Pasta,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+2622,156,Protein,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Popularity
+2622,182,Vegetables,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+2632,101,Pasta,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+2632,150,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2642,13,Milk,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Popularity
+2645,99,Pasta,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+2645,256,Fruit,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+2665,122,Sauce,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+2665,144,Protein,0.2,1.0,1.0,1.0,1.0,1.0,Popularity
+2669,133,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2684,196,Snacks,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+2684,222,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2702,180,Vegetables,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+2715,134,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2717,9,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2717,77,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2744,266,Yogurt,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2747,154,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2760,232,Dips,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2775,0,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2775,25,Cereal,0.2,1.0,1.0,1.0,1.0,1.0,Popularity
+2775,48,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2778,112,Pasta,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Popularity
+2782,247,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2796,141,Sauce,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2796,183,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2796,255,Fruit,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2798,103,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2798,122,Sauce,0.2,1.0,1.0,1.0,1.0,1.0,Popularity
+2798,145,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2798,169,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2811,51,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2811,100,Pasta,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2811,169,Vegetables,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+2853,42,Cereal,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Popularity
+2853,90,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2869,1,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2869,54,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2869,81,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2871,61,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2873,147,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2873,192,Snacks,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Popularity
+2876,1,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2876,31,Cereal,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+2880,256,Fruit,0.2,1.0,0.5,0.3333333333333333,1.0,1.0,Popularity
+2884,14,Milk,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Popularity
+2884,66,Bread,0.2,1.0,0.43067655807339306,0.25,1.0,1.0,Popularity
+2884,86,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2884,211,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2889,154,Protein,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2906,204,Snacks,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2906,279,Yogurt,0.2,1.0,1.0,1.0,1.0,1.0,Popularity
+2916,25,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2934,74,Coffee,0.2,1.0,0.38685280723454163,0.2,1.0,1.0,Popularity
+2947,250,Fruit,0.2,1.0,1.0,1.0,1.0,1.0,Popularity
+2961,187,Vegetables,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2973,18,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2973,61,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2973,91,Coffee,0.2,1.0,0.6309297535714575,0.5,1.0,1.0,Popularity
+2978,8,Milk,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2987,42,Cereal,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2987,62,Bread,0.0,0.0,0.0,0.0,0.0,1.0,Popularity
+2994,72,Coffee,0.0,0.0,0.0,0.0,0.0,1.0,Popularity

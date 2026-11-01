@@ -1,0 +1,25 @@
+{
+  "python": "3.12.14",
+  "tests_passed": 12,
+  "training": "scripts/train.py completed; notebook integrity assertions passed",
+  "pages_checked": [
+    "Find Substitutes",
+    "Out-of-Stock Simulator",
+    "Product Explorer",
+    "Relationship Explorer",
+    "Model Performance",
+    "ML Lab",
+    "About"
+  ],
+  "test_events": 474,
+  "test_households": 278,
+  "ndcg_at_5": 0.4067344020871279,
+  "paired_ndcg_comparison": {
+    "baseline": "Weak-label classifier",
+    "metric": "NDCG@5",
+    "mean_delta": 0.048767037746642254,
+    "ci_low": 0.010231689425298179,
+    "ci_high": 0.08652332962538224
+  },
+  "validation_scope": "Local unittest and Streamlit AppTest; new browser viewport checks and remote CI not run"
+}

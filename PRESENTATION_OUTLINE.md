@@ -1,8 +1,10 @@
-# FreshMatch — Six-slide presentation
+# FreshMatch — Advanced ML presentation
 
-1. **Problem and live demo:** unavailable essential → same-category alternatives, prices and explanation.
-2. **Data and integrity:** synthetic 288 products / 27,000 baskets; history/final-order separation; explicit simulated prices and brands.
-3. **Method:** complements from Apriori/FP-Growth; substitutes from shared context, names, low lift and price/popularity. Show README architecture.
-4. **Fair comparison:** RF/GB proposed; four comparators; identical product-disjoint test/CV folds; purged boundary pairs; fold-local scaling and sigmoid calibration. Historical context remains transductive.
-5. **Results and tradeoffs:** use assets/model-comparison.csv. RF wins CV selection; LR ranks future switches better. RF hit rate 52.7%, content 51.8%, popularity 32.2%. High classification scores learn heuristic labels; content still wins RF NDCG/MAP.
-6. **Product and next steps:** six-page responsive app, local feature sensitivities, scenario recovery KPIs, reproducible notebook. Next: expert labels, ingredient/size constraints, inventory capacity and prospective acceptance testing. Do not claim causal recovered revenue.
+1. **Problem and demo:** find alternatives for unavailable groceries; distinguish suitability, rank preference and acceptance probability.
+2. **Data:** synthetic 288-product catalogue, 24,000 historical and 3,000 final baskets. Prices and brands are simulated; Instacart ingestion remains supported.
+3. **Original ML:** Apriori/FP-Growth complements, context/name/price features, six tuned classifiers, product-disjoint folds and sigmoid calibration. Explain why heuristic labels can produce near-perfect classification.
+4. **Behavioral LambdaMART:** learn observed historical switches with `rank:ndcg`. Show 15,545 query groups and 357,535 candidate rows; need IDs define synthetic relevance but never enter features.
+5. **Experimental design:** 70/15/15 household split; historical transitions train; validation final orders select one of four configurations; test final orders report results. Historical features remain transductive.
+6. **Measured ranking:** on 474 test events, NDCG@5 0.4067 versus weak-label 0.3580; hit rate 64.1% versus 56.5%. Compare content, context and popularity on identical candidate pools. Show paired household-bootstrap interval [+0.0102, +0.0865] for NDCG improvement.
+7. **Diagnostics:** ML Lab category slices, validation-only ablations, gain importance and classifier reliability diagrams with Brier/log loss/ECE. Price/popularity removal slightly improves validation; do not change model selection after inspecting test results.
+8. **Engineering and limitations:** synchronized notebook/Python sources, reproducible runner, 12 passing tests covering all seven pages, and a CI workflow. Synthetic proxy switching is not confirmed stockout acceptance; real data, ingredient/size constraints, fully inductive evaluation and prospective trials remain future work.

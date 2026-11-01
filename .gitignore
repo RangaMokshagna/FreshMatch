@@ -26,3 +26,10 @@ header-fixed.png
 
 *.csv
 !assets/*.csv
+
+# Lightweight advanced inference and audit artifacts; fitted models stay local.
+!artifacts/
+artifacts/*
+!artifacts/advanced_report.json
+!artifacts/advanced_scores.npz
+!artifacts/advanced_test_events.csv
