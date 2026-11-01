@@ -149,6 +149,11 @@ except (OSError,ValueError,KeyError,json.JSONDecodeError) as exc:
     st.caption(f'Details: {type(exc).__name__}: {exc}')
     st.stop()
 
+if meta.get('source')!='Instacart':
+    st.warning('Synthetic demo: recommendations currently use simulated purchase records. Real Instacart training has not been completed.')
+else:
+    st.caption('Real Instacart purchase records · prices are estimates and brands are unverified name-token proxies.')
+
 def esc(s): return html.escape(str(s))
 def money(x): return f'${float(x):,.2f}'
 def make_comparison_figure(frame,selected):

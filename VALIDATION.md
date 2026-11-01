@@ -1,6 +1,10 @@
 # FreshMatch — Validation
 
-## Advanced extension · current local validation
+## Real-data transition · pending official inputs
+
+Real-data training now defaults to Instacart and fails before notebook execution when the five required CSVs are missing. The current local suite passes 20 tests, including eight ingestion/archive/CLI tests and the seven-page app test. Test fixtures are small fabricated CSVs, not real-data performance evidence. Input/schema checks, streaming ingestion, history-only catalogue selection, all-file content fingerprints and nested ZIP extraction are covered by fabricated **test fixtures**, not presented as real training records. No official Instacart files have been supplied here, so end-to-end real-data training and real model performance remain unverified. Previous results below are synthetic and have not been relabelled as real.
+
+## Advanced extension · previous synthetic validation
 
 Validated in an isolated Python 3.12.14 virtual environment with the exact pinned dependencies. `python scripts/train.py` completed all notebook cells, generated behavioral ranking artifacts and passed the original notebook integrity assertions. `python -m pip check` reported no broken requirements.
 
@@ -10,10 +14,10 @@ The behavioral experiment trains on 15,545 groups / 357,535 candidate rows from 
 
 NDCG@5 is 0.4067 versus 0.3580 for the weak-label baseline on identical test events; the paired 95% household-bootstrap difference interval is [+0.0102, +0.0865]. Results are synthetic and conditional on observed switches. The new ML Lab was checked through Streamlit AppTest; new desktop/mobile browser inspection and a remote GitHub Actions run were **not** performed. Earlier browser screenshots below describe the original six pages, not the added page.
 
-Reproduce:
+Reproduce the historical synthetic workflow explicitly:
 
 ```bash
-python scripts/train.py
+python scripts/train.py --data-source synthetic
 python -m unittest discover -s tests -v
 ```
 

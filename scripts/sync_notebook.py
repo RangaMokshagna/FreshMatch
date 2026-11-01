@@ -7,7 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def check():
     nb = nbformat.read(ROOT / 'product_substitution.ipynb', as_version=4)
-    for filename in ['app.py', 'advanced_ml.py']:
+    for filename in ['app.py', 'advanced_ml.py', 'real_data.py']:
         expected = f'%%writefile {filename}\n' + (ROOT / filename).read_text()
         matches = [c for c in nb.cells if c.cell_type == 'code' and c.source.startswith(f'%%writefile {filename}\n')]
         if len(matches) != 1 or matches[0].source != expected:
@@ -17,7 +17,7 @@ def check():
 def sync():
     path = ROOT / 'product_substitution.ipynb'
     nb = nbformat.read(path, as_version=4)
-    for filename in ['app.py', 'advanced_ml.py']:
+    for filename in ['app.py', 'advanced_ml.py', 'real_data.py']:
         matches = [c for c in nb.cells if c.cell_type == 'code' and c.source.startswith(f'%%writefile {filename}\n')]
         if len(matches) != 1:
             raise ValueError(f'Expected exactly one notebook cell writing {filename}')

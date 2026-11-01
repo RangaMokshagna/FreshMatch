@@ -1,5 +1,7 @@
 from pathlib import Path
 import unittest
+import json
+import pandas as pd
 from streamlit.testing.v1 import AppTest
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -14,10 +16,15 @@ class AppTests(unittest.TestCase):
                 at.run()
                 self.assertFalse(at.exception, [e.message for e in at.exception])
                 self.assertFalse(at.error, [e.value for e in at.error])
+                if json.loads((ROOT/'artifacts/manifest.json').read_text())['source']!='Instacart':
+                    self.assertTrue(any('Synthetic demo' in warning.value for warning in at.warning))
         at.session_state['freshmatch_page'] = 'ML Lab'
         at.run()
-        at.selectbox(key='lab_query').select(24).run()
-        at.multiselect(key='lab_outages').set_value(list(range(24,48))).run()
+        products = pd.read_csv(ROOT/'artifacts/products.csv')
+        query = min(24, len(products)-1)
+        at.selectbox(key='lab_query').select(query).run()
+        unavailable = products.index[products.category==products.iloc[query].category].tolist()
+        at.multiselect(key='lab_outages').set_value(unavailable).run()
         self.assertFalse(at.exception)
         self.assertTrue(any('No alternatives' in i.value for i in at.info))
         at.multiselect(key='lab_outages').set_value([]).run()

@@ -1,6 +1,7 @@
 """Execute FreshMatch's source notebook with the active, pinned interpreter."""
 from pathlib import Path
 import os
+import argparse
 import sys
 import nbformat
 from nbclient import NotebookClient
@@ -9,6 +10,25 @@ from sync_notebook import check
 
 ROOT = Path(__file__).resolve().parents[1]
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--data-source', choices=['instacart', 'synthetic'], default=os.environ.get('FRESHMATCH_DATA_SOURCE', 'instacart'))
+    parser.add_argument('--data-dir', type=Path, default=Path(os.environ.get('FRESHMATCH_DATA_DIR', ROOT/'instacart')))
+    parser.add_argument('--check-data', action='store_true', help='Validate real CSV files without training or changing inference artifacts')
+    args = parser.parse_args()
+    os.environ['FRESHMATCH_DATA_SOURCE'] = args.data_source
+    os.environ['FRESHMATCH_DATA_DIR'] = str(args.data_dir.expanduser().resolve())
+    sys.path.insert(0, str(ROOT))
+    if args.data_source == 'instacart':
+        from real_data import validate_instacart, DatasetError
+        try:
+            directory = validate_instacart(args.data_dir)
+        except DatasetError as exc:
+            parser.exit(2, f'{exc}\n')
+        print(f'Validated Instacart schemas and sample rows in {directory}', flush=True)
+    elif args.check_data:
+        parser.error('--check-data requires --data-source instacart')
+    if args.check_data:
+        raise SystemExit(0)
     check()  # Refuse to overwrite Python edits that have not been embedded yet.
     for line in (ROOT / 'requirements.txt').read_text().splitlines():
         if '==' in line:

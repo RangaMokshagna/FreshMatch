@@ -201,7 +201,8 @@ def run_experiment(*, products, history, history_orders, final_events, feature_c
             'Ranker training households, validation households and test households are disjoint.',
             'Training labels use historical adjacent orders; validation/test labels use final orders.',
             'Switches are observed purchase proxies, not confirmed substitutions or real stockouts.',
-            'Synthetic need groups define relevance only; need_id is never an input feature.',
+            ('Synthetic need groups define relevance only; need_id is never an input feature.' if synthetic else
+             'Shared aisle and next-order purchases define proxy relevance; substitution ground truth is unavailable.'),
             'Rank scores are relative preferences, not calibrated acceptance probabilities.',
             'Validation is reused for tuning and ablations. Reported test metrics do not select the ranker.',
             'Bootstrap intervals resample households; category slices can have small sample sizes.'])

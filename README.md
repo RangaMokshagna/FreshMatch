@@ -48,7 +48,7 @@ For automated runs set `FRESHMATCH_SKIP_LAUNCH=1`. The notebook remains the sour
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
-python scripts/train.py
+python scripts/train.py --data-source instacart --data-dir ./instacart
 python -m unittest discover -s tests -v
 python -m streamlit run streamlit_app.py --server.headless=true --browser.gatherUsageStats=false
 ```
@@ -57,7 +57,7 @@ The runner verifies exact dependencies, executes the notebook without package re
 
 **Behavioral LambdaMART** (`XGBRanker`, `rank:ndcg`) learns from observed historical adjacent-order switches rather than the heuristic pair labels. A seeded household split assigns 70% to training, 15% to validation and 15% to testing. Training uses historical transitions only. Four tree configurations compete on validation-household final-order NDCG@5; the selected configuration is fixed for test evaluation. Three feature-removal studies use validation only. The original six-model weak-label experiment remains available for comparison.
 
-**Measured synthetic test subset:** 474 final-order events from 278 households. LambdaMART reaches **NDCG@5 0.4067** and **64.1% hit rate**, versus **0.3580** and **56.5%** for the weak-label classifier on exactly those events. The paired NDCG difference is **+0.0488**, with a 95% household-bootstrap interval **[+0.0102, +0.0865]**. Content, shopping-context and popularity baselines use identical candidate pools. These subset results differ from the original 3,194-event benchmark and must not be compared as though the populations were identical.
+**Previous synthetic demonstration (not real-data results):** 474 final-order events from 278 households. LambdaMART reaches **NDCG@5 0.4067** and **64.1% hit rate**, versus **0.3580** and **56.5%** for the weak-label classifier on exactly those events. The paired NDCG difference is **+0.0488**, with a 95% household-bootstrap interval **[+0.0102, +0.0865]**. Content, shopping-context and popularity baselines use identical candidate pools. These subset results differ from the original 3,194-event benchmark and must not be compared as though the populations were identical.
 
 Open **ML Lab** to explore the results, category sample counts, validation ablations, ranker gain importance and classifier reliability diagrams (Brier loss, log loss and equal-width-bin ECE). The ranker demo respects price and availability filters. Its relative scores are not probabilities. The main recommendation cards continue to use calibrated weak-label suitability; the experimental ranker is presented separately for comparison.
 
@@ -65,9 +65,43 @@ Catalogue features use all historical households, so the evaluation is **transdu
 
 Artifacts: `artifacts/advanced_report.json`, `advanced_scores.npz` and `advanced_test_events.csv` are portable inference/audit outputs. The fitted `behavioral_ranker.ubj` remains local and can be regenerated. The app uses safe numeric arrays and JSON, without unpickling a ranker.
 
+### Use the real Instacart dataset
+
+1. Open the [official Kaggle download page](https://www.kaggle.com/c/instacart-market-basket-analysis/data), sign in, and accept the competition rules.
+2. Download the dataset. Extract it locally, or let the helper extract the official ZIP (including nested `*.csv.zip` files):
+
+```bash
+python scripts/prepare_instacart.py /path/to/instacart-market-basket-analysis.zip --output ./instacart
+```
+
+The directory must contain `orders.csv`, `order_products__prior.csv`, `products.csv`, `aisles.csv` and `departments.csv`. Extra Instacart files are not required. Alternatively, point directly to an existing extracted directory. Never commit the raw files or Kaggle credentials.
+
+3. Check input schemas and sample rows, then train:
+
+```bash
+python scripts/train.py --data-source instacart --data-dir ./instacart --check-data
+python scripts/train.py --data-source instacart --data-dir ./instacart
+python -m unittest discover -s tests -v
+python -m streamlit run streamlit_app.py
+```
+
+The check-only command does not fit models or replace artifacts. Training performs additional full checks on catalogue/lookup identifiers and sampled purchase records. It streams the large prior CSV, samples up to 3,000 eligible households and selects up to 320 products by historical frequency. Each household's final available **prior** order is held out; this does not claim to evaluate Kaggle's hidden competition test labels. Larger runs require a separate resource/evaluation plan.
+
+All five CSV content hashes, sampling settings and field provenance are saved in `artifacts/manifest.json`; any changed source file invalidates the ingestion cache. The app identifies the resulting source as Instacart only after artifacts are regenerated. Prices remain deterministic estimates and brand strings remain unverified name-token proxies. Real aisle-level switching relevance is broader than the synthetic hidden-need relevance, so the two datasets' scores are not directly comparable.
+
+**Pending:** real-data model performance has not been measured in this environment; the official files have not been supplied. Existing metrics, reports and screenshots describe the previous synthetic run. Once files are supplied, rerun training and review real-data suitability/ranking results before replacing those claims.
+
+For explicit demo/CI execution only:
+
+```bash
+python scripts/train.py --data-source synthetic
+```
+
+In a notebook set `FRESHMATCH_DATA_DIR` before the data cell; `FRESHMATCH_DATA_SOURCE` defaults to `instacart`. To intentionally run a demo, set `FRESHMATCH_DATA_SOURCE=synthetic`. The notebook embeds `real_data.py` so Colab requires no separately uploaded Python module.
+
 ## Data and scientific boundaries
 
-The notebook checks `instacart/` (or `FRESHMATCH_DATA_DIR`) for original Instacart files, then configured Kaggle credentials, then falls back automatically to **288 products, 12 categories, six brands, 24,000 history baskets and 3,000 future baskets**. Set credentials outside notebook source and accept the [Instacart competition rules](https://www.kaggle.com/c/instacart-market-basket-analysis/data) yourself before downloading.
+Real Instacart data is now required by default. Missing or invalid input stops training before inference artifacts are changed; there is no automatic synthetic fallback. The existing checked-in artifacts are still the previous synthetic demo until a real-data run completes. The app displays a prominent synthetic-data notice while those artifacts remain loaded.
 
 This measured run uses **synthetic data**. Synthetic prices and brands are simulated. Instacart prices are deterministic estimates and brands are unverified name-token proxies. The app and manifest identify the source. Never commit credentials, raw histories or generated model files.
 
@@ -130,6 +164,7 @@ The simulator uses covered demand × a user-controlled acceptance assumption, mu
 | File | Purpose |
 | --- | --- |
 | `product_substitution.ipynb` | Complete executable project, embedded app, chart outputs and launcher |
+| `real_data.py` | Strict real-data validation, streaming ingestion, provenance and safe archive extraction |
 | `advanced_ml.py` | Behavioral ranking, clustered uncertainty and calibration diagnostics |
 | `scripts/` | Notebook training and Python/notebook synchronization |
 | `tests/` | Metric, split, artifact and seven-page app tests |
