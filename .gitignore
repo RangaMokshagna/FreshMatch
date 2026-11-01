@@ -34,7 +34,8 @@ artifacts/*
 !artifacts/advanced_scores.npz
 !artifacts/advanced_test_events.csv
 
-# Keep the data folder visible while excluding the downloaded dataset.
+# Track Instacart CSV datasets with Git LFS.
 !instacart/
 instacart/*
 !instacart/README.md
+!instacart/*.csv
