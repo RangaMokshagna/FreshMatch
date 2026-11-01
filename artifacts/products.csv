@@ -1,289 +1,321 @@
-product_id,name,category,aisle,department,brand,price,need_id,mission,idx,popularity,support,reorder_rate
-0,Harvest Whole milk,Milk,Milk,Dairy,Harvest,2.73,0,0,0,621,0.025875,0.15780998389694043
-1,Everyday Whole milk,Milk,Milk,Dairy,Everyday,2.94,0,0,1,575,0.023958333,0.13217391304347825
-2,Green Valley Whole milk,Milk,Milk,Dairy,Green Valley,3.61,0,0,2,464,0.019333333,0.15732758620689655
-3,Orchard Whole milk,Milk,Milk,Dairy,Orchard,3.91,0,0,3,353,0.014708334,0.11048158640226628
-4,Purely Whole milk,Milk,Milk,Dairy,Purely,3.81,0,0,4,267,0.011125,0.1348314606741573
-5,Market House Whole milk,Milk,Milk,Dairy,Market House,4.97,0,0,5,174,0.00725,0.08620689655172414
-6,Harvest Low fat milk,Milk,Milk,Dairy,Harvest,2.72,0,0,6,609,0.025375,0.15599343185550082
-7,Everyday Low fat milk,Milk,Milk,Dairy,Everyday,3.15,0,0,7,573,0.023875,0.15706806282722513
-8,Green Valley Low fat milk,Milk,Milk,Dairy,Green Valley,3.12,0,0,8,452,0.018833334,0.14823008849557523
-9,Orchard Low fat milk,Milk,Milk,Dairy,Orchard,3.72,0,0,9,340,0.014166667,0.10882352941176471
-10,Purely Low fat milk,Milk,Milk,Dairy,Purely,4.04,0,0,10,276,0.0115,0.10507246376811594
-11,Market House Low fat milk,Milk,Milk,Dairy,Market House,4.93,0,0,11,172,0.0071666664,0.05813953488372093
-12,Harvest Oat drink,Milk,Milk,Dairy,Harvest,2.66,1,0,12,584,0.024333334,0.1284246575342466
-13,Everyday Oat drink,Milk,Milk,Dairy,Everyday,3.17,1,0,13,581,0.024208333,0.13941480206540446
-14,Green Valley Oat drink,Milk,Milk,Dairy,Green Valley,3.33,1,0,14,414,0.01725,0.14251207729468598
-15,Orchard Oat drink,Milk,Milk,Dairy,Orchard,3.55,1,0,15,321,0.013375,0.08411214953271028
-16,Purely Oat drink,Milk,Milk,Dairy,Purely,4.19,1,0,16,288,0.012,0.11805555555555555
-17,Market House Oat drink,Milk,Milk,Dairy,Market House,4.14,1,0,17,183,0.007625,0.06557377049180328
-18,Harvest Almond drink,Milk,Milk,Dairy,Harvest,2.75,1,0,18,585,0.024375,0.13333333333333333
-19,Everyday Almond drink,Milk,Milk,Dairy,Everyday,3.05,1,0,19,585,0.024375,0.16923076923076924
-20,Green Valley Almond drink,Milk,Milk,Dairy,Green Valley,3.54,1,0,20,459,0.019125,0.1394335511982571
-21,Orchard Almond drink,Milk,Milk,Dairy,Orchard,3.65,1,0,21,316,0.013166667,0.10759493670886076
-22,Purely Almond drink,Milk,Milk,Dairy,Purely,4.54,1,0,22,265,0.011041666,0.12075471698113208
-23,Market House Almond drink,Milk,Milk,Dairy,Market House,4.9,1,0,23,188,0.007833334,0.0851063829787234
-24,Harvest Rolled oats,Cereal,Cereal,Breakfast,Harvest,3.69,2,0,24,628,0.026166666,0.15605095541401273
-25,Everyday Rolled oats,Cereal,Cereal,Breakfast,Everyday,3.78,2,0,25,571,0.023791667,0.1436077057793345
-26,Green Valley Rolled oats,Cereal,Cereal,Breakfast,Green Valley,4.52,2,0,26,477,0.019875,0.16561844863731656
-27,Orchard Rolled oats,Cereal,Cereal,Breakfast,Orchard,4.62,2,0,27,319,0.013291666,0.10344827586206896
-28,Purely Rolled oats,Cereal,Cereal,Breakfast,Purely,5.22,2,0,28,298,0.012416666,0.10738255033557047
-29,Market House Rolled oats,Cereal,Cereal,Breakfast,Market House,6.37,2,0,29,190,0.007916667,0.07368421052631578
-30,Harvest Granola,Cereal,Cereal,Breakfast,Harvest,3.67,2,0,30,610,0.025416667,0.1557377049180328
-31,Everyday Granola,Cereal,Cereal,Breakfast,Everyday,4.4,2,0,31,563,0.023458334,0.16341030195381884
-32,Green Valley Granola,Cereal,Cereal,Breakfast,Green Valley,4.4,2,0,32,416,0.017333332,0.11778846153846154
-33,Orchard Granola,Cereal,Cereal,Breakfast,Orchard,4.95,2,0,33,360,0.015,0.12222222222222222
-34,Purely Granola,Cereal,Cereal,Breakfast,Purely,5.58,2,0,34,290,0.012083333,0.1103448275862069
-35,Market House Granola,Cereal,Cereal,Breakfast,Market House,5.76,2,0,35,170,0.0070833336,0.09411764705882353
-36,Harvest Corn flakes,Cereal,Cereal,Breakfast,Harvest,3.24,3,0,36,604,0.025166666,0.15066225165562913
-37,Everyday Corn flakes,Cereal,Cereal,Breakfast,Everyday,4.01,3,0,37,568,0.023666667,0.1602112676056338
-38,Green Valley Corn flakes,Cereal,Cereal,Breakfast,Green Valley,4.31,3,0,38,452,0.018833334,0.12389380530973451
-39,Orchard Corn flakes,Cereal,Cereal,Breakfast,Orchard,5.26,3,0,39,306,0.01275,0.0915032679738562
-40,Purely Corn flakes,Cereal,Cereal,Breakfast,Purely,5.54,3,0,40,273,0.011375,0.09523809523809523
-41,Market House Corn flakes,Cereal,Cereal,Breakfast,Market House,6.55,3,0,41,159,0.006625,0.06289308176100629
-42,Harvest Bran flakes,Cereal,Cereal,Breakfast,Harvest,3.64,3,0,42,593,0.024708332,0.1433389544688027
-43,Everyday Bran flakes,Cereal,Cereal,Breakfast,Everyday,3.87,3,0,43,590,0.024583334,0.17796610169491525
-44,Green Valley Bran flakes,Cereal,Cereal,Breakfast,Green Valley,4.86,3,0,44,397,0.016541667,0.12846347607052896
-45,Orchard Bran flakes,Cereal,Cereal,Breakfast,Orchard,5.39,3,0,45,367,0.015291667,0.1335149863760218
-46,Purely Bran flakes,Cereal,Cereal,Breakfast,Purely,5.49,3,0,46,265,0.011041666,0.1018867924528302
-47,Market House Bran flakes,Cereal,Cereal,Breakfast,Market House,5.88,3,0,47,188,0.007833334,0.09574468085106383
-48,Harvest Whole wheat loaf,Bread,Bread,Bakery,Harvest,2.76,4,0,48,625,0.026041666,0.1344
-49,Everyday Whole wheat loaf,Bread,Bread,Bakery,Everyday,2.84,4,0,49,633,0.026375,0.14533965244865718
-50,Green Valley Whole wheat loaf,Bread,Bread,Bakery,Green Valley,3.26,4,0,50,453,0.018875,0.13024282560706402
-51,Orchard Whole wheat loaf,Bread,Bread,Bakery,Orchard,3.49,4,0,51,331,0.013791666,0.10876132930513595
-52,Purely Whole wheat loaf,Bread,Bread,Bakery,Purely,4.52,4,0,52,270,0.01125,0.09259259259259259
-53,Market House Whole wheat loaf,Bread,Bread,Bakery,Market House,4.83,4,0,53,186,0.00775,0.06989247311827956
-54,Harvest Rye loaf,Bread,Bread,Bakery,Harvest,2.77,4,0,54,625,0.026041666,0.1616
-55,Everyday Rye loaf,Bread,Bread,Bakery,Everyday,3.23,4,0,55,589,0.024541667,0.14261460101867574
-56,Green Valley Rye loaf,Bread,Bread,Bakery,Green Valley,3.44,4,0,56,453,0.018875,0.10596026490066225
-57,Orchard Rye loaf,Bread,Bread,Bakery,Orchard,3.92,4,0,57,357,0.014875,0.13165266106442577
-58,Purely Rye loaf,Bread,Bread,Bakery,Purely,3.96,4,0,58,274,0.011416666,0.11313868613138686
-59,Market House Rye loaf,Bread,Bread,Bakery,Market House,4.31,4,0,59,160,0.006666667,0.0375
-60,Harvest Sourdough loaf,Bread,Bread,Bakery,Harvest,2.75,5,0,60,604,0.025166666,0.15894039735099338
-61,Everyday Sourdough loaf,Bread,Bread,Bakery,Everyday,3.04,5,0,61,561,0.023375,0.1497326203208556
-62,Green Valley Sourdough loaf,Bread,Bread,Bakery,Green Valley,3.51,5,0,62,400,0.016666668,0.115
-63,Orchard Sourdough loaf,Bread,Bread,Bakery,Orchard,4.07,5,0,63,327,0.013625,0.11926605504587157
-64,Purely Sourdough loaf,Bread,Bread,Bakery,Purely,4.39,5,0,64,268,0.011166667,0.11567164179104478
-65,Market House Sourdough loaf,Bread,Bread,Bakery,Market House,4.72,5,0,65,209,0.008708334,0.10526315789473684
-66,Harvest White loaf,Bread,Bread,Bakery,Harvest,2.69,5,0,66,606,0.02525,0.16666666666666666
-67,Everyday White loaf,Bread,Bread,Bakery,Everyday,2.94,5,0,67,593,0.024708332,0.16020236087689713
-68,Green Valley White loaf,Bread,Bread,Bakery,Green Valley,3.14,5,0,68,426,0.01775,0.11971830985915492
-69,Orchard White loaf,Bread,Bread,Bakery,Orchard,3.82,5,0,69,370,0.015416667,0.1
-70,Purely White loaf,Bread,Bread,Bakery,Purely,4.03,5,0,70,234,0.00975,0.06837606837606838
-71,Market House White loaf,Bread,Bread,Bakery,Market House,4.59,5,0,71,172,0.0071666664,0.0872093023255814
-72,Harvest Ground coffee,Coffee,Coffee,Beverages,Harvest,6.35,6,0,72,586,0.024416666,0.1825938566552901
-73,Everyday Ground coffee,Coffee,Coffee,Beverages,Everyday,6.46,6,0,73,589,0.024541667,0.1697792869269949
-74,Green Valley Ground coffee,Coffee,Coffee,Beverages,Green Valley,7.04,6,0,74,440,0.018333333,0.1318181818181818
-75,Orchard Ground coffee,Coffee,Coffee,Beverages,Orchard,8.24,6,0,75,361,0.015041667,0.10249307479224377
-76,Purely Ground coffee,Coffee,Coffee,Beverages,Purely,9.12,6,0,76,288,0.012,0.1284722222222222
-77,Market House Ground coffee,Coffee,Coffee,Beverages,Market House,10.75,6,0,77,190,0.007916667,0.07894736842105263
-78,Harvest Espresso beans,Coffee,Coffee,Beverages,Harvest,6.0,6,0,78,627,0.026125,0.16108452950558214
-79,Everyday Espresso beans,Coffee,Coffee,Beverages,Everyday,7.21,6,0,79,550,0.022916667,0.14545454545454545
-80,Green Valley Espresso beans,Coffee,Coffee,Beverages,Green Valley,7.98,6,0,80,462,0.01925,0.13636363636363635
-81,Orchard Espresso beans,Coffee,Coffee,Beverages,Orchard,8.46,6,0,81,341,0.014208334,0.10263929618768329
-82,Purely Espresso beans,Coffee,Coffee,Beverages,Purely,10.11,6,0,82,280,0.011666667,0.11071428571428571
-83,Market House Espresso beans,Coffee,Coffee,Beverages,Market House,9.72,6,0,83,179,0.0074583334,0.09497206703910614
-84,Harvest Decaf ground coffee,Coffee,Coffee,Beverages,Harvest,5.36,7,0,84,624,0.026,0.17147435897435898
-85,Everyday Decaf ground coffee,Coffee,Coffee,Beverages,Everyday,6.27,7,0,85,566,0.023583334,0.13427561837455831
-86,Green Valley Decaf ground coffee,Coffee,Coffee,Beverages,Green Valley,8.07,7,0,86,462,0.01925,0.15151515151515152
-87,Orchard Decaf ground coffee,Coffee,Coffee,Beverages,Orchard,8.55,7,0,87,377,0.015708333,0.14854111405835543
-88,Purely Decaf ground coffee,Coffee,Coffee,Beverages,Purely,8.87,7,0,88,262,0.010916667,0.09541984732824428
-89,Market House Decaf ground coffee,Coffee,Coffee,Beverages,Market House,10.42,7,0,89,189,0.007875,0.07407407407407407
-90,Harvest Decaf instant coffee,Coffee,Coffee,Beverages,Harvest,5.52,7,0,90,585,0.024375,0.11965811965811966
-91,Everyday Decaf instant coffee,Coffee,Coffee,Beverages,Everyday,7.09,7,0,91,589,0.024541667,0.16129032258064516
-92,Green Valley Decaf instant coffee,Coffee,Coffee,Beverages,Green Valley,7.64,7,0,92,441,0.018375,0.1383219954648526
-93,Orchard Decaf instant coffee,Coffee,Coffee,Beverages,Orchard,8.41,7,0,93,299,0.012458334,0.13712374581939799
-94,Purely Decaf instant coffee,Coffee,Coffee,Beverages,Purely,9.14,7,0,94,288,0.012,0.09375
-95,Market House Decaf instant coffee,Coffee,Coffee,Beverages,Market House,10.68,7,0,95,184,0.0076666665,0.07065217391304347
-96,Harvest Spaghetti,Pasta,Pasta,Pantry,Harvest,1.92,8,1,96,642,0.02675,0.16822429906542055
-97,Everyday Spaghetti,Pasta,Pasta,Pantry,Everyday,2.09,8,1,97,584,0.024333334,0.1523972602739726
-98,Green Valley Spaghetti,Pasta,Pasta,Pantry,Green Valley,2.38,8,1,98,446,0.018583333,0.11434977578475336
-99,Orchard Spaghetti,Pasta,Pasta,Pantry,Orchard,3.14,8,1,99,344,0.014333333,0.10755813953488372
-100,Purely Spaghetti,Pasta,Pasta,Pantry,Purely,3.43,8,1,100,257,0.010708333,0.0933852140077821
-101,Market House Spaghetti,Pasta,Pasta,Pantry,Market House,3.61,8,1,101,164,0.0068333335,0.054878048780487805
-102,Harvest Linguine,Pasta,Pasta,Pantry,Harvest,1.88,8,1,102,669,0.027875,0.15695067264573992
-103,Everyday Linguine,Pasta,Pasta,Pantry,Everyday,2.49,8,1,103,578,0.024083333,0.14186851211072665
-104,Green Valley Linguine,Pasta,Pasta,Pantry,Green Valley,2.72,8,1,104,424,0.017666666,0.11320754716981132
-105,Orchard Linguine,Pasta,Pasta,Pantry,Orchard,3.0,8,1,105,350,0.014583333,0.10571428571428572
-106,Purely Linguine,Pasta,Pasta,Pantry,Purely,3.14,8,1,106,245,0.010208333,0.12653061224489795
-107,Market House Linguine,Pasta,Pasta,Pantry,Market House,3.31,8,1,107,176,0.007333333,0.0625
-108,Harvest Penne,Pasta,Pasta,Pantry,Harvest,1.82,9,1,108,595,0.024791667,0.16302521008403362
-109,Everyday Penne,Pasta,Pasta,Pantry,Everyday,2.46,9,1,109,644,0.026833333,0.15372670807453417
-110,Green Valley Penne,Pasta,Pasta,Pantry,Green Valley,2.55,9,1,110,430,0.017916666,0.1558139534883721
-111,Orchard Penne,Pasta,Pasta,Pantry,Orchard,2.7,9,1,111,337,0.014041667,0.08011869436201781
-112,Purely Penne,Pasta,Pasta,Pantry,Purely,3.05,9,1,112,296,0.0123333335,0.09121621621621621
-113,Market House Penne,Pasta,Pasta,Pantry,Market House,3.53,9,1,113,224,0.009333333,0.09821428571428571
-114,Harvest Fusilli,Pasta,Pasta,Pantry,Harvest,1.85,9,1,114,580,0.024166666,0.1396551724137931
-115,Everyday Fusilli,Pasta,Pasta,Pantry,Everyday,2.44,9,1,115,581,0.024208333,0.15834767641996558
-116,Green Valley Fusilli,Pasta,Pasta,Pantry,Green Valley,2.71,9,1,116,447,0.018625,0.1319910514541387
-117,Orchard Fusilli,Pasta,Pasta,Pantry,Orchard,3.0,9,1,117,332,0.013833334,0.10240963855421686
-118,Purely Fusilli,Pasta,Pasta,Pantry,Purely,3.13,9,1,118,264,0.011,0.10227272727272728
-119,Market House Fusilli,Pasta,Pasta,Pantry,Market House,3.56,9,1,119,182,0.007583333,0.08791208791208792
-120,Harvest Tomato basil sauce,Sauce,Sauce,Pantry,Harvest,3.09,10,1,120,661,0.027541667,0.16944024205748864
-121,Everyday Tomato basil sauce,Sauce,Sauce,Pantry,Everyday,3.6,10,1,121,585,0.024375,0.13162393162393163
-122,Green Valley Tomato basil sauce,Sauce,Sauce,Pantry,Green Valley,3.63,10,1,122,461,0.019208333,0.1193058568329718
-123,Orchard Tomato basil sauce,Sauce,Sauce,Pantry,Orchard,4.35,10,1,123,330,0.01375,0.1
-124,Purely Tomato basil sauce,Sauce,Sauce,Pantry,Purely,4.43,10,1,124,306,0.01275,0.10784313725490197
-125,Market House Tomato basil sauce,Sauce,Sauce,Pantry,Market House,5.33,10,1,125,182,0.007583333,0.09340659340659341
-126,Harvest Marinara sauce,Sauce,Sauce,Pantry,Harvest,2.94,10,1,126,609,0.025375,0.16912972085385877
-127,Everyday Marinara sauce,Sauce,Sauce,Pantry,Everyday,3.25,10,1,127,603,0.025125,0.12935323383084577
-128,Green Valley Marinara sauce,Sauce,Sauce,Pantry,Green Valley,3.65,10,1,128,431,0.017958334,0.1136890951276102
-129,Orchard Marinara sauce,Sauce,Sauce,Pantry,Orchard,4.5,10,1,129,344,0.014333333,0.0755813953488372
-130,Purely Marinara sauce,Sauce,Sauce,Pantry,Purely,4.56,10,1,130,270,0.01125,0.09259259259259259
-131,Market House Marinara sauce,Sauce,Sauce,Pantry,Market House,5.79,10,1,131,159,0.006625,0.06289308176100629
-132,Harvest Pesto sauce,Sauce,Sauce,Pantry,Harvest,3.09,11,1,132,593,0.024708332,0.15851602023608768
-133,Everyday Pesto sauce,Sauce,Sauce,Pantry,Everyday,3.39,11,1,133,613,0.025541667,0.16802610114192496
-134,Green Valley Pesto sauce,Sauce,Sauce,Pantry,Green Valley,4.03,11,1,134,469,0.019541666,0.10021321961620469
-135,Orchard Pesto sauce,Sauce,Sauce,Pantry,Orchard,4.0,11,1,135,339,0.014125,0.10914454277286136
-136,Purely Pesto sauce,Sauce,Sauce,Pantry,Purely,5.33,11,1,136,282,0.01175,0.10283687943262411
-137,Market House Pesto sauce,Sauce,Sauce,Pantry,Market House,5.32,11,1,137,192,0.008,0.09375
-138,Harvest Creamy basil sauce,Sauce,Sauce,Pantry,Harvest,3.21,11,1,138,575,0.023958333,0.1391304347826087
-139,Everyday Creamy basil sauce,Sauce,Sauce,Pantry,Everyday,3.21,11,1,139,591,0.024625,0.18612521150592218
-140,Green Valley Creamy basil sauce,Sauce,Sauce,Pantry,Green Valley,3.95,11,1,140,447,0.018625,0.17002237136465326
-141,Orchard Creamy basil sauce,Sauce,Sauce,Pantry,Orchard,4.41,11,1,141,321,0.013375,0.11838006230529595
-142,Purely Creamy basil sauce,Sauce,Sauce,Pantry,Purely,5.31,11,1,142,276,0.0115,0.10507246376811594
-143,Market House Creamy basil sauce,Sauce,Sauce,Pantry,Market House,5.42,11,1,143,205,0.008541667,0.07317073170731707
-144,Harvest Chicken breast,Protein,Protein,Chilled,Harvest,4.91,12,1,144,619,0.025791667,0.16639741518578352
-145,Everyday Chicken breast,Protein,Protein,Chilled,Everyday,5.42,12,1,145,589,0.024541667,0.1494057724957555
-146,Green Valley Chicken breast,Protein,Protein,Chilled,Green Valley,6.22,12,1,146,423,0.017625,0.1276595744680851
-147,Orchard Chicken breast,Protein,Protein,Chilled,Orchard,7.21,12,1,147,330,0.01375,0.11818181818181818
-148,Purely Chicken breast,Protein,Protein,Chilled,Purely,7.83,12,1,148,267,0.011125,0.09363295880149813
-149,Market House Chicken breast,Protein,Protein,Chilled,Market House,7.85,12,1,149,190,0.007916667,0.042105263157894736
-150,Harvest Turkey slices,Protein,Protein,Chilled,Harvest,5.26,12,1,150,652,0.027166666,0.1687116564417178
-151,Everyday Turkey slices,Protein,Protein,Chilled,Everyday,6.14,12,1,151,578,0.024083333,0.1695501730103806
-152,Green Valley Turkey slices,Protein,Protein,Chilled,Green Valley,5.97,12,1,152,482,0.020083332,0.15975103734439833
-153,Orchard Turkey slices,Protein,Protein,Chilled,Orchard,7.26,12,1,153,365,0.015208334,0.12054794520547946
-154,Purely Turkey slices,Protein,Protein,Chilled,Purely,7.31,12,1,154,313,0.013041667,0.08945686900958466
-155,Market House Turkey slices,Protein,Protein,Chilled,Market House,8.98,12,1,155,165,0.006875,0.10303030303030303
-156,Harvest Firm tofu,Protein,Protein,Chilled,Harvest,4.72,13,1,156,590,0.024583334,0.14576271186440679
-157,Everyday Firm tofu,Protein,Protein,Chilled,Everyday,5.87,13,1,157,601,0.025041666,0.13311148086522462
-158,Green Valley Firm tofu,Protein,Protein,Chilled,Green Valley,6.73,13,1,158,441,0.018375,0.1292517006802721
-159,Orchard Firm tofu,Protein,Protein,Chilled,Orchard,7.57,13,1,159,359,0.014958333,0.11142061281337047
-160,Purely Firm tofu,Protein,Protein,Chilled,Purely,7.31,13,1,160,258,0.01075,0.06976744186046512
-161,Market House Firm tofu,Protein,Protein,Chilled,Market House,9.4,13,1,161,175,0.0072916667,0.07428571428571429
-162,Harvest Black bean patties,Protein,Protein,Chilled,Harvest,4.67,13,1,162,632,0.026333334,0.16139240506329114
-163,Everyday Black bean patties,Protein,Protein,Chilled,Everyday,5.16,13,1,163,635,0.026458334,0.18740157480314962
-164,Green Valley Black bean patties,Protein,Protein,Chilled,Green Valley,6.51,13,1,164,445,0.018541666,0.14606741573033707
-165,Orchard Black bean patties,Protein,Protein,Chilled,Orchard,7.0,13,1,165,352,0.014666666,0.13352272727272727
-166,Purely Black bean patties,Protein,Protein,Chilled,Purely,8.45,13,1,166,269,0.011208333,0.12639405204460966
-167,Market House Black bean patties,Protein,Protein,Chilled,Market House,9.21,13,1,167,197,0.0082083335,0.08121827411167512
-168,Harvest Baby spinach,Vegetables,Vegetables,Produce,Harvest,2.34,14,1,168,632,0.026333334,0.17721518987341772
-169,Everyday Baby spinach,Vegetables,Vegetables,Produce,Everyday,3.05,14,1,169,573,0.023875,0.17102966841186737
-170,Green Valley Baby spinach,Vegetables,Vegetables,Produce,Green Valley,3.04,14,1,170,410,0.017083334,0.16097560975609757
-171,Orchard Baby spinach,Vegetables,Vegetables,Produce,Orchard,3.55,14,1,171,325,0.013541667,0.1076923076923077
-172,Purely Baby spinach,Vegetables,Vegetables,Produce,Purely,3.71,14,1,172,277,0.011541666,0.04332129963898917
-173,Market House Baby spinach,Vegetables,Vegetables,Produce,Market House,4.64,14,1,173,211,0.0087916665,0.04739336492890995
-174,Harvest Mixed greens,Vegetables,Vegetables,Produce,Harvest,2.27,14,1,174,675,0.028125,0.1674074074074074
-175,Everyday Mixed greens,Vegetables,Vegetables,Produce,Everyday,2.55,14,1,175,600,0.025,0.15
-176,Green Valley Mixed greens,Vegetables,Vegetables,Produce,Green Valley,3.13,14,1,176,469,0.019541666,0.13646055437100213
-177,Orchard Mixed greens,Vegetables,Vegetables,Produce,Orchard,3.88,14,1,177,354,0.01475,0.09887005649717515
-178,Purely Mixed greens,Vegetables,Vegetables,Produce,Purely,4.21,14,1,178,289,0.012041667,0.10034602076124567
-179,Market House Mixed greens,Vegetables,Vegetables,Produce,Market House,4.48,14,1,179,188,0.007833334,0.06914893617021277
-180,Harvest Broccoli florets,Vegetables,Vegetables,Produce,Harvest,2.62,15,1,180,594,0.02475,0.15151515151515152
-181,Everyday Broccoli florets,Vegetables,Vegetables,Produce,Everyday,3.02,15,1,181,604,0.025166666,0.16390728476821192
-182,Green Valley Broccoli florets,Vegetables,Vegetables,Produce,Green Valley,3.18,15,1,182,445,0.018541666,0.14382022471910114
-183,Orchard Broccoli florets,Vegetables,Vegetables,Produce,Orchard,3.41,15,1,183,336,0.014,0.12797619047619047
-184,Purely Broccoli florets,Vegetables,Vegetables,Produce,Purely,4.12,15,1,184,255,0.010625,0.08627450980392157
-185,Market House Broccoli florets,Vegetables,Vegetables,Produce,Market House,4.41,15,1,185,196,0.008166667,0.061224489795918366
-186,Harvest Green beans,Vegetables,Vegetables,Produce,Harvest,2.37,15,1,186,587,0.024458334,0.16183986371379896
-187,Everyday Green beans,Vegetables,Vegetables,Produce,Everyday,2.57,15,1,187,554,0.023083333,0.148014440433213
-188,Green Valley Green beans,Vegetables,Vegetables,Produce,Green Valley,3.32,15,1,188,490,0.020416666,0.11428571428571428
-189,Orchard Green beans,Vegetables,Vegetables,Produce,Orchard,3.37,15,1,189,333,0.013875,0.08108108108108109
-190,Purely Green beans,Vegetables,Vegetables,Produce,Purely,4.25,15,1,190,289,0.012041667,0.08304498269896193
-191,Market House Green beans,Vegetables,Vegetables,Produce,Market House,4.05,15,1,191,210,0.00875,0.09047619047619047
-192,Harvest Sea salt crisps,Snacks,Snacks,Snacks,Harvest,2.53,16,2,192,511,0.021291668,0.15264187866927592
-193,Everyday Sea salt crisps,Snacks,Snacks,Snacks,Everyday,3.36,16,2,193,534,0.02225,0.15730337078651685
-194,Green Valley Sea salt crisps,Snacks,Snacks,Snacks,Green Valley,3.32,16,2,194,374,0.015583334,0.12566844919786097
-195,Orchard Sea salt crisps,Snacks,Snacks,Snacks,Orchard,3.72,16,2,195,300,0.0125,0.10666666666666667
-196,Purely Sea salt crisps,Snacks,Snacks,Snacks,Purely,4.48,16,2,196,234,0.00975,0.08547008547008547
-197,Market House Sea salt crisps,Snacks,Snacks,Snacks,Market House,5.17,16,2,197,168,0.007,0.07142857142857142
-198,Harvest Corn tortilla chips,Snacks,Snacks,Snacks,Harvest,2.57,16,2,198,521,0.021708334,0.13051823416506717
-199,Everyday Corn tortilla chips,Snacks,Snacks,Snacks,Everyday,3.03,16,2,199,486,0.02025,0.14609053497942387
-200,Green Valley Corn tortilla chips,Snacks,Snacks,Snacks,Green Valley,3.76,16,2,200,391,0.016291667,0.1432225063938619
-201,Orchard Corn tortilla chips,Snacks,Snacks,Snacks,Orchard,4.35,16,2,201,300,0.0125,0.1
-202,Purely Corn tortilla chips,Snacks,Snacks,Snacks,Purely,4.39,16,2,202,209,0.008708334,0.09090909090909091
-203,Market House Corn tortilla chips,Snacks,Snacks,Snacks,Market House,4.46,16,2,203,144,0.006,0.04861111111111111
-204,Harvest Rice crackers,Snacks,Snacks,Snacks,Harvest,2.47,17,2,204,499,0.020791667,0.12424849699398798
-205,Everyday Rice crackers,Snacks,Snacks,Snacks,Everyday,2.98,17,2,205,457,0.019041667,0.12472647702407003
-206,Green Valley Rice crackers,Snacks,Snacks,Snacks,Green Valley,3.3,17,2,206,351,0.014625,0.09971509971509972
-207,Orchard Rice crackers,Snacks,Snacks,Snacks,Orchard,4.12,17,2,207,265,0.011041666,0.09056603773584905
-208,Purely Rice crackers,Snacks,Snacks,Snacks,Purely,4.06,17,2,208,254,0.010583334,0.0984251968503937
-209,Market House Rice crackers,Snacks,Snacks,Snacks,Market House,4.81,17,2,209,162,0.00675,0.06790123456790123
-210,Harvest Roasted nuts,Snacks,Snacks,Snacks,Harvest,2.84,17,2,210,458,0.019083334,0.12008733624454149
-211,Everyday Roasted nuts,Snacks,Snacks,Snacks,Everyday,3.2,17,2,211,496,0.020666666,0.1350806451612903
-212,Green Valley Roasted nuts,Snacks,Snacks,Snacks,Green Valley,3.35,17,2,212,370,0.015416667,0.12432432432432433
-213,Orchard Roasted nuts,Snacks,Snacks,Snacks,Orchard,4.22,17,2,213,293,0.012208333,0.10580204778156997
-214,Purely Roasted nuts,Snacks,Snacks,Snacks,Purely,4.58,17,2,214,221,0.009208334,0.09049773755656108
-215,Market House Roasted nuts,Snacks,Snacks,Snacks,Market House,5.04,17,2,215,160,0.006666667,0.075
-216,Harvest Mild salsa,Dips,Dips,Chilled,Harvest,2.96,18,2,216,557,0.023208333,0.1436265709156194
-217,Everyday Mild salsa,Dips,Dips,Chilled,Everyday,3.4,18,2,217,519,0.021625,0.13872832369942195
-218,Green Valley Mild salsa,Dips,Dips,Chilled,Green Valley,4.51,18,2,218,389,0.016208334,0.11825192802056556
-219,Orchard Mild salsa,Dips,Dips,Chilled,Orchard,4.55,18,2,219,272,0.011333333,0.10661764705882353
-220,Purely Mild salsa,Dips,Dips,Chilled,Purely,4.92,18,2,220,233,0.009708334,0.04721030042918455
-221,Market House Mild salsa,Dips,Dips,Chilled,Market House,5.59,18,2,221,161,0.0067083333,0.07453416149068323
-222,Harvest Guacamole,Dips,Dips,Chilled,Harvest,3.3,18,2,222,502,0.020916667,0.12350597609561753
-223,Everyday Guacamole,Dips,Dips,Chilled,Everyday,4.01,18,2,223,480,0.02,0.12291666666666666
-224,Green Valley Guacamole,Dips,Dips,Chilled,Green Valley,3.98,18,2,224,373,0.015541667,0.13404825737265416
-225,Orchard Guacamole,Dips,Dips,Chilled,Orchard,5.04,18,2,225,311,0.012958333,0.12540192926045016
-226,Purely Guacamole,Dips,Dips,Chilled,Purely,4.64,18,2,226,226,0.009416667,0.07964601769911504
-227,Market House Guacamole,Dips,Dips,Chilled,Market House,5.67,18,2,227,133,0.005541667,0.03759398496240601
-228,Harvest Classic hummus,Dips,Dips,Chilled,Harvest,3.28,19,2,228,482,0.020083332,0.11410788381742738
-229,Everyday Classic hummus,Dips,Dips,Chilled,Everyday,3.39,19,2,229,512,0.021333333,0.142578125
-230,Green Valley Classic hummus,Dips,Dips,Chilled,Green Valley,3.86,19,2,230,392,0.016333334,0.14030612244897958
-231,Orchard Classic hummus,Dips,Dips,Chilled,Orchard,4.57,19,2,231,278,0.011583333,0.1079136690647482
-232,Purely Classic hummus,Dips,Dips,Chilled,Purely,5.6,19,2,232,217,0.009041667,0.06912442396313365
-233,Market House Classic hummus,Dips,Dips,Chilled,Market House,5.71,19,2,233,149,0.006208333,0.10067114093959731
-234,Harvest Yogurt dip,Dips,Dips,Chilled,Harvest,3.47,19,2,234,516,0.0215,0.14922480620155038
-235,Everyday Yogurt dip,Dips,Dips,Chilled,Everyday,3.9,19,2,235,471,0.019625,0.11889596602972399
-236,Green Valley Yogurt dip,Dips,Dips,Chilled,Green Valley,4.13,19,2,236,340,0.014166667,0.13529411764705881
-237,Orchard Yogurt dip,Dips,Dips,Chilled,Orchard,4.91,19,2,237,275,0.011458334,0.09818181818181818
-238,Purely Yogurt dip,Dips,Dips,Chilled,Purely,4.63,19,2,238,221,0.009208334,0.09954751131221719
-239,Market House Yogurt dip,Dips,Dips,Chilled,Market House,5.17,19,2,239,158,0.0065833335,0.03164556962025317
-240,Harvest Red apples,Fruit,Fruit,Produce,Harvest,2.43,20,3,240,548,0.022833332,0.13503649635036497
-241,Everyday Red apples,Fruit,Fruit,Produce,Everyday,2.78,20,3,241,607,0.025291666,0.13509060955518945
-242,Green Valley Red apples,Fruit,Fruit,Produce,Green Valley,2.81,20,3,242,400,0.016666668,0.115
-243,Orchard Red apples,Fruit,Fruit,Produce,Orchard,3.34,20,3,243,317,0.013208333,0.13249211356466878
-244,Purely Red apples,Fruit,Fruit,Produce,Purely,3.74,20,3,244,262,0.010916667,0.10687022900763359
-245,Market House Red apples,Fruit,Fruit,Produce,Market House,4.3,20,3,245,184,0.0076666665,0.09239130434782608
-246,Harvest Green apples,Fruit,Fruit,Produce,Harvest,2.33,20,3,246,583,0.024291666,0.17152658662092624
-247,Everyday Green apples,Fruit,Fruit,Produce,Everyday,2.58,20,3,247,540,0.0225,0.1574074074074074
-248,Green Valley Green apples,Fruit,Fruit,Produce,Green Valley,2.9,20,3,248,391,0.016291667,0.11508951406649616
-249,Orchard Green apples,Fruit,Fruit,Produce,Orchard,3.27,20,3,249,343,0.014291666,0.10495626822157435
-250,Purely Green apples,Fruit,Fruit,Produce,Purely,3.77,20,3,250,248,0.010333333,0.10080645161290322
-251,Market House Green apples,Fruit,Fruit,Produce,Market House,4.3,20,3,251,173,0.0072083334,0.06358381502890173
-252,Harvest Cavendish bananas,Fruit,Fruit,Produce,Harvest,2.26,21,3,252,562,0.023416666,0.16548042704626334
-253,Everyday Cavendish bananas,Fruit,Fruit,Produce,Everyday,2.49,21,3,253,566,0.023583334,0.15547703180212014
-254,Green Valley Cavendish bananas,Fruit,Fruit,Produce,Green Valley,2.81,21,3,254,396,0.0165,0.12373737373737374
-255,Orchard Cavendish bananas,Fruit,Fruit,Produce,Orchard,3.48,21,3,255,336,0.014,0.11607142857142858
-256,Purely Cavendish bananas,Fruit,Fruit,Produce,Purely,3.89,21,3,256,244,0.0101666665,0.0860655737704918
-257,Market House Cavendish bananas,Fruit,Fruit,Produce,Market House,3.69,21,3,257,181,0.0075416667,0.055248618784530384
-258,Harvest Navel oranges,Fruit,Fruit,Produce,Harvest,2.08,21,3,258,566,0.023583334,0.1413427561837456
-259,Everyday Navel oranges,Fruit,Fruit,Produce,Everyday,2.67,21,3,259,578,0.024083333,0.17128027681660898
-260,Green Valley Navel oranges,Fruit,Fruit,Produce,Green Valley,2.76,21,3,260,413,0.017208334,0.14043583535108958
-261,Orchard Navel oranges,Fruit,Fruit,Produce,Orchard,3.53,21,3,261,312,0.013,0.09615384615384616
-262,Purely Navel oranges,Fruit,Fruit,Produce,Purely,3.52,21,3,262,253,0.010541666,0.12648221343873517
-263,Market House Navel oranges,Fruit,Fruit,Produce,Market House,3.72,21,3,263,171,0.007125,0.07017543859649122
-264,Harvest Plain Greek yogurt,Yogurt,Yogurt,Dairy,Harvest,3.38,22,3,264,599,0.024958333,0.14858096828046743
-265,Everyday Plain Greek yogurt,Yogurt,Yogurt,Dairy,Everyday,3.35,22,3,265,545,0.022708334,0.11743119266055047
-266,Green Valley Plain Greek yogurt,Yogurt,Yogurt,Dairy,Green Valley,3.88,22,3,266,404,0.016833333,0.11138613861386139
-267,Orchard Plain Greek yogurt,Yogurt,Yogurt,Dairy,Orchard,4.22,22,3,267,338,0.014083333,0.10059171597633136
-268,Purely Plain Greek yogurt,Yogurt,Yogurt,Dairy,Purely,4.62,22,3,268,253,0.010541666,0.07509881422924901
-269,Market House Plain Greek yogurt,Yogurt,Yogurt,Dairy,Market House,4.95,22,3,269,205,0.008541667,0.06341463414634146
-270,Harvest Vanilla Greek yogurt,Yogurt,Yogurt,Dairy,Harvest,2.84,22,3,270,592,0.024666667,0.14189189189189189
-271,Everyday Vanilla Greek yogurt,Yogurt,Yogurt,Dairy,Everyday,3.35,22,3,271,569,0.023708334,0.14235500878734622
-272,Green Valley Vanilla Greek yogurt,Yogurt,Yogurt,Dairy,Green Valley,3.7,22,3,272,408,0.017,0.09803921568627451
-273,Orchard Vanilla Greek yogurt,Yogurt,Yogurt,Dairy,Orchard,4.61,22,3,273,325,0.013541667,0.11076923076923077
-274,Purely Vanilla Greek yogurt,Yogurt,Yogurt,Dairy,Purely,5.18,22,3,274,226,0.009416667,0.10176991150442478
-275,Market House Vanilla Greek yogurt,Yogurt,Yogurt,Dairy,Market House,5.36,22,3,275,200,0.008333334,0.06
-276,Harvest Strawberry yogurt,Yogurt,Yogurt,Dairy,Harvest,3.0,23,3,276,579,0.024125,0.16062176165803108
-277,Everyday Strawberry yogurt,Yogurt,Yogurt,Dairy,Everyday,3.59,23,3,277,606,0.02525,0.15016501650165018
-278,Green Valley Strawberry yogurt,Yogurt,Yogurt,Dairy,Green Valley,4.36,23,3,278,388,0.016166667,0.09536082474226804
-279,Orchard Strawberry yogurt,Yogurt,Yogurt,Dairy,Orchard,4.85,23,3,279,334,0.013916667,0.09580838323353294
-280,Purely Strawberry yogurt,Yogurt,Yogurt,Dairy,Purely,4.55,23,3,280,285,0.011875,0.11228070175438597
-281,Market House Strawberry yogurt,Yogurt,Yogurt,Dairy,Market House,5.12,23,3,281,177,0.007375,0.05649717514124294
-282,Harvest Coconut yogurt,Yogurt,Yogurt,Dairy,Harvest,2.95,23,3,282,518,0.021583334,0.13513513513513514
-283,Everyday Coconut yogurt,Yogurt,Yogurt,Dairy,Everyday,3.41,23,3,283,532,0.022166668,0.12218045112781954
-284,Green Valley Coconut yogurt,Yogurt,Yogurt,Dairy,Green Valley,4.12,23,3,284,420,0.0175,0.14285714285714285
-285,Orchard Coconut yogurt,Yogurt,Yogurt,Dairy,Orchard,4.45,23,3,285,306,0.01275,0.09477124183006536
-286,Purely Coconut yogurt,Yogurt,Yogurt,Dairy,Purely,4.55,23,3,286,267,0.011125,0.10112359550561797
-287,Market House Coconut yogurt,Yogurt,Yogurt,Dairy,Market House,5.34,23,3,287,164,0.0068333335,0.09146341463414634
+product_id,name,aisle_id,department_id,category,department,aisle,brand,price,idx,popularity,support,reorder_rate
+45,European Cucumber,83,4,fresh vegetables,produce,fresh vegetables,European,4.36,0,241,0.0048432476,0.6639004149377593
+196,Soda,77,7,soft drinks,beverages,soft drinks,Soda,2.54,1,575,0.011555466,0.7617391304347826
+260,Cantaloupe,24,4,fresh fruits,produce,fresh fruits,Cantaloupe,5.21,2,303,0.006089228,0.6039603960396039
+432,Vanilla Almond Breeze Almond Milk,91,16,soy lactosefree,dairy eggs,soy lactosefree,Vanilla,5.62,3,421,0.008460611,0.7339667458432304
+651,Organic Salted Butter,36,16,butter,dairy eggs,butter,Organic,1.77,4,306,0.006149518,0.6437908496732027
+890,Organic Diced Tomatoes,81,15,canned jarred vegetables,canned goods,canned jarred vegetables,Organic,2.29,5,301,0.0060490356,0.46179401993355484
+1158,Mango Chunks,116,1,frozen produce,frozen,frozen produce,Mango,4.06,6,271,0.0054461416,0.5498154981549815
+1463,Organic Milk,84,16,milk,dairy eggs,milk,Organic,3.4,7,513,0.010309486,0.8576998050682261
+1940,Organic 2% Reduced Fat Milk,84,16,milk,dairy eggs,milk,Organic,3.83,8,446,0.008963022,0.7982062780269058
+2078,Unsalted Pure Irish Butter,36,16,butter,dairy eggs,butter,Unsalted,2.74,9,331,0.006651929,0.6858006042296072
+2086,Sustainably Soft Bath Tissue,54,17,paper goods,household,paper goods,Sustainably,5.48,10,339,0.006812701,0.6224188790560472
+2295,Yellow Bell Pepper,83,4,fresh vegetables,produce,fresh vegetables,Yellow,5.27,11,329,0.0066117365,0.513677811550152
+2825,Organic Original Hommus,67,20,fresh dips tapenades,deli,fresh dips tapenades,Organic,3.96,12,213,0.0042805467,0.6150234741784038
+2966,Pure Coconut Water,98,7,juice nectars,beverages,juice nectars,Pure,6.06,13,228,0.0045819934,0.6140350877192983
+3599,Baked Aged White Cheddar Rice and Corn Puffs,23,19,popcorn jerky,snacks,popcorn jerky,Baked,4.65,14,234,0.0047025722,0.6623931623931624
+3952,Organic Broccoli Crowns,83,4,fresh vegetables,produce,fresh vegetables,Organic,2.74,15,327,0.0065715434,0.6941896024464832
+3957,100% Raw Coconut Water,31,7,refrigerated,beverages,refrigerated,100%,4.47,16,540,0.01085209,0.7888888888888889
+4210,Whole Milk,84,16,milk,dairy eggs,milk,Whole,2.63,17,576,0.011575563,0.7864583333333334
+4421,Organic Beef Uncured Hot Dogs,106,12,hot dogs bacon sausage,meat seafood,hot dogs bacon sausage,Organic,5.48,18,220,0.004421222,0.6272727272727273
+4472,Toasted Coconut Almondmilk Blend,91,16,soy lactosefree,dairy eggs,soy lactosefree,Toasted,3.78,19,281,0.005647106,0.7900355871886121
+4562,English Seedless Cucumber,83,4,fresh vegetables,produce,fresh vegetables,English,3.58,20,231,0.004642283,0.5454545454545454
+4605,Yellow Onions,83,4,fresh vegetables,produce,fresh vegetables,Yellow,2.94,21,1100,0.02210611,0.5945454545454546
+4799,Shredded Parmesan,21,16,packaged cheese,dairy eggs,packaged cheese,Shredded,6.29,22,528,0.0106109325,0.6401515151515151
+4920,Seedless Red Grapes,123,4,packaged vegetables fruits,produce,packaged vegetables fruits,Seedless,3.63,23,1281,0.025743568,0.687743950039032
+4957,Total 2% Lowfat Greek Strained Yogurt With Blueberry,120,16,yogurt,dairy eggs,yogurt,Total,3.25,24,536,0.010771704,0.7985074626865671
+5025,Green Onions,83,4,fresh vegetables,produce,fresh vegetables,Green,3.35,25,474,0.009525724,0.5822784810126582
+5077,100% Whole Wheat Bread,112,3,bread,bakery,bread,100%,4.77,26,989,0.019875402,0.7714863498483316
+5134,Organic Thompson Seedless Raisins,117,19,nuts seeds dried fruit,snacks,nuts seeds dried fruit,Organic,4.46,27,218,0.004381029,0.6376146788990825
+5212,Watermelon Chunks,123,4,packaged vegetables fruits,produce,packaged vegetables fruits,Watermelon,4.55,28,409,0.0082194535,0.7652811735941321
+5322,Gluten Free Dark Chocolate Chunk Chewy with a Crunch Granola Bars,3,19,energy granola bars,snacks,energy granola bars,Gluten,4.58,29,222,0.0044614146,0.7522522522522522
+5450,Small Hass Avocado,24,4,fresh fruits,produce,fresh fruits,Small,9.09,30,779,0.015655145,0.6880616174582799
+5479,Italian Sparkling Mineral Water,115,7,water seltzer sparkling water,beverages,water seltzer sparkling water,Italian,3.28,31,601,0.012077974,0.8402662229617305
+5785,Organic Reduced Fat 2% Milk,84,16,milk,dairy eggs,milk,Organic,3.14,32,698,0.014027331,0.7922636103151862
+5818,White Onion,83,4,fresh vegetables,produce,fresh vegetables,White,2.79,33,257,0.005164791,0.6070038910505836
+5876,Organic Lemon,24,4,fresh fruits,produce,fresh fruits,Organic,4.94,34,1255,0.025221061,0.6916334661354582
+6046,Boneless Skinless Chicken Breast,35,12,poultry counter,meat seafood,poultry counter,Boneless,6.06,35,312,0.0062700966,0.6730769230769231
+6184,Clementines,32,4,packaged produce,produce,packaged produce,Clementines,3.69,36,520,0.010450161,0.7538461538461538
+6873,Organic Iceberg Lettuce,83,4,fresh vegetables,produce,fresh vegetables,Organic,2.76,37,246,0.00494373,0.6178861788617886
+6948,Organic Original Almond Milk,91,16,soy lactosefree,dairy eggs,soy lactosefree,Organic,2.77,38,317,0.006370579,0.889589905362776
+7021,Organic Tomato Paste,81,15,canned jarred vegetables,canned goods,canned jarred vegetables,Organic,5.0,39,271,0.0054461416,0.4095940959409594
+7503,Whole Almonds,117,19,nuts seeds dried fruit,snacks,nuts seeds dried fruit,Whole,5.19,40,219,0.0044011255,0.5799086757990868
+7559,Cinnamon Rolls with Icing,105,13,doughs gelatins bake mixes,pantry,doughs gelatins bake mixes,Cinnamon,4.79,41,221,0.004441318,0.6561085972850679
+7781,Organic Sticks Low Moisture Part Skim Mozzarella String Cheese,21,16,packaged cheese,dairy eggs,packaged cheese,Organic,2.96,42,550,0.011053055,0.7672727272727272
+7948,Organic Unsalted Butter,36,16,butter,dairy eggs,butter,Organic,4.23,43,366,0.0073553054,0.5765027322404371
+8021,100% Recycled Paper Towels,54,17,paper goods,household,paper goods,100%,4.04,44,341,0.006852894,0.533724340175953
+8048,Packaged Grape Tomatoes,32,4,packaged produce,produce,packaged produce,Packaged,4.21,45,218,0.004381029,0.7844036697247706
+8174,Organic Navel Orange,24,4,fresh fruits,produce,fresh fruits,Organic,5.47,46,645,0.012962218,0.6527131782945736
+8193,Russet Potato,83,4,fresh vegetables,produce,fresh vegetables,Russet,4.22,47,451,0.009063505,0.5720620842572062
+8277,Apple Honeycrisp Organic,24,4,fresh fruits,produce,fresh fruits,Apple,5.06,48,1354,0.027210612,0.7540620384047267
+8424,Broccoli Crown,83,4,fresh vegetables,produce,fresh vegetables,Broccoli,3.96,49,557,0.01119373,0.6606822262118492
+8518,Organic Red Onion,83,4,fresh vegetables,produce,fresh vegetables,Organic,4.33,50,1095,0.022005627,0.6438356164383562
+8571,Baby Cucumbers,32,4,packaged produce,produce,packaged produce,Baby,4.97,51,246,0.00494373,0.7967479674796748
+8859,Natural Spring Water,115,7,water seltzer sparkling water,beverages,water seltzer sparkling water,Natural,2.15,52,286,0.0057475884,0.7272727272727273
+9076,Blueberries,116,1,frozen produce,frozen,frozen produce,Blueberries,3.39,53,758,0.015233119,0.5712401055408971
+9387,Granny Smith Apples,24,4,fresh fruits,produce,fresh fruits,Granny,3.2,54,439,0.008822347,0.6059225512528473
+9839,Organic Broccoli,83,4,fresh vegetables,produce,fresh vegetables,Organic,2.99,55,592,0.011897106,0.7364864864864865
+10070,Organic 1% Low Fat Milk,84,16,milk,dairy eggs,milk,Organic,3.46,56,257,0.005164791,0.8365758754863813
+10132,Organic American Cheese Singles,21,16,packaged cheese,dairy eggs,packaged cheese,Organic,7.01,57,252,0.0050643086,0.6785714285714286
+10246,Organic Celery Hearts,83,4,fresh vegetables,produce,fresh vegetables,Organic,2.73,58,415,0.008340032,0.5421686746987951
+10673,Original Nooks & Crannies English Muffins,93,3,breakfast bakery,bakery,breakfast bakery,Original,5.68,59,234,0.0047025722,0.6239316239316239
+10749,Organic Red Bell Pepper,83,4,fresh vegetables,produce,fresh vegetables,Organic,1.97,60,892,0.017926045,0.6457399103139013
+10957,Fridge Pack Cola,77,7,soft drinks,beverages,soft drinks,Fridge,3.37,61,254,0.0051045017,0.7007874015748031
+11182,Baby Spinach,123,4,packaged vegetables fruits,produce,packaged vegetables fruits,Baby,4.12,62,355,0.0071342443,0.6084507042253521
+11408,Crushed Tomatoes,81,15,canned jarred vegetables,canned goods,canned jarred vegetables,Crushed,4.88,63,217,0.0043609324,0.5483870967741935
+11422,Plain Greek Yogurt,120,16,yogurt,dairy eggs,yogurt,Plain,5.13,64,226,0.004541801,0.7699115044247787
+11520,Large Alfresco Eggs,86,16,eggs,dairy eggs,eggs,Large,5.3,65,495,0.009947749,0.7292929292929293
+11777,Red Raspberries,123,4,packaged vegetables fruits,produce,packaged vegetables fruits,Red,3.36,66,366,0.0073553054,0.6693989071038251
+11782,Bing Cherries,24,4,fresh fruits,produce,fresh fruits,Bing,3.21,67,279,0.005606913,0.5663082437275986
+12206,Basil Pesto,9,9,pasta sauce,dry goods pasta,pasta sauce,Basil,5.44,68,241,0.0048432476,0.46887966804979253
+12341,Hass Avocados,32,4,packaged produce,produce,packaged produce,Hass,3.57,69,665,0.013364148,0.7203007518796992
+12614,Yellow Grape Tomatoes,83,4,fresh vegetables,produce,fresh vegetables,Yellow,2.32,70,224,0.0045016077,0.8482142857142857
+13166,"Organic Milk Reduced Fat, 2% Milkfat",84,16,milk,dairy eggs,milk,Organic,2.45,71,236,0.0047427653,0.8432203389830508
+13176,Bag of Organic Bananas,24,4,fresh fruits,produce,fresh fruits,Bag,2.67,72,5656,0.113665596,0.832036775106082
+13198,85% Lean Ground Beef,122,12,meat counter,meat seafood,meat counter,85%,4.71,73,241,0.0048432476,0.6639004149377593
+13249,Skim Milk,84,16,milk,dairy eggs,milk,Skim,4.08,74,217,0.0043609324,0.7557603686635944
+13380,Organic Blue Corn Tortilla Chips,107,19,chips pretzels,snacks,chips pretzels,Organic,5.08,75,271,0.0054461416,0.6014760147601476
+13575,Apples,24,4,fresh fruits,produce,fresh fruits,Apples,3.25,76,256,0.0051446944,0.8125
+13629,Organic Snipped Green Beans,83,4,fresh vegetables,produce,fresh vegetables,Organic,4.11,77,252,0.0050643086,0.7341269841269841
+13646,Lemon Hummus,67,20,fresh dips tapenades,deli,fresh dips tapenades,Lemon,4.95,78,250,0.0050241156,0.732
+13829,Mild Salsa,51,13,preserved dips spreads,pantry,preserved dips spreads,Mild,3.41,79,215,0.00432074,0.6046511627906976
+13870,Lightly Salted Baked Snap Pea Crisps,107,19,chips pretzels,snacks,chips pretzels,Lightly,4.63,80,402,0.008078778,0.6716417910447762
+13984,Organic Mint,16,4,fresh herbs,produce,fresh herbs,Organic,2.96,81,338,0.0067926045,0.6005917159763313
+14678,Organic Frozen Peas,116,1,frozen produce,frozen,frozen produce,Organic,3.34,82,293,0.0058882637,0.5426621160409556
+14947,Pure Sparkling Water,115,7,water seltzer sparkling water,beverages,water seltzer sparkling water,Pure,3.31,83,426,0.008561093,0.8169014084507042
+14992,Green Beans,83,4,fresh vegetables,produce,fresh vegetables,Green,2.39,84,439,0.008822347,0.6059225512528473
+15290,Orange Bell Pepper,83,4,fresh vegetables,produce,fresh vegetables,Orange,4.69,85,590,0.011856914,0.5915254237288136
+15613,Salted Tub of Butter,36,16,butter,dairy eggs,butter,Salted,3.2,86,251,0.005044212,0.6374501992031872
+15649,Baby Seedless Cucumbers,83,4,fresh vegetables,produce,fresh vegetables,Baby,3.88,87,226,0.004541801,0.7787610619469026
+15872,Celery Hearts,83,4,fresh vegetables,produce,fresh vegetables,Celery,4.68,88,250,0.0050241156,0.644
+15937,Shallot,83,4,fresh vegetables,produce,fresh vegetables,Shallot,4.61,89,320,0.006430868,0.55625
+16083,Organic Large Brown Eggs,86,16,eggs,dairy eggs,eggs,Organic,5.03,90,229,0.00460209,0.8646288209606987
+16185,Sharp Cheddar Cheese,21,16,packaged cheese,dairy eggs,packaged cheese,Sharp,3.71,91,459,0.009224277,0.5925925925925926
+16349,Organic Yams,83,4,fresh vegetables,produce,fresh vegetables,Organic,3.26,92,279,0.005606913,0.5412186379928315
+16759,Organic Carrot Bunch,83,4,fresh vegetables,produce,fresh vegetables,Organic,3.74,93,567,0.011394694,0.5908289241622575
+16797,Strawberries,24,4,fresh fruits,produce,fresh fruits,Strawberries,1.96,94,2254,0.04529743,0.7244897959183674
+16953,Creamy Peanut Butter,88,13,spreads,pantry,spreads,Creamy,2.16,95,266,0.0053456593,0.4398496240601504
+17461,Air Chilled Organic Boneless Skinless Chicken Breasts,35,12,poultry counter,meat seafood,poultry counter,Air,2.27,96,298,0.005988746,0.7046979865771812
+17600,"YoKids Squeezers Organic Low-Fat Yogurt, Strawberry",120,16,yogurt,dairy eggs,yogurt,YoKids,2.59,97,309,0.006209807,0.7087378640776699
+17794,Carrots,83,4,fresh vegetables,produce,fresh vegetables,Carrots,4.53,98,1111,0.02232717,0.6336633663366337
+17872,Total 2% Lowfat Plain Greek Yogurt,120,16,yogurt,dairy eggs,yogurt,Total,2.69,99,300,0.006028939,0.68
+17948,Frozen Organic Wild Blueberries,116,1,frozen produce,frozen,frozen produce,Frozen,3.32,100,394,0.007918007,0.6269035532994924
+17949,Mild Cheddar Cheese Sticks,21,16,packaged cheese,dairy eggs,packaged cheese,Mild,6.49,101,216,0.004340836,0.8101851851851852
+18027,Ezekiel 4:9 Bread Organic Sprouted Whole Grain,112,3,bread,bakery,bread,Ezekiel,3.35,102,261,0.005245177,0.6628352490421456
+18234,Organic Spinach Bunch,83,4,fresh vegetables,produce,fresh vegetables,Organic,5.18,103,240,0.004823151,0.6875
+18288,Sea Salt Potato Chips,107,19,chips pretzels,snacks,chips pretzels,Sea,2.66,104,225,0.0045217043,0.6533333333333333
+18362,Organic Bread with 21 Whole Grains,112,3,bread,bakery,bread,Organic,3.55,105,298,0.005988746,0.7013422818791947
+18370,Organic Shredded Mozzarella,21,16,packaged cheese,dairy eggs,packaged cheese,Organic,2.64,106,258,0.0051848874,0.5503875968992248
+18441,Organic Ketchup,72,13,condiments,pantry,condiments,Organic,3.37,107,225,0.0045217043,0.37777777777777777
+18465,Organic Grade A Free Range Large Brown Eggs,86,16,eggs,dairy eggs,eggs,Organic,5.4,108,757,0.015213023,0.7635402906208718
+18523,Total 2% All Natural Greek Strained Yogurt with Honey,120,16,yogurt,dairy eggs,yogurt,Total,1.93,109,408,0.0081993565,0.7352941176470589
+18531,Organic Heavy Whipping Cream,53,16,cream,dairy eggs,cream,Organic,4.59,110,432,0.008681672,0.6319444444444444
+19019,Uncured Slow Cooked Ham,96,20,lunch meat,deli,lunch meat,Uncured,4.24,111,237,0.004762862,0.6160337552742616
+19048,Organic Butternut Squash,83,4,fresh vegetables,produce,fresh vegetables,Organic,3.04,112,297,0.0059686494,0.48148148148148145
+19057,Organic Large Extra Fancy Fuji Apple,24,4,fresh fruits,produce,fresh fruits,Organic,2.16,113,997,0.020036174,0.7372116349047142
+19173,Orange Calcium & Vitamin D Pulp Free,98,7,juice nectars,beverages,juice nectars,Orange,3.97,114,248,0.004983923,0.7379032258064516
+19348,Fat Free Milk,84,16,milk,dairy eggs,milk,Fat,3.12,115,526,0.010570739,0.8060836501901141
+19660,Spring Water,115,7,water seltzer sparkling water,beverages,water seltzer sparkling water,Spring,4.23,116,812,0.016318329,0.8115763546798029
+19677,Original Pure Creamy Almond Milk,91,16,soy lactosefree,dairy eggs,soy lactosefree,Original,3.89,117,235,0.004722669,0.7787234042553192
+19678,Organic Russet Potato,83,4,fresh vegetables,produce,fresh vegetables,Organic,7.32,118,465,0.009344855,0.610752688172043
+19706,Organic Nectarine,24,4,fresh fruits,produce,fresh fruits,Organic,3.51,119,258,0.0051848874,0.6550387596899225
+20114,Jalapeno Peppers,83,4,fresh vegetables,produce,fresh vegetables,Jalapeno,2.56,120,675,0.013565113,0.5807407407407408
+20119,Sparkling Water Berry,115,7,water seltzer sparkling water,beverages,water seltzer sparkling water,Sparkling,4.14,121,313,0.0062901927,0.744408945686901
+20842,Total 0% Greek Yogurt,120,16,yogurt,dairy eggs,yogurt,Total,4.21,122,415,0.008340032,0.6963855421686747
+20995,Organic Broccoli Florets,116,1,frozen produce,frozen,frozen produce,Organic,6.64,123,500,0.010048231,0.646
+21019,Roasted Red Pepper Hummus,67,20,fresh dips tapenades,deli,fresh dips tapenades,Roasted,5.39,124,252,0.0050643086,0.6031746031746031
+21137,Organic Strawberries,24,4,fresh fruits,produce,fresh fruits,Organic,4.45,125,3991,0.080204986,0.7825106489601603
+21288,Blackberries,24,4,fresh fruits,produce,fresh fruits,Blackberries,6.93,126,383,0.007696945,0.6631853785900783
+21295,Organic Spaghetti Squash,83,4,fresh vegetables,produce,fresh vegetables,Organic,2.4,127,213,0.0042805467,0.4131455399061033
+21405,"Organic Red Radish, Bunch",83,4,fresh vegetables,produce,fresh vegetables,Organic,2.99,128,418,0.008400322,0.6411483253588517
+21616,Organic Baby Arugula,123,4,packaged vegetables fruits,produce,packaged vegetables fruits,Organic,2.66,129,1097,0.02204582,0.6900638103919782
+21709,Sparkling Lemon Water,115,7,water seltzer sparkling water,beverages,water seltzer sparkling water,Sparkling,3.3,130,529,0.010631029,0.7863894139886578
+21903,Organic Baby Spinach,123,4,packaged vegetables fruits,produce,packaged vegetables fruits,Organic,2.22,131,3864,0.07765273,0.7903726708074534
+21938,Green Bell Pepper,83,4,fresh vegetables,produce,fresh vegetables,Green,4.97,132,926,0.018609324,0.6317494600431965
+22035,Organic Whole String Cheese,21,16,packaged cheese,dairy eggs,packaged cheese,Organic,3.53,133,956,0.019212218,0.7845188284518828
+22825,Organic D'Anjou Pears,24,4,fresh fruits,produce,fresh fruits,Organic,2.14,134,719,0.014449357,0.6648122392211405
+22935,Organic Yellow Onion,83,4,fresh vegetables,produce,fresh vegetables,Organic,2.57,135,1728,0.034726687,0.7037037037037037
+22963,Organic Roasted Turkey Breast,96,20,lunch meat,deli,lunch meat,Organic,4.37,136,472,0.009485531,0.6652542372881356
+23165,Organic Leek,83,4,fresh vegetables,produce,fresh vegetables,Organic,5.39,137,304,0.0061093247,0.5460526315789473
+23375,Marinara Sauce,9,9,pasta sauce,dry goods pasta,pasta sauce,Marinara,8.57,138,364,0.0073151127,0.6978021978021978
+23734,Sour Cream,108,16,other creams cheeses,dairy eggs,other creams cheeses,Sour,12.37,139,332,0.0066720257,0.5542168674698795
+23909,2% Reduced Fat Milk,84,16,milk,dairy eggs,milk,2%,4.55,140,628,0.0126205785,0.7898089171974523
+24184,Red Peppers,83,4,fresh vegetables,produce,fresh vegetables,Red,2.6,141,886,0.017805466,0.6580135440180587
+24489,Organic Whole Strawberries,116,1,frozen produce,frozen,frozen produce,Organic,1.64,142,446,0.008963022,0.600896860986547
+24561,Organic Cheese Frozen Pizza,79,1,frozen pizza,frozen,frozen pizza,Organic,4.29,143,251,0.005044212,0.7370517928286853
+24799,Vanilla Skyr Nonfat Yogurt,120,16,yogurt,dairy eggs,yogurt,Vanilla,2.79,144,261,0.005245177,0.6475095785440613
+24830,Organic Romaine,123,4,packaged vegetables fruits,produce,packaged vegetables fruits,Organic,3.27,145,357,0.0071744374,0.6274509803921569
+24838,Unsweetened Almondmilk,91,16,soy lactosefree,dairy eggs,soy lactosefree,Unsweetened,3.02,146,786,0.01579582,0.7506361323155216
+24852,Banana,24,4,fresh fruits,produce,fresh fruits,Banana,3.65,147,7167,0.14403135,0.8523789591181805
+24954,Total 0% with Honey Nonfat Greek Strained Yogurt,120,16,yogurt,dairy eggs,yogurt,Total,5.91,148,275,0.0055265273,0.8327272727272728
+24964,Organic Garlic,83,4,fresh vegetables,produce,fresh vegetables,Organic,4.11,149,1472,0.029581994,0.6603260869565217
+25146,Original Orange Juice,31,7,refrigerated,beverages,refrigerated,Original,3.62,150,443,0.008902733,0.6591422121896162
+25588,Seedless Small Watermelon,24,4,fresh fruits,produce,fresh fruits,Seedless,2.55,151,218,0.004381029,0.5596330275229358
+25659,Organic Coconut Milk,91,16,soy lactosefree,dairy eggs,soy lactosefree,Organic,1.97,152,425,0.008540996,0.5858823529411765
+25890,Boneless Skinless Chicken Breasts,49,12,packaged poultry,meat seafood,packaged poultry,Boneless,3.18,153,751,0.015092444,0.6897470039946738
+25931,Organic Baby Spinach Salad,123,4,packaged vegetables fruits,produce,packaged vegetables fruits,Organic,3.78,154,237,0.004762862,0.7215189873417721
+26165,Electrolyte Enhanced Water,115,7,water seltzer sparkling water,beverages,water seltzer sparkling water,Electrolyte,7.82,155,300,0.006028939,0.73
+26209,Limes,24,4,fresh fruits,produce,fresh fruits,Limes,4.06,156,2178,0.043770097,0.6882460973370065
+26283,White Corn,83,4,fresh vegetables,produce,fresh vegetables,White,5.72,157,296,0.005948553,0.5202702702702703
+26369,Organic Roma Tomato,83,4,fresh vegetables,produce,fresh vegetables,Organic,3.16,158,515,0.010349679,0.6932038834951456
+26604,Organic Blackberries,24,4,fresh fruits,produce,fresh fruits,Organic,2.4,159,927,0.01862942,0.656957928802589
+26620,Peach Pear Flavored Sparkling Water,115,7,water seltzer sparkling water,beverages,water seltzer sparkling water,Peach,2.62,160,430,0.00864148,0.7697674418604651
+26940,Organic Large Green Asparagus,83,4,fresh vegetables,produce,fresh vegetables,Organic,2.89,161,272,0.005466238,0.5551470588235294
+27086,Half & Half,53,16,cream,dairy eggs,cream,Half,9.04,162,1317,0.026467042,0.8116932422171602
+27104,Fresh Cauliflower,83,4,fresh vegetables,produce,fresh vegetables,Fresh,2.78,163,1022,0.020538585,0.6487279843444227
+27156,Organic Black Beans,59,15,canned meals beans,canned goods,canned meals beans,Organic,5.39,164,652,0.013102894,0.6395705521472392
+27344,Uncured Genoa Salami,96,20,lunch meat,deli,lunch meat,Uncured,2.69,165,756,0.015192926,0.701058201058201
+27521,Organic Lacinato (Dinosaur) Kale,83,4,fresh vegetables,produce,fresh vegetables,Organic,5.6,166,630,0.012660772,0.6873015873015873
+27695,Natural Chicken & Sage Breakfast Sausage,106,12,hot dogs bacon sausage,meat seafood,hot dogs bacon sausage,Natural,4.5,167,220,0.004421222,0.6727272727272727
+27845,Organic Whole Milk,84,16,milk,dairy eggs,milk,Organic,3.62,168,2048,0.041157555,0.833984375
+27966,Organic Raspberries,123,4,packaged vegetables fruits,produce,packaged vegetables fruits,Organic,3.8,169,2214,0.04449357,0.7827461607949413
+28156,Total 0% Nonfat Plain Greek Yogurt,120,16,yogurt,dairy eggs,yogurt,Total,2.97,170,218,0.004381029,0.5642201834862385
+28199,"Clementines, Bag",123,4,packaged vegetables fruits,produce,packaged vegetables fruits,"Clementines,",4.61,171,676,0.013585209,0.6331360946745562
+28204,Organic Fuji Apple,24,4,fresh fruits,produce,fresh fruits,Organic,3.22,172,1228,0.024678456,0.7003257328990228
+28289,Organic Shredded Carrots,123,4,packaged vegetables fruits,produce,packaged vegetables fruits,Organic,2.36,173,308,0.0061897105,0.6168831168831169
+28465,Icelandic Style Skyr Blueberry Non-fat Yogurt,120,16,yogurt,dairy eggs,yogurt,Icelandic,2.31,174,388,0.0077974275,0.7654639175257731
+28476,Organic Small Curd Cottage Cheese,108,16,other creams cheeses,dairy eggs,other creams cheeses,Organic,4.13,175,242,0.004863344,0.8223140495867769
+28745,Oven Roasted Turkey,96,20,lunch meat,deli,lunch meat,Oven,7.25,176,268,0.005385852,0.8208955223880597
+28842,Bunched Cilantro,16,4,fresh herbs,produce,fresh herbs,Bunched,4.11,177,675,0.013565113,0.597037037037037
+28849,No Salt Added Black Beans,59,15,canned meals beans,canned goods,canned meals beans,No,3.68,178,452,0.009083602,0.6128318584070797
+28934,Frozen Broccoli Florets,116,1,frozen produce,frozen,frozen produce,Frozen,4.32,179,213,0.0042805467,0.596244131455399
+28985,Michigan Organic Kale,83,4,fresh vegetables,produce,fresh vegetables,Michigan,6.5,180,929,0.018669615,0.6942949407965554
+29447,"Milk, Organic, Vitamin D",84,16,milk,dairy eggs,milk,"Milk,",4.21,181,286,0.0057475884,0.8881118881118881
+29487,Roma Tomato,83,4,fresh vegetables,produce,fresh vegetables,Roma,3.27,182,629,0.0126406755,0.6820349761526232
+29987,Shredded Mozzarella,21,16,packaged cheese,dairy eggs,packaged cheese,Shredded,6.0,183,389,0.0078175245,0.5784061696658098
+30169,Total 2% All Natural Plain Greek Yogurt,120,16,yogurt,dairy eggs,yogurt,Total,4.58,184,220,0.004421222,0.7136363636363636
+30233,Organic Large Brown Grade AA Cage Free Eggs,86,16,eggs,dairy eggs,eggs,Organic,7.13,185,519,0.010430064,0.8015414258188824
+30391,Organic Cucumber,83,4,fresh vegetables,produce,fresh vegetables,Organic,4.15,186,1096,0.022025723,0.6788321167883211
+30450,Creamy Almond Butter,88,13,spreads,pantry,spreads,Creamy,2.36,187,279,0.005606913,0.4767025089605735
+30489,Original Hummus,67,20,fresh dips tapenades,deli,fresh dips tapenades,Original,2.23,188,889,0.017865757,0.6962879640044994
+30776,Organic Raw Kombucha Gingerade,31,7,refrigerated,beverages,refrigerated,Organic,7.47,189,257,0.005164791,0.7315175097276264
+30827,Seedless Cucumbers,32,4,packaged produce,produce,packaged produce,Seedless,7.69,190,238,0.0047829584,0.7352941176470589
+31040,Sea Salt Pita Chips,107,19,chips pretzels,snacks,chips pretzels,Sea,3.59,191,304,0.0061093247,0.625
+31343,Shredded Mild Cheddar Cheese,21,16,packaged cheese,dairy eggs,packaged cheese,Shredded,3.31,192,399,0.008018489,0.5989974937343359
+31506,Extra Virgin Olive Oil,19,13,oils vinegars,pantry,oils vinegars,Extra,6.92,193,746,0.014991961,0.47319034852546915
+31553,Fresh Ginger Root,83,4,fresh vegetables,produce,fresh vegetables,Fresh,2.48,194,315,0.006330386,0.47619047619047616
+31683,Original No Pulp 100% Florida Orange Juice,31,7,refrigerated,beverages,refrigerated,Original,2.7,195,292,0.005868167,0.6746575342465754
+31717,Organic Cilantro,16,4,fresh herbs,produce,fresh herbs,Organic,4.99,196,1125,0.02260852,0.6613333333333333
+32478,Reduced Fat 2% Milk,84,16,milk,dairy eggs,milk,Reduced,3.29,197,377,0.0075763664,0.8222811671087533
+32655,Organic Large Grade AA Brown Eggs,86,16,eggs,dairy eggs,eggs,Organic,3.85,198,312,0.0062700966,0.75
+32689,Romaine Hearts,123,4,packaged vegetables fruits,produce,packaged vegetables fruits,Romaine,3.61,199,431,0.008661576,0.6032482598607889
+32734,Spaghetti,131,9,dry pasta,dry goods pasta,dry pasta,Spaghetti,4.42,200,283,0.005687299,0.5759717314487632
+32864,Organic Baby Rainbow Carrots,123,4,packaged vegetables fruits,produce,packaged vegetables fruits,Organic,6.77,201,309,0.006209807,0.5954692556634305
+33000,Pure Irish Butter,36,16,butter,dairy eggs,butter,Pure,4.0,202,478,0.009606109,0.6506276150627615
+33120,Organic Egg Whites,86,16,eggs,dairy eggs,eggs,Organic,4.99,203,275,0.0055265273,0.7236363636363636
+33198,Sparkling Natural Mineral Water,115,7,water seltzer sparkling water,beverages,water seltzer sparkling water,Sparkling,1.7,204,654,0.013143087,0.7308868501529052
+33401,Goat Cheese Crumbles,21,16,packaged cheese,dairy eggs,packaged cheese,Goat,3.78,205,213,0.0042805467,0.568075117370892
+33731,Grated Parmesan,21,16,packaged cheese,dairy eggs,packaged cheese,Grated,2.75,206,807,0.016217846,0.644361833952912
+33754,Total 2% with Strawberry Lowfat Greek Strained Yogurt,120,16,yogurt,dairy eggs,yogurt,Total,2.37,207,525,0.010550643,0.7523809523809524
+33768,Sinfully Sweet Campari Tomatoes,83,4,fresh vegetables,produce,fresh vegetables,Sinfully,2.71,208,245,0.0049236333,0.7020408163265306
+33787,Total 2% Lowfat Greek Strained Yogurt with Peach,120,16,yogurt,dairy eggs,yogurt,Total,3.37,209,369,0.007415595,0.7208672086720868
+34126,Organic Italian Parsley Bunch,16,4,fresh herbs,produce,fresh herbs,Organic,5.56,210,889,0.017865757,0.6321709786276716
+34243,Organic Baby Broccoli,83,4,fresh vegetables,produce,fresh vegetables,Organic,2.27,211,428,0.008601286,0.633177570093458
+34358,Garlic,83,4,fresh vegetables,produce,fresh vegetables,Garlic,3.9,212,533,0.010711415,0.6097560975609756
+34448,Original Veggie Straws,50,19,fruit vegetable snacks,snacks,fruit vegetable snacks,Original,3.18,213,274,0.0055064308,0.6897810218978102
+34969,Red Vine Tomato,83,4,fresh vegetables,produce,fresh vegetables,Red,3.38,214,770,0.015474277,0.6337662337662338
+35042,Black Beans,59,15,canned meals beans,canned goods,canned meals beans,Black,5.76,215,218,0.004381029,0.5137614678899083
+35108,Salted Butter,36,16,butter,dairy eggs,butter,Salted,4.78,216,341,0.006852894,0.6656891495601173
+35221,Lime Sparkling Water,115,7,water seltzer sparkling water,beverages,water seltzer sparkling water,Lime,6.59,217,776,0.015594855,0.7860824742268041
+35547,Organic Baby Kale,83,4,fresh vegetables,produce,fresh vegetables,Organic,3.63,218,247,0.0049638264,0.631578947368421
+35561,Organic Tortilla Chips,107,19,chips pretzels,snacks,chips pretzels,Organic,2.92,219,225,0.0045217043,0.6977777777777778
+35628,Organic Strawberry Smoothie,120,16,yogurt,dairy eggs,yogurt,Organic,3.53,220,275,0.0055265273,0.8472727272727273
+35939,Organic Jalapeno Pepper,83,4,fresh vegetables,produce,fresh vegetables,Organic,4.25,221,243,0.0048834407,0.48559670781893005
+35951,Organic Unsweetened Almond Milk,91,16,soy lactosefree,dairy eggs,soy lactosefree,Organic,4.14,222,993,0.019955788,0.7673716012084593
+36011,Organic Fat Free Milk,84,16,milk,dairy eggs,milk,Organic,2.5,223,494,0.009927653,0.8259109311740891
+36070,"Super Spinach! Baby Spinach, Baby Bok Choy, Sweet Baby Kale",123,4,packaged vegetables fruits,produce,packaged vegetables fruits,Super,4.0,224,236,0.0047427653,0.576271186440678
+36695,Organic Hothouse Cucumbers,83,4,fresh vegetables,produce,fresh vegetables,Organic,4.23,225,296,0.005948553,0.5777027027027027
+37067,Organic Banana,24,4,fresh fruits,produce,fresh fruits,Organic,10.56,226,282,0.0056672026,0.6099290780141844
+37158,Chicken & Maple Breakfast Sausage,52,1,frozen breakfast,frozen,frozen breakfast,Chicken,8.17,227,282,0.0056672026,0.6985815602836879
+37646,Organic Gala Apples,24,4,fresh fruits,produce,fresh fruits,Organic,2.74,228,1160,0.023311896,0.7560344827586207
+37687,Organic Spring Mix,123,4,packaged vegetables fruits,produce,packaged vegetables fruits,Organic,3.44,229,502,0.010088424,0.7250996015936255
+37710,Trail Mix,125,19,trail mix snack mix,snacks,trail mix snack mix,Trail,2.15,230,259,0.005204984,0.803088803088803
+37766,XL Emerald White Seedless Grapes,123,4,packaged vegetables fruits,produce,packaged vegetables fruits,XL,3.05,231,240,0.004823151,0.6416666666666667
+38159,Organic Yellow Peaches,24,4,fresh fruits,produce,fresh fruits,Organic,4.38,232,348,0.006993569,0.5632183908045977
+38164,Almonds & Sea Salt in Dark Chocolate,45,19,candy chocolate,snacks,candy chocolate,Almonds,6.25,233,230,0.0046221865,0.717391304347826
+38293,Ground Turkey Breast,35,12,poultry counter,meat seafood,poultry counter,Ground,2.88,234,433,0.008701769,0.6535796766743649
+38383,Organic White Onions,83,4,fresh vegetables,produce,fresh vegetables,Organic,2.97,235,325,0.0065313503,0.5938461538461538
+38400,Asparation/Broccolini/Baby Broccoli,83,4,fresh vegetables,produce,fresh vegetables,Asparation/Broccolini/Baby,1.63,236,292,0.005868167,0.6335616438356164
+38456,Large Grapefruit,24,4,fresh fruits,produce,fresh fruits,Large,3.61,237,279,0.005606913,0.46236559139784944
+38689,Organic Reduced Fat Milk,84,16,milk,dairy eggs,milk,Organic,2.52,238,556,0.011173634,0.8830935251798561
+38739,Hass Avocado,83,4,fresh vegetables,produce,fresh vegetables,Hass,3.12,239,272,0.005466238,0.5772058823529411
+38777,Organic Green Seedless Grapes,123,4,packaged vegetables fruits,produce,packaged vegetables fruits,Organic,2.72,240,289,0.005807878,0.5778546712802768
+39180,Organic Lowfat 1% Milk,84,16,milk,dairy eggs,milk,Organic,3.71,241,224,0.0045016077,0.8616071428571429
+39275,Organic Blueberries,123,4,packaged vegetables fruits,produce,packaged vegetables fruits,Organic,1.91,242,1470,0.0295418,0.6346938775510204
+39408,Gala Apples,24,4,fresh fruits,produce,fresh fruits,Gala,2.15,243,338,0.0067926045,0.5976331360946746
+39475,Total Greek Strained Yogurt,120,16,yogurt,dairy eggs,yogurt,Total,9.04,244,360,0.0072347266,0.725
+39619,Organic Tomato Basil Pasta Sauce,9,9,pasta sauce,dry goods pasta,pasta sauce,Organic,2.3,245,249,0.0050040195,0.5381526104417671
+39812,Organic Thyme,16,4,fresh herbs,produce,fresh herbs,Organic,2.49,246,295,0.005928457,0.43389830508474575
+39877,Organic Granny Smith Apple,24,4,fresh fruits,produce,fresh fruits,Organic,8.04,247,839,0.016860932,0.6841477949940405
+39928,Organic Kiwi,24,4,fresh fruits,produce,fresh fruits,Organic,12.33,248,714,0.014348875,0.6792717086834734
+39984,Organic Dill,16,4,fresh herbs,produce,fresh herbs,Organic,2.41,249,316,0.0063504823,0.5537974683544303
+39993,Vine Ripe Tomatoes,83,4,fresh vegetables,produce,fresh vegetables,Vine,3.33,250,235,0.004722669,0.5702127659574469
+40063,Gluten Free Chocolate Chip Cookies,61,19,cookies cakes,snacks,cookies cakes,Gluten,4.42,251,229,0.00460209,0.6768558951965066
+40174,2% Reduced Fat Organic Milk,84,16,milk,dairy eggs,milk,2%,7.7,252,327,0.0065715434,0.8409785932721713
+40310,Oven Roasted Turkey Breast,96,20,lunch meat,deli,lunch meat,Oven,2.6,253,284,0.0057073957,0.6725352112676056
+40571,Total 2% Greek Strained Yogurt with Cherry 5.3 oz,120,16,yogurt,dairy eggs,yogurt,Total,3.5,254,458,0.00920418,0.7991266375545851
+40604,Feta Cheese Crumbles,21,16,packaged cheese,dairy eggs,packaged cheese,Feta,5.26,255,527,0.010590836,0.5749525616698292
+40706,Organic Grape Tomatoes,123,4,packaged vegetables fruits,produce,packaged vegetables fruits,Organic,4.59,256,1274,0.025602894,0.673469387755102
+40709,Sea Salt & Vinegar Potato Chips,107,19,chips pretzels,snacks,chips pretzels,Sea,3.32,257,250,0.0050241156,0.64
+41220,Organic Romaine Lettuce,83,4,fresh vegetables,produce,fresh vegetables,Organic,3.66,258,433,0.008701769,0.5935334872979214
+41290,Lemonade,31,7,refrigerated,beverages,refrigerated,Lemonade,2.23,259,321,0.0064509646,0.6822429906542056
+41665,Organic Mexican Blend Finely Shredded Cheese,21,16,packaged cheese,dairy eggs,packaged cheese,Organic,3.51,260,297,0.0059686494,0.6734006734006734
+41787,Bartlett Pears,24,4,fresh fruits,produce,fresh fruits,Bartlett,3.47,261,564,0.011334405,0.6294326241134752
+41844,Honey Nut Cheerios,121,14,cereal,breakfast,cereal,Honey,4.23,262,380,0.007636656,0.618421052631579
+41950,Organic Tomato Cluster,83,4,fresh vegetables,produce,fresh vegetables,Organic,3.09,263,1039,0.020880224,0.6727622714148219
+42265,Organic Baby Carrots,123,4,packaged vegetables fruits,produce,packaged vegetables fruits,Organic,4.66,264,1012,0.02033762,0.6254940711462451
+42356,Strawberry Preserves,88,13,spreads,pantry,spreads,Strawberry,5.78,265,238,0.0047829584,0.5546218487394958
+42445,Organic Plain Whole Milk Yogurt,120,16,yogurt,dairy eggs,yogurt,Organic,4.1,266,222,0.0044614146,0.7252252252252253
+42450,Macaroni & Cheese,38,1,frozen meals,frozen,frozen meals,Macaroni,4.44,267,366,0.0073553054,0.7759562841530054
+42585,Organic Extra Firm Tofu,14,20,tofu meat alternatives,deli,tofu meat alternatives,Organic,3.94,268,301,0.0060490356,0.5083056478405316
+42701,Organic Sour Cream,108,16,other creams cheeses,dairy eggs,other creams cheeses,Organic,3.86,269,474,0.009525724,0.5970464135021097
+42736,Unsalted Butter,36,16,butter,dairy eggs,butter,Unsalted,2.89,270,569,0.011434888,0.562390158172232
+42768,Organic Garbanzo Beans,59,15,canned meals beans,canned goods,canned meals beans,Organic,4.38,271,518,0.010409968,0.5752895752895753
+42828,Whipped Cream Cheese,108,16,other creams cheeses,dairy eggs,other creams cheeses,Whipped,3.71,272,545,0.010952572,0.7321100917431193
+43122,Organic Bartlett Pear,24,4,fresh fruits,produce,fresh fruits,Organic,8.91,273,702,0.014107717,0.7606837606837606
+43154,Sparkling Mineral Water,115,7,water seltzer sparkling water,beverages,water seltzer sparkling water,Sparkling,7.24,274,305,0.0061294213,0.7934426229508197
+43295,Unsweetened Vanilla Almond Milk,91,16,soy lactosefree,dairy eggs,soy lactosefree,Unsweetened,4.5,275,442,0.008882636,0.6877828054298643
+43352,Raspberries,32,4,packaged produce,produce,packaged produce,Raspberries,2.84,276,903,0.018147105,0.7142857142857143
+43662,"Yogurt, Strained Low-Fat, Coconut",120,16,yogurt,dairy eggs,yogurt,"Yogurt,",2.47,277,247,0.0049638264,0.728744939271255
+43713,Organic Creamy Peanut Butter,88,13,spreads,pantry,spreads,Organic,6.21,278,298,0.005988746,0.6174496644295302
+43768,Organic Bell Pepper,83,4,fresh vegetables,produce,fresh vegetables,Organic,4.28,279,410,0.00823955,0.6390243902439025
+43772,Cherubs Heavenly Salad Tomatoes,83,4,fresh vegetables,produce,fresh vegetables,Cherubs,4.67,280,377,0.0075763664,0.7055702917771883
+43789,Organic Basil,16,4,fresh herbs,produce,fresh herbs,Organic,1.92,281,447,0.008983119,0.5637583892617449
+43961,Organic Peeled Whole Baby Carrots,123,4,packaged vegetables fruits,produce,packaged vegetables fruits,Organic,5.59,282,897,0.018026527,0.6521739130434783
+44142,Red Onion,83,4,fresh vegetables,produce,fresh vegetables,Red,4.63,283,643,0.012922025,0.5381026438569206
+44359,Organic Small Bunch Celery,83,4,fresh vegetables,produce,fresh vegetables,Organic,2.47,284,948,0.019051448,0.6497890295358649
+44422,Organic Old Fashioned Rolled Oats,130,14,hot cereal pancake mixes,breakfast,hot cereal pancake mixes,Organic,3.19,285,319,0.0064107715,0.567398119122257
+44560,Kids Organic Chocolate Chip ZBars,3,19,energy granola bars,snacks,energy granola bars,Kids,4.29,286,224,0.0045016077,0.7410714285714286
+44570,Kale Greens,83,4,fresh vegetables,produce,fresh vegetables,Kale,3.94,287,270,0.005426045,0.6555555555555556
+44632,Sparkling Water Grapefruit,115,7,water seltzer sparkling water,beverages,water seltzer sparkling water,Sparkling,3.43,288,1254,0.025200965,0.7878787878787878
+44683,Brussels Sprouts,83,4,fresh vegetables,produce,fresh vegetables,Brussels,3.7,289,299,0.0060088425,0.5852842809364549
+44799,Fresh CA Grown Eggs,86,16,eggs,dairy eggs,eggs,Fresh,3.49,290,252,0.0050643086,0.876984126984127
+44910,Organic Spring Mix Salad,123,4,packaged vegetables fruits,produce,packaged vegetables fruits,Organic,4.1,291,259,0.005204984,0.5444015444015444
+44987,Heavy Whipping Cream,53,16,cream,dairy eggs,cream,Heavy,6.95,292,332,0.0066720257,0.49096385542168675
+45007,Organic Zucchini,83,4,fresh vegetables,produce,fresh vegetables,Organic,1.38,293,1497,0.030084405,0.6653306613226453
+45066,Honeycrisp Apple,24,4,fresh fruits,produce,fresh fruits,Honeycrisp,3.51,294,1086,0.021824758,0.7182320441988951
+45200,Organic Cauliflower,83,4,fresh vegetables,produce,fresh vegetables,Organic,4.14,295,228,0.0045819934,0.5263157894736842
+45504,Whole Organic Omega 3 Milk,84,16,milk,dairy eggs,milk,Whole,4.34,296,224,0.0045016077,0.9107142857142857
+45535,Organic Low Sodium Chicken Broth,69,15,soup broth bouillon,canned goods,soup broth bouillon,Organic,3.32,297,236,0.0047427653,0.423728813559322
+46654,Organic Grade A Large Brown Eggs,86,16,eggs,dairy eggs,eggs,Organic,1.91,298,248,0.004983923,0.6088709677419355
+46667,Organic Ginger Root,83,4,fresh vegetables,produce,fresh vegetables,Organic,4.4,299,745,0.014971865,0.5302013422818792
+46676,Total 0% Nonfat Greek Yogurt,120,16,yogurt,dairy eggs,yogurt,Total,7.7,300,465,0.009344855,0.7354838709677419
+46802,Pineapple Chunks,116,1,frozen produce,frozen,frozen produce,Pineapple,2.09,301,349,0.0070136655,0.5329512893982808
+46906,Grape White/Green Seedless,24,4,fresh fruits,produce,fresh fruits,Grape,5.45,302,610,0.012258843,0.6770491803278689
+46969,Organic Bosc Pear,24,4,fresh fruits,produce,fresh fruits,Organic,3.38,303,374,0.0075160773,0.7406417112299465
+46979,Asparagus,83,4,fresh vegetables,produce,fresh vegetables,Asparagus,3.76,304,1091,0.02192524,0.6544454628780935
+47144,Unsweetened Original Almond Breeze Almond Milk,91,16,soy lactosefree,dairy eggs,soy lactosefree,Unsweetened,2.53,305,426,0.008561093,0.715962441314554
+47209,Organic Hass Avocado,24,4,fresh fruits,produce,fresh fruits,Organic,3.37,306,3024,0.060771704,0.8015873015873016
+47626,Large Lemon,24,4,fresh fruits,produce,fresh fruits,Large,6.49,307,2249,0.045196947,0.7012005335704757
+47672,Uncured Hickory Smoked Sunday Bacon,106,12,hot dogs bacon sausage,meat seafood,hot dogs bacon sausage,Uncured,4.87,308,290,0.005827974,0.6275862068965518
+47734,Organic Green Cabbage,83,4,fresh vegetables,produce,fresh vegetables,Organic,7.71,309,306,0.006149518,0.5196078431372549
+47766,Organic Avocado,24,4,fresh fruits,produce,fresh fruits,Organic,6.18,310,2621,0.05267283,0.7645936665394888
+47977,Grapefruit Sparkling Water,115,7,water seltzer sparkling water,beverages,water seltzer sparkling water,Grapefruit,4.6,311,250,0.0050241156,0.72
+48205,Spinach,123,4,packaged vegetables fruits,produce,packaged vegetables fruits,Spinach,7.75,312,348,0.006993569,0.646551724137931
+48364,Sweet Onion,83,4,fresh vegetables,produce,fresh vegetables,Sweet,4.6,313,277,0.0055667204,0.5342960288808665
+48679,Organic Garnet Sweet Potato (Yam),83,4,fresh vegetables,produce,fresh vegetables,Organic,5.37,314,790,0.015876206,0.6848101265822785
+48745,Globe Eggplant,83,4,fresh vegetables,produce,fresh vegetables,Globe,3.43,315,268,0.005385852,0.5186567164179104
+48775,Organic Red Cabbage,83,4,fresh vegetables,produce,fresh vegetables,Organic,3.96,316,222,0.0044614146,0.4864864864864865
+49075,Organic Brown Rice,38,1,frozen meals,frozen,frozen meals,Organic,2.92,317,216,0.004340836,0.5833333333333334
+49235,Organic Half & Half,53,16,cream,dairy eggs,cream,Organic,5.73,318,1080,0.02170418,0.7777777777777778
+49683,Cucumber Kirby,83,4,fresh vegetables,produce,fresh vegetables,Cucumber,2.41,319,1412,0.028376205,0.6890934844192634

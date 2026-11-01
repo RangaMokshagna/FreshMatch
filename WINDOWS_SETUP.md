@@ -10,6 +10,10 @@ Open that folder and confirm you can see `requirements.txt`, `scripts`, and
 `streamlit_app.py`. If another `FreshMatch-main` folder is inside, open that inner
 folder; the commands below must run beside `requirements.txt`.
 
+GitHub ZIP archives may include small Git LFS pointer files instead of CSV contents.
+If you clone using Git instead, install Git LFS and run `git lfs install` followed
+by `git lfs pull`. Otherwise copy your previously downloaded CSVs as described below.
+
 ## 2. Add the downloaded data
 
 Open `C:\Users\cheth\Downloads\archive`. Copy these extracted files into the
@@ -32,7 +36,7 @@ FreshMatch-main\
 If Windows hides filename extensions, turn on **View → Show → File name
 extensions** in File Explorer. Each required file must be a CSV, not a ZIP.
 Extract nested `*.csv.zip` archives if present. Keep the original download as a
-backup. Do not upload raw data to GitHub.
+backup. Source CSVs already in the repository are stored with Git LFS.
 
 ## 3. Install Python and dependencies
 

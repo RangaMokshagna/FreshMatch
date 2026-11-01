@@ -1,9 +1,89 @@
 {
   "version": "3.0",
   "seed": 42,
-  "source": "Synthetic grocery simulation",
-  "fallback_reason": "No extracted Instacart CSVs or configured Kaggle credentials found.",
-  "model_cache_hit": true,
+  "source": "Instacart",
+  "fallback_reason": "",
+  "split_audit": {
+    "method": "Seeded category-balanced product assignments; label-count support only",
+    "min_examples_per_class": 5,
+    "seed": 42,
+    "outer_assignment_attempt": 15,
+    "fold_assignment_attempt": 56,
+    "train_class_counts": [
+      2003,
+      33
+    ],
+    "test_class_counts": [
+      261,
+      5
+    ],
+    "purged_pairs": 1532,
+    "folds": [
+      {
+        "train_class_counts": [
+          876,
+          12
+        ],
+        "validation_class_counts": [
+          211,
+          6
+        ]
+      },
+      {
+        "train_class_counts": [
+          876,
+          21
+        ],
+        "validation_class_counts": [
+          209,
+          5
+        ]
+      },
+      {
+        "train_class_counts": [
+          878,
+          16
+        ],
+        "validation_class_counts": [
+          207,
+          5
+        ]
+      }
+    ]
+  },
+  "data_provenance": {
+    "source": "Instacart",
+    "ingestion_version": "strict-instacart-v1",
+    "files": {
+      "orders.csv": {
+        "sha256": "92a60ced67ac33bd82271f66ff9675374f69482d17a0e1442ba42caa8b3bff89",
+        "bytes": 108968645
+      },
+      "order_products__prior.csv": {
+        "sha256": "27b59dc9cf0d485f55e64e0bc9c5d6fb077ae167f8dfeab9246a03b5b0186359",
+        "bytes": 577550706
+      },
+      "products.csv": {
+        "sha256": "abc61fdd748003d280ae49cc5d71b65380805ab1ca55dba96fd9a49295ea78b9",
+        "bytes": 2166953
+      },
+      "aisles.csv": {
+        "sha256": "2c5f4677761907d3a3ca01edd2d2abe67c147cc60e4905e68736d5f9f3046067",
+        "bytes": 2603
+      },
+      "departments.csv": {
+        "sha256": "e6829cea3da95ec22eeb4e0294094a68b929f3bcfda48fdd7d1e33403110fc43",
+        "bytes": 270
+      }
+    },
+    "seed": 42,
+    "max_products": 320,
+    "max_households": 3000,
+    "price_origin": "Deterministic estimates; absent from original dataset",
+    "brand_origin": "First-name-token proxy; not verified brand data",
+    "holdout": "Each sampled household's last available prior order; all earlier prior orders are history"
+  },
+  "model_cache_hit": false,
   "software_versions": {
     "numpy": "2.4.6",
     "pandas": "2.3.3",
@@ -11,11 +91,11 @@
     "xgboost": "3.2.0",
     "mlxtend": "0.23.4"
   },
-  "products": 288,
-  "history_baskets": 24000,
+  "products": 320,
+  "history_baskets": 49760,
   "future_baskets": 3000,
-  "events": 3194,
-  "selected_model": "Random Forest",
+  "events": 2540,
+  "selected_model": "XGBoost",
   "proposed_models": [
     "Random Forest",
     "Gradient Boosting"
@@ -29,12 +109,12 @@
   "selection_criterion": "Highest training-CV average precision; held-out metrics are reporting only",
   "training_time_definition": "Grid search + refit + sigmoid calibration, including component fits for the voter; original timings retained on cache hits",
   "importance_method": "Permutation decrease in held-out PR-AUC, 3 repeats; post-selection diagnostic",
-  "price_note": "Synthetic USD prices",
-  "brand_note": "Simulated brands",
+  "price_note": "Estimated USD prices; not supplied by Instacart",
+  "brand_note": "First-name-token proxy, not verified brands",
   "support": 0.0015,
-  "weak_pairs": 7437,
-  "test_pairs": 443,
-  "elapsed_seconds": 7.29,
+  "weak_pairs": 3834,
+  "test_pairs": 266,
+  "elapsed_seconds": 17.08,
   "limitations": [
     "Weak labels are heuristic; test accuracy is not expert validation.",
     "Both product endpoints are disjoint across supervised splits; historical context remains shared (transductive).",
@@ -43,26 +123,26 @@
     "No causal claim of recovered revenue; prices are synthetic or estimated."
   ],
   "sha256": {
-    "products.csv": "e0c9f37edf3dc7f9a79f77a27eaa0f4405950f855af4239821960cbe4eb23058",
-    "mining_compare.csv": "4b386d271a466f5556f5f82de046099b7aad7ce686510eade06d8f432c97ef9b",
-    "cv_results.json": "81a603d712ff6877d5707efccc6e782278fdb504a1859d1c5df3f2698fb8dc7f",
-    "comparison_chart.json": "1d2a847c1fe0645b34ec54dcb154aa68936e168d55fa96d1ce6e0c7907ad4191",
-    "matrices.npz": "3a594fe279452ba77544a19e7ae4ed4afde112e9c1894925142f1b3b1cb63eb6",
-    "evaluation_split.npz": "aaa5c59fb797ded8399f37be18a86662aaae9c790d84f829cd848bf4a69b38bf",
-    "advanced_report.json": "b1d6d4cd03b23075392633aaaf7777d5112fd4806d3dc9a7cf80d5d241358bba",
-    "advanced_test_events.csv": "e7cb9bc9df822d615965166d7f3fef2177abb02eec983a8af2e736e8ea7f65a1",
-    "comparison.csv": "19508343a767c2a64fc4809faf91ce7e9d790551cce6b47863044778c382c41c",
-    "model_ranking_metrics.csv": "413b43bfc0e95ffb1f6a9d259f04670eca43befb41d304b73614c9d94ea89f6c",
-    "importance.csv": "1476b54cabf180063f041a068eca648a1e8775a8256bfc636a5fc0594858e897",
-    "models.joblib": "8f7a0aff2f79e845f54d6f769c7fea4e4a64f2b5dd99767ec6bdfe1ff7c471aa",
-    "ranking_metrics.csv": "3e29b923c017bf06673523af2650970bdd7c1e6bd095e880aa73102bc5b0c7d8",
-    "curves.json": "d026a4e024cf8f4a7746fe2aa6d627f8f3a0721a3fa5430a55a01f7733bb8d4b",
-    "labelled_pairs.csv": "66c5431be70a9aa964a02eb76364f823438912e49e7cf3bb4bf54684c718e7ca",
-    "model_metrics.csv": "fcbc1c2029f10c9ebcfd9ddfa31feb426780479d832564a4dc32e1f640589368",
-    "advanced_scores.npz": "09f7ed029f74dce5d0b943c8256b2497d3a773c8f21fd6323a5e2997abddf550",
-    "behavioral_ranker.ubj": "4821913db86b963f465e3bac6b4601dbfd3ac0ee4a69ecf19a714cad2e26ce0c",
-    "rules.csv": "333891d0a5182a8575ff32041f9c1613920230af39cc61977d9e7b3ccd8af4a5",
-    "switch_events.csv": "9fe4b954c521ab0ae4cac2e32030a5cd39e2a569ff6d96e96b0c365da670f269"
+    "products.csv": "65b962fd56b682a2fe6afddc3f9e69c7873c0b35474d43a302236b30b54b939d",
+    "mining_compare.csv": "d22a619e2961fe260e8aa9d8cc732e1ac9b154b795b4a5c3312d5fc4bd02af2a",
+    "cv_results.json": "eb8075ae6853df01512dbcdbe8cfcbae2598142f039f31604a106f4990f73702",
+    "comparison_chart.json": "cc8385ad407da84309c03986e53fca1211462d04305e8cf50ffa48c0afe636a2",
+    "matrices.npz": "cb9078822255f00e526c733b26036b4e470115112cd6a09d49083e4677a18427",
+    "evaluation_split.npz": "c7e6b4b0c31a094f9f531813048f2247c9b228b08f6e7e47df270e921761430c",
+    "advanced_report.json": "0c5e7b81c13b8b16adeb91c26e6694f1dd8cd8d7b09871aa94690e768eedc0fc",
+    "advanced_test_events.csv": "76b0847b40a5a7c2c0113d5c060783eae3affb49f86ed47500197c3bb92bc0ff",
+    "comparison.csv": "d94315dbb4cdeea713ee2e803e0a785630571f139bac677b5f40c27a85aa37d5",
+    "model_ranking_metrics.csv": "a9d9cc77ee0baeaf10a6828685a4f9e41995cc4300ae7e2bc2428ac2b51c016e",
+    "importance.csv": "a569facb15c8312f105aba4cb57b9760211c3bb85ca667f86f76cb56571bc851",
+    "models.joblib": "8bce9d0c626ab6a117b46f39659bd59703f2f31fa1086f1f072b6096f9dac5c0",
+    "ranking_metrics.csv": "2825cfae32b638232334f58dc93efca7fdcd0cd5c0b16b13b868b30546452a95",
+    "curves.json": "0ee4369f8d19082c58471b2d68c660725563ca43ed0867bd989a1d721b7aa48f",
+    "labelled_pairs.csv": "352ae58593e5cb62239a9202b66ee03cc5a87026e4dc529b0f9b8aca43de3149",
+    "model_metrics.csv": "09e82d4c22f09791d78f661f20a67c382446348710c810c08ed4deecda6edb82",
+    "advanced_scores.npz": "498d219436a34ecd4926893d7ce12114524ce48fe42be3d5d5ea65b5114089bc",
+    "behavioral_ranker.ubj": "7fc6e5f51815fce3ce9d1163c21bf7d33221879d29b3175b03a04043a43e8da6",
+    "rules.csv": "7918f4d310715a1f3c71eccc4e0d1fd2e2bc101e60771bcc3f1d69bb9718eb3d",
+    "switch_events.csv": "725e0615e3770d14c84d4e80d4e67225fd7345acff10a55a3b198356db0c8278"
   },
   "advanced_experiment": {
     "report": "advanced_report.json",

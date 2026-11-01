@@ -1,10 +1,10 @@
-# FreshMatch — Advanced ML presentation
+# FreshMatch — Real-data ML presentation
 
-1. **Problem and demo:** find alternatives for unavailable groceries; distinguish suitability, rank preference and acceptance probability.
-2. **Data:** synthetic 288-product catalogue, 24,000 historical and 3,000 final baskets. Prices and brands are simulated; Instacart ingestion remains supported.
-3. **Original ML:** Apriori/FP-Growth complements, context/name/price features, six tuned classifiers, product-disjoint folds and sigmoid calibration. Explain why heuristic labels can produce near-perfect classification.
-4. **Behavioral LambdaMART:** learn observed historical switches with `rank:ndcg`. Show 15,545 query groups and 357,535 candidate rows; need IDs define synthetic relevance but never enter features.
-5. **Experimental design:** 70/15/15 household split; historical transitions train; validation final orders select one of four configurations; test final orders report results. Historical features remain transductive.
-6. **Measured ranking:** on 474 test events, NDCG@5 0.4067 versus weak-label 0.3580; hit rate 64.1% versus 56.5%. Compare content, context and popularity on identical candidate pools. Show paired household-bootstrap interval [+0.0102, +0.0865] for NDCG improvement.
-7. **Diagnostics:** ML Lab category slices, validation-only ablations, gain importance and classifier reliability diagrams with Brier/log loss/ECE. Price/popularity removal slightly improves validation; do not change model selection after inspecting test results.
-8. **Engineering and limitations:** synchronized notebook/Python sources, reproducible runner, 12 passing tests covering all seven pages, and a CI workflow. Synthetic proxy switching is not confirmed stockout acceptance; real data, ingredient/size constraints, fully inductive evaluation and prospective trials remain future work.
+1. **Problem and live demo:** unavailable groceries → filtered alternatives. Distinguish heuristic suitability, relative ranking scores and acceptance probabilities.
+2. **Real dataset:** Git-LFS-backed Instacart CSVs; 49,688 products in source, 320 selected products / 51 aisles, 3,000 sampled households, 49,760 history baskets and 3,000 held-out last prior orders. Prices/brands remain estimated/proxied.
+3. **Method:** complements from Apriori and FP-Growth; pair suitability from names, contexts, lift, category and estimated price/popularity/reorder signals. No stockout or expert substitution labels are claimed.
+4. **Classifier protocol:** six tuned/calibrated models, product-disjoint outer/CV partitions, purged boundary pairs and minimum class support. XGBoost wins training-CV selection. Test has only five positive weak labels; explain the uncertainty.
+5. **Behavioral ranker:** LambdaMART trained on 8,840 historical candidate groups / 147,340 rows from 2,100 households. Four configurations selected on 384 validation events; 365 test events from disjoint households. Historical features remain transductive.
+6. **Real results:** NDCG@5: behavioral 0.1294, weak-label 0.0647, content 0.0883, context 0.1019, popularity 0.1409. Behavioral improvement vs weak labels has paired 95% interval [+0.0437,+0.0859], but popularity is stronger. Only 36.7% target coverage.
+7. **Diagnostics and engineering:** ML Lab, category slices, validation ablations, calibration and explanations. Source-synchronized notebook, provenance hashes, exact CV cache identity and 23 local passing tests covering all seven app pages.
+8. **Limitations and next work:** improve candidate coverage, acquire expert labels/real price and ingredient data, fit fully inductive features and run prospective acceptance evaluation. Do not compare old synthetic scores directly with the real-data experiment or claim causal recovered revenue.

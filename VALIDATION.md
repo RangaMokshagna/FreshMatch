@@ -1,50 +1,23 @@
-# FreshMatch — Validation
+# FreshMatch — Current real-data validation
 
-## Real-data transition · pending official inputs
+## Data and provenance
 
-Real-data training now defaults to Instacart and fails before notebook execution when the five required CSVs are missing. The current local suite passes 20 tests, including eight ingestion/archive/CLI tests and the seven-page app test. Test fixtures are small fabricated CSVs, not real-data performance evidence. Input/schema checks, streaming ingestion, history-only catalogue selection, all-file content fingerprints and nested ZIP extraction are covered by fabricated **test fixtures**, not presented as real training records. No official Instacart files have been supplied here, so end-to-end real-data training and real model performance remain unverified. Previous results below are synthetic and have not been relabelled as real.
+Fetched Git LFS commit `2fed8b5` from the user's repository. Downloaded and checked out the five required CSV objects; their SHA-256 hashes match the Git LFS pointer OIDs. The prior-purchases file is 577,550,706 bytes and orders.csv is 108,968,645 bytes. The ingestion manifest records all required file hashes, byte sizes and sampling settings. The optional order_products__train.csv is not consumed.
 
-## Advanced extension · previous synthetic validation
+Real CSV schema/sample checks passed. Full ingestion verified catalogue references, unique product/order IDs, sampled purchase references, reorder flags, completeness of sampled orders and absence of duplicate sampled order/product pairs. Each household's final available prior order is separated from history; catalogue frequency selection uses history only.
 
-Validated in an isolated Python 3.12.14 virtual environment with the exact pinned dependencies. `python scripts/train.py` completed all notebook cells, generated behavioral ranking artifacts and passed the original notebook integrity assertions. `python -m pip check` reported no broken requirements.
+The run uses 320 real products, 51 aisles, 3,000 households, 49,760 historical baskets and 3,000 final baskets. Prices are estimates and brands are name-token proxies. No synthetic records were used in this run.
 
-`python -m unittest discover -s tests -v`: **12 tests passed**. These cover deterministic disjoint household assignment, adjacent-order relevance, ranker candidate/label grouping, ineligible-target metric denominators, stable ranking ties and empty pools, clustered bootstrapping, calibration boundary bins, embedded-source synchronization, artifact checksums, independently recomputed test metrics and paired confidence intervals. The app test renders all **seven pages**, changes the ranker query and calibration model, excludes every same-category alternative through availability controls, and checks the original recommendation CSV control.
+## Training and regression checks
 
-The behavioral experiment trains on 15,545 groups / 357,535 candidate rows from 2,100 households. Validation uses 477 events; reporting uses 474 events from 278 of the 450 reserved test households. Four configurations are selected using validation NDCG@5 only; three feature-removal models are evaluated on validation only. Test targets never train the ranker. Historical feature construction remains shared across households, so this is transductive.
+`python scripts/train.py --data-source instacart --data-dir ./instacart` completed all notebook cells and integrity assertions. Valid ingestion and mining outputs were reused after diagnosing the initial split failure. The initial category-local folds had a validation partition with no positive weak labels; this failed assertion was not disabled. A tested deterministic label-support split now requires five examples of each class in each retained partition, preserves endpoint separation, and is selected without model performance scores. Exact CV indices enter fitted-model caching.
 
-NDCG@5 is 0.4067 versus 0.3580 for the weak-label baseline on identical test events; the paired 95% household-bootstrap difference interval is [+0.0102, +0.0865]. Results are synthetic and conditional on observed switches. The new ML Lab was checked through Streamlit AppTest; new desktop/mobile browser inspection and a remote GitHub Actions run were **not** performed. Earlier browser screenshots below describe the original six pages, not the added page.
+`python -m unittest discover -s tests -v`: **23 tests passed**. Coverage includes product-disjoint class support and repeatability, infeasible split rejection, deterministic household partitions, real CSV/reference/holdout checks using fabricated fixtures, LFS pointer rejection, archive extraction, no silent synthetic fallback, ranking denominators, bootstrap calculations, probability calibration, source synchronization, inference checksums, and independently recomputed event metrics/paired intervals. The AppTest renders all seven pages, exercises query/calibration choices and complete category outages, and checks the main recommendation CSV control.
 
-Reproduce the historical synthetic workflow explicitly:
+The classifier test contains 266 pairs, only five of them positive. This is a material statistical limitation. The behavioral test contains 365 events from 163 households; target coverage is 36.7%. Popularity's NDCG@5 is 0.1409 versus behavioral 0.1294 and weak-label 0.0647. The paired behavioral-minus-weak-label interval is [+0.0437, +0.0859]. No model was selected using these reporting outcomes.
 
-```bash
-python scripts/train.py --data-source synthetic
-python -m unittest discover -s tests -v
-```
+## Scope limits
 
-The lightweight advanced report, numeric score matrix and per-event audit table are included with the project. Fitted models and the fully executed notebook remain ignored local outputs. The source notebook has cleared outputs to avoid shipping stale results; tests ensure its embedded Python matches the editable files.
+Historical features remain transductive; labels are weak or observational purchase proxies. This is not confirmed stockout substitution, nutritional equivalence, real-price forecasting or causal sales recovery. The seven-page check uses Streamlit AppTest; new real-data browser/viewport checks were not performed. Existing screenshots and earlier JSON evidence describe the previous synthetic version. The explicit synthetic training path also completed in an isolated temporary copy after the split fix, while the project retained its real artifacts. The GitHub Actions workflow checks explicit synthetic mode; this local real-data execution does not establish a remote real-data CI result.
 
-## Original submission evidence
-
-The following records describe the earlier project version and are retained as historical evidence.
-
-The original notebook executed end to end locally in Python 3.11 with requirements pinned to the installed tested versions. The launch cell was intentionally skipped via `FRESHMATCH_SKIP_LAUNCH=1` for automated execution; the generated app was inspected on the already running localhost Streamlit server. A Google Colab live session and public tunnel were not independently tested in this pass.
-
-## Automated checks
-
-26 assertions passed: outer product endpoint separation; all three purged CV endpoint separations; full six-model metric columns; same-category eligibility; complement exclusion; finite local explanation tensors; bounded probabilities; six independently recomputed ROC-AUC/PR-AUC/F1 results; final matrix equality to the selected calibrated model; deployment flag consistency; six AppTest pages; example-product selection and score explanation; self-exclusion; app comparison-table equality.
-
-The artifact files preserve labelled pairs and exact outer/CV indices for audit. Pair classification labels remain heuristic, historical features are transductive, and tuning is not nested. Final-order ranking does not select the deployment winner.
-
-## Browser checks
-
-All six pages inspected at desktop 1280px and mobile 375px: no app exceptions, document overflow or main-container overflow. No captured browser console errors. Wide tables retain internal scrolling. Product selection, local explanation expansion, custom navigation, score rings, stock badge, filters and CSV controls render. Screenshots in assets are captured from the actual app, not mockups. Mobile and desktop viewport overrides were reset after inspection. Reduced-motion rules disable ring and skeleton animation.
-
-See `assets/validation-checks.json` and `assets/responsive-checks.json` for measured evidence. CSS uses explicit dark secondary text, white controls, focus rings and contrast-aware tokens; this is not a comprehensive screen-reader or third-party accessibility certification.
-
-## Environment note
-
-The pre-existing local environment also contains unrelated `dowhy`, whose SciPy upper bound conflicts with the installed SciPy. FreshMatch does not import or require dowhy; its own notebook and app ran successfully. Use a fresh virtual environment for the pinned project requirements.
-
-## Remaining empirical work
-
-Synthetic data and simulated prices do not demonstrate real shopper acceptance, nutritional equivalence or causal recovery. Future ranking is conditional on observed switches; real stockouts may differ. Simulator assumptions are visible and editable. Real deployment needs expert labels, ingredient/pack-size checks, stock constraints and a prospective evaluation.
+The source notebook has cleared outputs. The executed notebook is retained locally in .cache_freshmatch/executed.ipynb; portable real inference/audit outputs are tracked in artifacts. Large source CSVs remain in Git LFS; fitted model binaries remain local. Reproduce with the commands in README.md or WINDOWS_SETUP.md.

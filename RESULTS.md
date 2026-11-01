@@ -1,18 +1,18 @@
 # FreshMatch · Measured results
-Data: **Synthetic grocery simulation**. 288 products; 24,000 history baskets; 3,000 future baskets.
-Selected model: **Random Forest**, chosen by training cross-validation.
+Data: **Instacart**. 320 products; 49,760 history baskets; 3,000 future baskets.
+Selected model: **XGBoost**, chosen by training cross-validation.
 
 ## Six-model comparison · identical pair split, CV folds and next-order events
 Proposed methods: **Random Forest and Gradient Boosting**. Comparison methods: Logistic Regression, XGBoost, MLPClassifier and soft voting (RF + GB + XGBoost).
 
 | Model | Role | Deployed | ROC-AUC | PR-AUC | F1 | Precision@5 | Recall@5 | NDCG@5 | MAP@5 | Training time (s) | CV PR-AUC |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Random Forest | Proposed | True | 1.0 | 1.0 | 0.9928 | 0.1054 | 0.5269 | 0.3238 | 0.2577 | 3.4402 | 1.0 |
-| Gradient Boosting | Proposed | False | 0.9985 | 0.9949 | 0.9855 | 0.0989 | 0.4944 | 0.292 | 0.2267 | 2.9571 | 0.9998 |
-| Logistic Regression | Comparison | False | 1.0 | 1.0 | 1.0 | 0.1212 | 0.6058 | 0.3778 | 0.3034 | 0.0981 | 1.0 |
-| XGBoost | Comparison | False | 0.9978 | 0.9935 | 0.9855 | 0.1093 | 0.5466 | 0.328 | 0.2572 | 0.2734 | 1.0 |
-| MLPClassifier | Comparison | False | 1.0 | 1.0 | 1.0 | 0.109 | 0.5451 | 0.3436 | 0.2776 | 1.346 | 0.9997 |
-| Soft Voting (RF + GB + XGB) | Comparison | False | 1.0 | 1.0 | 0.9855 | 0.1066 | 0.5332 | 0.326 | 0.2586 | 3.7266 | 1.0 |
+| Random Forest | Proposed | False | 0.9762 | 0.6736 | 0.8 | 0.0301 | 0.088 | 0.0658 | 0.0476 | 2.8973 | 0.8457 |
+| Gradient Boosting | Proposed | False | 0.99 | 0.8188 | 0.6667 | 0.03 | 0.0856 | 0.0657 | 0.0481 | 2.2424 | 0.7991 |
+| Logistic Regression | Comparison | False | 0.9854 | 0.6514 | 0.5455 | 0.0343 | 0.0987 | 0.0756 | 0.0561 | 0.0941 | 0.7443 |
+| XGBoost | Comparison | True | 0.9908 | 0.8225 | 0.6667 | 0.0299 | 0.0865 | 0.0668 | 0.0493 | 0.2274 | 0.9083 |
+| MLPClassifier | Comparison | False | 0.4912 | 0.0307 | 0.0 | 0.0351 | 0.0983 | 0.0721 | 0.052 | 0.7169 | 0.3214 |
+| Soft Voting (RF + GB + XGB) | Comparison | False | 0.9801 | 0.7933 | 0.6667 | 0.0299 | 0.0876 | 0.0658 | 0.0478 | 3.7317 | 0.9054 |
 
 The deployed row is selected by **training CV PR-AUC**, not by these held-out outcomes. The notebook and Model Performance page share this exact table and a single bar chart with a metric dropdown (including training seconds on their own scale).
 Training time includes grid search, refit and calibration; voting time includes component fits. LR/MLP scaling is fitted within each training fold. Exact CV ties retain the declared model order.
@@ -21,13 +21,13 @@ Training time includes grid search, refit and calibration; voting time includes 
 ## Held-out next-order ranking (K=5)
 | model | precision_at_k | recall_at_k | ndcg_at_k | map_at_k | hit_rate | hit_ci_low | hit_ci_high | target_coverage | events | revenue_saved |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| FreshMatch | 0.1054 | 0.5269 | 0.3238 | 0.2577 | 0.5269 | 0.5102 | 0.5442 | 1.0 | 3194 | 6859.76 |
-| Popular in category | 0.0643 | 0.3215 | 0.1957 | 0.1547 | 0.3215 | 0.3055 | 0.3356 | 1.0 | 3194 | 3522.38 |
-| Content similarity | 0.1035 | 0.5175 | 0.3418 | 0.2841 | 0.5175 | 0.5012 | 0.5358 | 1.0 | 3194 | 6825.53 |
+| FreshMatch | 0.0299 | 0.0865 | 0.0668 | 0.0493 | 0.1441 | 0.1299 | 0.1583 | 0.3559 | 2540 | 1474.03 |
+| Popular in category | 0.0584 | 0.1566 | 0.1316 | 0.1023 | 0.2508 | 0.2334 | 0.268 | 0.3559 | 2540 | 2323.8 |
+| Content similarity | 0.0379 | 0.106 | 0.0796 | 0.0581 | 0.1732 | 0.1587 | 0.1864 | 0.3559 | 2540 | 1786.65 |
 
 Classification PR-AUC is average precision. MAP is truncated at 5 and divided by all relevant targets.
-Top-5 hit rate has a household-bootstrap 95% interval of 51.0%–54.4%.
-Runtime before app launch: 7.3 seconds (excludes package installation; fitted-model cache hit: True). The training-time column retains original search/refit/calibration measurements when models are cached.
+Top-5 hit rate has a household-bootstrap 95% interval of 13.0%–15.8%.
+Runtime before app launch: 17.1 seconds (excludes package installation; fitted-model cache hit: False). The training-time column retains original search/refit/calibration measurements when models are cached.
 
 Novelty: complementary-item rules are separated from substitution signals; context similarity measures shared shopping roles;
 low direct lift suppresses co-purchased products; six calibrated model families share one split/CV protocol and are compared with content and popularity;
@@ -41,11 +41,11 @@ the tables report measured outcomes without hiding that possibility.
 ## Behavioral LambdaMART · held-out households
 | model | precision_at_k | recall_at_k | ndcg_at_k | map_at_k | hit_rate | target_coverage | ndcg_ci_low | ndcg_ci_high | events | households |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Behavioral LambdaMART | 0.1283 | 0.6414 | 0.4067 | 0.3297 | 0.6414 | 1.0 | 0.3749 | 0.4394 | 474 | 278 |
-| Weak-label classifier | 0.1131 | 0.5654 | 0.358 | 0.2908 | 0.5654 | 1.0 | 0.3282 | 0.3893 | 474 | 278 |
-| Content similarity | 0.108 | 0.5401 | 0.3604 | 0.3015 | 0.5401 | 1.0 | 0.3288 | 0.3947 | 474 | 278 |
-| Shopping context | 0.1207 | 0.6034 | 0.3596 | 0.2802 | 0.6034 | 1.0 | 0.3293 | 0.392 | 474 | 278 |
-| Popularity | 0.0608 | 0.3038 | 0.1819 | 0.1421 | 0.3038 | 1.0 | 0.1561 | 0.2085 | 474 | 278 |
+| Behavioral LambdaMART | 0.0564 | 0.158 | 0.1294 | 0.1008 | 0.2438 | 0.3671 | 0.103 | 0.1547 | 365 | 163 |
+| Weak-label classifier | 0.029 | 0.0867 | 0.0647 | 0.0482 | 0.1397 | 0.3671 | 0.0463 | 0.0854 | 365 | 163 |
+| Content similarity | 0.0416 | 0.1118 | 0.0883 | 0.0651 | 0.1918 | 0.3671 | 0.0677 | 0.1104 | 365 | 163 |
+| Shopping context | 0.0482 | 0.1351 | 0.1019 | 0.0748 | 0.2219 | 0.3671 | 0.0808 | 0.1255 | 365 | 163 |
+| Popularity | 0.063 | 0.1636 | 0.1409 | 0.1103 | 0.274 | 0.3671 | 0.1135 | 0.1682 | 365 | 163 |
 
 Selection: validation-household final-order NDCG@5. Historical features remain transductive.
-Paired NDCG@5 difference vs weak-label classifier: +0.0488; 95% household-bootstrap interval [+0.0102, +0.0865].
+Paired NDCG@5 difference vs weak-label classifier: +0.0647; 95% household-bootstrap interval [+0.0437, +0.0859].

@@ -1,6 +1,6 @@
 """Validated, local-only ingestion of the official Instacart CSV dataset.
 
-Raw data stays outside Git. Real purchase records do not contain prices or
+Resolve repository CSVs with Git LFS before ingestion; never treat LFS pointers as data. Real purchase records do not contain prices or
 verified brands; those fields remain explicitly estimated/proxied in FreshMatch.
 """
 from __future__ import annotations
@@ -47,7 +47,13 @@ def validate_instacart(directory):
             'Synthetic demo data must be selected explicitly with --data-source synthetic.')
     for name, columns in SCHEMAS.items():
         try:
+            with (root / name).open('rb') as handle:
+                is_pointer = handle.read(128).startswith(b'version https://git-lfs.github.com/spec/v1')
+            if is_pointer:
+                raise DatasetError(f'{name} is a Git LFS pointer. Run git lfs install and git lfs pull before training.')
             sample = pd.read_csv(root / name, nrows=1000)
+        except DatasetError:
+            raise
         except (OSError, ValueError, pd.errors.ParserError) as exc:
             raise DatasetError(f'Cannot read {name}: {type(exc).__name__}.') from exc
         missing = set(columns) - set(sample)

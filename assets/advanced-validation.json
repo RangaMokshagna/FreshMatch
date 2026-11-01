@@ -1,7 +1,11 @@
 {
+  "source": "Instacart",
   "python": "3.12.14",
-  "tests_passed": 12,
-  "training": "scripts/train.py completed; notebook integrity assertions passed",
+  "tests_passed": 23,
+  "training": "Full real-data notebook and integrity assertions passed; valid ingestion/mining caches reused",
+  "products": 320,
+  "history_baskets": 49760,
+  "future_baskets": 3000,
   "pages_checked": [
     "Find Substitutes",
     "Out-of-Stock Simulator",
@@ -11,15 +15,16 @@
     "ML Lab",
     "About"
   ],
-  "test_events": 474,
-  "test_households": 278,
-  "ndcg_at_5": 0.4067344020871279,
+  "test_events": 365,
+  "test_households": 163,
+  "ndcg_at_5": 0.12936472006035352,
+  "popularity_ndcg_at_5": 0.14089050119273144,
   "paired_ndcg_comparison": {
     "baseline": "Weak-label classifier",
     "metric": "NDCG@5",
-    "mean_delta": 0.048767037746642254,
-    "ci_low": 0.010231689425298179,
-    "ci_high": 0.08652332962538224
+    "mean_delta": 0.06468557313928656,
+    "ci_low": 0.0437040645559184,
+    "ci_high": 0.08590715903454185
   },
-  "validation_scope": "Local unittest and Streamlit AppTest; new browser viewport checks and remote CI not run"
+  "validation_scope": "Local unittest and Streamlit AppTest; new browser/viewport and remote real-data CI not run"
 }

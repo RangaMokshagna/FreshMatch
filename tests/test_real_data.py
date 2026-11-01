@@ -59,6 +59,11 @@ class RealDataTests(unittest.TestCase):
         with self.assertRaisesRegex(DatasetError,'missing columns'):
             validate_instacart(self.root)
 
+    def test_lfs_pointer_is_not_accepted_as_csv(self):
+        (self.root/'aisles.csv').write_text('version https://git-lfs.github.com/spec/v1\noid sha256:abc\nsize 100\n')
+        with self.assertRaisesRegex(DatasetError,'Git LFS pointer'):
+            validate_instacart(self.root)
+
     def test_invalid_reorder_flag_rejected(self):
         lines = pd.read_csv(self.root/'order_products__prior.csv')
         lines.loc[0,'reordered']=2

@@ -83,7 +83,7 @@ class EvaluationTests(unittest.TestCase):
 class ArtifactTests(unittest.TestCase):
     def test_notebook_and_python_sources_match(self):
         n = json.loads((ROOT/'product_substitution.ipynb').read_text())
-        for name in ['app.py', 'advanced_ml.py', 'real_data.py']:
+        for name in ['app.py', 'advanced_ml.py', 'real_data.py', 'evaluation.py']:
             cells = [''.join(c['source']) for c in n['cells'] if c['cell_type']=='code']
             embedded = next(s.split('\n', 1)[1] for s in cells if s.startswith(f'%%writefile {name}\n'))
             self.assertEqual(embedded, (ROOT/name).read_text())
