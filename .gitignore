@@ -39,3 +39,12 @@ artifacts/*
 instacart/*
 !instacart/README.md
 !instacart/*.csv
+
+# Validation-selected hybrid and frozen household holdout evidence.
+!artifacts/hybrid_selection.json
+!artifacts/hybrid_report.json
+!artifacts/hybrid_scores.npz
+!artifacts/hybrid_test_events.csv
+!artifacts/fresh_holdout_protocol.json
+!artifacts/fresh_holdout_report.json
+!artifacts/fresh_holdout_events.csv

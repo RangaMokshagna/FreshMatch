@@ -2,6 +2,8 @@ from pathlib import Path
 import unittest
 import json
 import pandas as pd
+import numpy as np
+import html
 from streamlit.testing.v1 import AppTest
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -36,6 +38,25 @@ class AppTests(unittest.TestCase):
         at.selectbox(key='chosen_product').select(0).run()
         self.assertFalse(at.exception)
         self.assertTrue(at.get('download_button'))
+
+    def test_main_cards_follow_validated_hybrid_order(self):
+        report_path=ROOT/'artifacts/hybrid_report.json'
+        if not report_path.exists():self.skipTest('Hybrid has not been trained')
+        report=json.loads(report_path.read_text())
+        if not report['selection']['deploy_hybrid']:self.skipTest('Validation did not approve hybrid deployment')
+        products=pd.read_csv(ROOT/'artifacts/products.csv')
+        with np.load(ROOT/'artifacts/hybrid_scores.npz',allow_pickle=False) as data:
+            eligible=data['eligible'];scores=data['scores']
+        query=int(np.flatnonzero(eligible.sum(1)>=5)[0])
+        ids=np.flatnonzero(eligible[query]);expected=ids[np.argsort(-scores[query,ids],kind='stable')][:5]
+        at=AppTest.from_file(str(ROOT/'streamlit_app.py'),default_timeout=60).run()
+        at.selectbox(key='chosen_product').select(query).run()
+        self.assertFalse(at.exception)
+        self.assertTrue(any('Ordered by FreshMatch Hybrid' in caption.value for caption in at.caption))
+        cards=next(item.value for item in at.markdown if '<article class="product-card">' in item.value)
+        positions=[cards.index('<h3>'+html.escape(products.iloc[i]['name'])+'</h3>') for i in expected]
+        self.assertEqual(positions,sorted(positions))
+        self.assertTrue(any(box.disabled for box in at.checkbox if 'Same category' in box.label))
 
 if __name__ == '__main__':
     unittest.main()

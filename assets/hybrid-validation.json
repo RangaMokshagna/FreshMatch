@@ -1,0 +1,117 @@
+{
+  "source": "Instacart",
+  "tests_passed": 29,
+  "browser_pages_checked": 7,
+  "browser_exceptions": 0,
+  "main_ranking_model": "FreshMatch Hybrid",
+  "selected_weights": {
+    "learned_weight": 0.75,
+    "transition_weight": 0.0,
+    "popularity_weight": 0.25,
+    "validation_ndcg_at_5": 0.13565327807619834
+  },
+  "fresh_households_sampled": 5000,
+  "fresh_events": 4594,
+  "fresh_active_households": 1888,
+  "test_metrics": [
+    {
+      "model": "FreshMatch Hybrid",
+      "ndcg_at_k": 0.13439743263544782,
+      "precision_at_k": 0.057683935568132345,
+      "recall_at_k": 0.16272432641609827,
+      "map_at_k": 0.10556901341294027,
+      "hit_rate": 0.2533739660426643,
+      "target_coverage": 0.36199390509360035,
+      "ndcg_ci_low": 0.12617311640327195,
+      "ndcg_ci_high": 0.1432107378368623,
+      "events": 4594,
+      "households": 1888
+    },
+    {
+      "model": "Popularity",
+      "ndcg_at_k": 0.13262730847358437,
+      "precision_at_k": 0.05798868088811493,
+      "recall_at_k": 0.16193559922880776,
+      "map_at_k": 0.1036687000297144,
+      "hit_rate": 0.25293861558554637,
+      "target_coverage": 0.36199390509360035,
+      "ndcg_ci_low": 0.12420509537496568,
+      "ndcg_ci_high": 0.14152412741364045,
+      "events": 4594,
+      "households": 1888
+    },
+    {
+      "model": "Content similarity",
+      "ndcg_at_k": 0.07844103389836402,
+      "precision_at_k": 0.03569873748367436,
+      "recall_at_k": 0.10479956603160781,
+      "map_at_k": 0.05837362484538147,
+      "hit_rate": 0.1671745755333043,
+      "target_coverage": 0.36199390509360035,
+      "ndcg_ci_low": 0.0728653206670838,
+      "ndcg_ci_high": 0.08482289818374164,
+      "events": 4594,
+      "households": 1888
+    },
+    {
+      "model": "Shopping context",
+      "ndcg_at_k": 0.09968318465106656,
+      "precision_at_k": 0.04658249891162386,
+      "recall_at_k": 0.13298738520223063,
+      "map_at_k": 0.07345653578511654,
+      "hit_rate": 0.21571615150195908,
+      "target_coverage": 0.36199390509360035,
+      "ndcg_ci_low": 0.09329178485782931,
+      "ndcg_ci_high": 0.10642959071279857,
+      "events": 4594,
+      "households": 1888
+    },
+    {
+      "model": "Weak-label classifier",
+      "ndcg_at_k": 0.0670698339285603,
+      "precision_at_k": 0.029342620809751852,
+      "recall_at_k": 0.08698224392064183,
+      "map_at_k": 0.0504618385955456,
+      "hit_rate": 0.13974749673487158,
+      "target_coverage": 0.36199390509360035,
+      "ndcg_ci_low": 0.061432573277916964,
+      "ndcg_ci_high": 0.07298963322286783,
+      "events": 4594,
+      "households": 1888
+    },
+    {
+      "model": "Original LambdaMART",
+      "ndcg_at_k": 0.11726592499386888,
+      "precision_at_k": 0.05124074880278624,
+      "recall_at_k": 0.14529847420030267,
+      "map_at_k": 0.09014647297026487,
+      "hit_rate": 0.2305180670439704,
+      "target_coverage": 0.36199390509360035,
+      "ndcg_ci_low": 0.10956751109684165,
+      "ndcg_ci_high": 0.1247661603531292,
+      "events": 4594,
+      "households": 1888
+    },
+    {
+      "model": "Directional LambdaMART",
+      "ndcg_at_k": 0.13432792976487926,
+      "precision_at_k": 0.057683935568132345,
+      "recall_at_k": 0.1633405546226617,
+      "map_at_k": 0.1053331294787542,
+      "hit_rate": 0.25380931649978233,
+      "target_coverage": 0.36199390509360035,
+      "ndcg_ci_low": 0.12610191432393628,
+      "ndcg_ci_high": 0.14311056940722305,
+      "events": 4594,
+      "households": 1888
+    }
+  ],
+  "paired_vs_popularity": {
+    "baseline": "Popularity",
+    "ndcg_difference": 0.0017701241618634216,
+    "ci_low": -0.00042229862357706774,
+    "ci_high": 0.00420827588192844
+  },
+  "interpretation": "Highest observed NDCG among compared methods; the edge over popularity is not statistically conclusive.",
+  "integration_check": "Full explicit-demo notebook succeeded in an isolated copy; 29 demo tests completed with 1 real-only holdout test skipped."
+}

@@ -13,4 +13,4 @@ screenshots remain images. Check fonts and spacing after import.
 
 All numbers come from the project's current Instacart artifacts. Prices are
 estimates, brand labels are proxies, and observed switches are not confirmed
-substitutions. The popularity baseline leads on the reported real-data test.
+substitutions. The hybrid has the highest observed NDCG on the new-household test; the small lead over popularity is not statistically conclusive.

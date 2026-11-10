@@ -10,6 +10,26 @@ The current app artifacts were trained on **real Instacart records**, not the pr
 
 Instacart contains product names, basket contents and reorder flags. **Prices are deterministic estimates; brand strings are unverified name-token proxies.** It does not identify confirmed stockouts, accepted substitutions, ingredients or dietary equivalence. Observed same-aisle switching is a proxy outcome, not substitute ground truth.
 
+## Current ranking: FreshMatch Hybrid
+
+Main recommendations now use a validation-approved **75% directional LambdaMART / 25% popularity rank blend**. XGBoost suitability remains a separate displayed score, not the ordering rule or a purchase probability. Directional features add candidate purchase frequency, repeat-purchase rates and historical switching preferences. The household being fitted is excluded from its own transition-feature encoding.
+
+A protocol and model-file hashes were frozen before reading a new sample of **5,000 households**, disjoint from all 3,000 development households. This produced **4,594 switching examples from 1,888 households**. Every method uses the same fixed candidates.
+
+| Method · new household holdout | NDCG@5 | Hit rate |
+| --- | ---: | ---: |
+| FreshMatch Hybrid | 0.1344 | 25.3% |
+| Popularity | 0.1326 | 25.3% |
+| Content similarity | 0.0784 | 16.7% |
+| Shopping context | 0.0997 | 21.6% |
+| Weak-label classifier | 0.0671 | 14.0% |
+| Original LambdaMART | 0.1173 | 23.1% |
+| Directional LambdaMART | 0.1343 | 25.4% |
+
+FreshMatch Hybrid has the **highest measured NDCG@5 among the compared methods**. It improves NDCG by **14.6% relative to the original ranker** on these same new examples. The edge over popularity is small: +0.00177 NDCG, paired 95% interval **[-0.00042, +0.00421]**. Because that interval includes zero, this is **not statistically conclusive superiority over popularity**, and the hybrid does not win every metric. Target coverage remains 36.2%; observed same-aisle switches are not confirmed substitutions.
+
+The original 365-example test had already been inspected and is retained as a retrospective development benchmark, not described as fresh. No settings were changed after inspecting the new-household results. Full details: [IMPROVEMENT_RESULTS.md](IMPROVEMENT_RESULTS.md).
+
 ## Run locally
 
 Use 64-bit Python 3.12 and Git LFS. On Windows, follow [WINDOWS_SETUP.md](WINDOWS_SETUP.md). On other systems:
@@ -53,9 +73,9 @@ Missing real inputs stop training; there is no automatic synthetic fallback. Exp
 - **ML Lab:** behavioral LambdaMART, household-held-out results, bootstrap intervals, category slices, validation ablations, interactive ranking and classifier calibration.
 - **About:** method, source and limitations.
 
-The main recommendation cards use calibrated weak-label suitability from **XGBoost**, selected by training CV average precision. Behavioral LambdaMART is a separate experimental ranker in ML Lab; its relative rank scores are not acceptance probabilities.
+The card order uses **FreshMatch Hybrid**, approved by original validation results. The cards separately display calibrated XGBoost suitability and its explanation. Neither the rank score nor suitability is a customer acceptance probability. Model Performance and ML Lab show the current holdout first and retain original experiments as labelled references.
 
-## Evaluation and real-data results
+## Original evaluation and real-data results · reference
 
 Apriori and FP-Growth mine the same historical baskets at support 0.0015 and length at most two; their itemsets must agree. Pair features combine category/aisle/department/brand proxies, TF-IDF names, shopping-context cosine, smoothed lift, price/popularity ratios and reorder similarity. Eligible candidates share aisle/category, have lift below 1.5 and exclude the query and declared outages.
 
@@ -77,11 +97,13 @@ These figures differ from the separate 2,540-event full-household weak-classifie
 
 ## Reproducibility
 
-The notebook embeds `app.py`, `advanced_ml.py`, `real_data.py` and `evaluation.py` with writefile cells for self-contained execution. Set `FRESHMATCH_DATA_DIR` before notebook ingestion; real data is the default. Use `FRESHMATCH_SKIP_LAUNCH=1` for automated execution, avoiding a public tunnel. `scripts/train.py` verifies exact pinned package versions, checks source synchronization, executes the notebook, and saves `.cache_freshmatch/executed.ipynb`.
+The notebook embeds `app.py`, `advanced_ml.py`, `real_data.py`, `evaluation.py` and `hybrid_ranker.py` with writefile cells for self-contained execution. Set `FRESHMATCH_DATA_DIR` before notebook ingestion; real data is the default. Use `FRESHMATCH_SKIP_LAUNCH=1` for automated execution, avoiding a public tunnel. `scripts/train.py` verifies exact pinned package versions, checks source synchronization, executes the notebook, and saves `.cache_freshmatch/executed.ipynb`.
+
+To reproduce the improvement from matching real base artifacts, run `python scripts/improve.py`. Full notebook training also builds the hybrid. `python scripts/verify_fresh_holdout.py` evaluates only the published frozen checkpoint; it refuses changed model-file hashes. Do not delete the protocol or reuse these test outcomes for model selection. A changed model needs a genuinely new holdout. See IMPROVEMENT_RESULTS.md for details.
 
 After editing Python sources, run `python scripts/sync_notebook.py` before training. `--check` verifies synchronization without modifying files. Seeds are fixed at 42. Cached ingestion depends on all source hashes; model caching includes exact CV indices. Do not change splits or thresholds after inspecting test performance and then describe the same test as untouched.
 
-The local real-data notebook run and **23 tests** passed, including all seven app pages, ranking filters, split isolation, class support, calibration, source synchronization, checksums and recomputed bootstrap intervals. CI currently exercises explicit synthetic mode to avoid large LFS downloads on every push; a real-data CI run is not claimed. Existing screenshots and earlier validation JSON describe the historical synthetic UI and are not new real-data browser evidence.
+The local real-data workflow and **29 tests** passed, including all seven app pages, ranking filters, split isolation, class support, calibration, source synchronization, checksums and recomputed bootstrap intervals. CI currently exercises explicit synthetic mode to avoid large LFS downloads on every push; a real-data CI run is not claimed. Screenshots in `assets/home-*.png` and `assets/model-performance.png` remain historical synthetic examples. `presentations/screenshots/` now contains browser captures of all seven current real-data hybrid pages.
 
 ## Files and team
 
@@ -90,6 +112,7 @@ The local real-data notebook run and **23 tests** passed, including all seven ap
 | `product_substitution.ipynb` | Executable training, evaluation, embedded app and optional launcher |
 | `real_data.py` | Strict CSV validation, streaming ingestion, provenance and archive extraction |
 | `evaluation.py` | Class-supported product-disjoint outer/CV assignment |
+| `hybrid_ranker.py` | Cross-fitted directional ranking and validation-only blending |
 | `advanced_ml.py` | Behavioral ranking, clustered uncertainty and calibration diagnostics |
 | `app.py` / `streamlit_app.py` | Generated app and deployment entry point |
 | `scripts/` / `tests/` | Reproducible training, synchronization and automated checks |

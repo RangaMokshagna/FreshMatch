@@ -1,10 +1,12 @@
-# FreshMatch — Real-data ML presentation
+# FreshMatch — Improved model presentation
 
-1. **Problem and live demo:** unavailable groceries → filtered alternatives. Distinguish heuristic suitability, relative ranking scores and acceptance probabilities.
-2. **Real dataset:** Git-LFS-backed Instacart CSVs; 49,688 products in source, 320 selected products / 51 aisles, 3,000 sampled households, 49,760 history baskets and 3,000 held-out last prior orders. Prices/brands remain estimated/proxied.
-3. **Method:** complements from Apriori and FP-Growth; pair suitability from names, contexts, lift, category and estimated price/popularity/reorder signals. No stockout or expert substitution labels are claimed.
-4. **Classifier protocol:** six tuned/calibrated models, product-disjoint outer/CV partitions, purged boundary pairs and minimum class support. XGBoost wins training-CV selection. Test has only five positive weak labels; explain the uncertainty.
-5. **Behavioral ranker:** LambdaMART trained on 8,840 historical candidate groups / 147,340 rows from 2,100 households. Four configurations selected on 384 validation events; 365 test events from disjoint households. Historical features remain transductive.
-6. **Real results:** NDCG@5: behavioral 0.1294, weak-label 0.0647, content 0.0883, context 0.1019, popularity 0.1409. Behavioral improvement vs weak labels has paired 95% interval [+0.0437,+0.0859], but popularity is stronger. Only 36.7% target coverage.
-7. **Diagnostics and engineering:** ML Lab, category slices, validation ablations, calibration and explanations. Source-synchronized notebook, provenance hashes, exact CV cache identity and 23 local passing tests covering all seven app pages.
-8. **Limitations and next work:** improve candidate coverage, acquire expert labels/real price and ingredient data, fit fully inductive features and run prospective acceptance evaluation. Do not compare old synthetic scores directly with the real-data experiment or claim causal recovered revenue.
+1. **Problem:** suggest plausible grocery alternatives when a preferred item is unavailable. Explain suitability separately from ranking preference and purchase probability.
+2. **Real data:** 320 selected products / 51 aisles from 3,000 development households; 49,760 historical baskets and 3,000 last-prior baskets. Prices and brand labels remain estimated/proxied.
+3. **Reference models:** six classifiers; XGBoost supplies a separate suitability score. The small classifier test has only five positive labels, so do not overstate it.
+4. **Improved learner:** directional LambdaMART uses candidate popularity, repeat purchases, switching preferences, names/context, relative price and suitability. Training transition encodings exclude the household being fitted.
+5. **Hybrid selection:** four tree configurations and ten predefined blends compete on original validation NDCG only. Selected: depth 4 / 120 trees, 75% learned ranking + 25% popularity. Freeze before new-household evaluation.
+6. **New holdout:** 5,000 previously unused households, disjoint from all development users; 4,594 qualifying examples from 1,888 households. Same fixed candidate pool for every method.
+7. **Results:** hybrid NDCG@5 0.1344; popularity 0.1326; original ranker 0.1173. Hybrid has the highest measured primary score among compared methods and improves 14.6% over the old ranker. The small edge over popularity is not statistically conclusive: paired interval [-0.00042,+0.00421]. It does not win every metric.
+8. **App and limits:** hybrid controls suggestion order; suitability remains separate. All 29 local tests pass and seven pages render. Candidate coverage remains 36.2%; expert substitute labels, actual prices/ingredients and prospective shopper acceptance remain future work.
+
+The old 365-example test is retrospective reference evidence and had popularity ahead. Do not mix that population with the new 4,594-example holdout. Current slides and detailed evidence are in presentations/ and IMPROVEMENT_RESULTS.md.

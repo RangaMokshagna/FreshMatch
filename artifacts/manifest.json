@@ -142,12 +142,24 @@
     "advanced_scores.npz": "498d219436a34ecd4926893d7ce12114524ce48fe42be3d5d5ea65b5114089bc",
     "behavioral_ranker.ubj": "7fc6e5f51815fce3ce9d1163c21bf7d33221879d29b3175b03a04043a43e8da6",
     "rules.csv": "7918f4d310715a1f3c71eccc4e0d1fd2e2bc101e60771bcc3f1d69bb9718eb3d",
-    "switch_events.csv": "725e0615e3770d14c84d4e80d4e67225fd7345acff10a55a3b198356db0c8278"
+    "switch_events.csv": "725e0615e3770d14c84d4e80d4e67225fd7345acff10a55a3b198356db0c8278",
+    "hybrid_selection.json": "b88f95d1872fd9200f58aae787488ebd570d45269db77792ef75077154a41061",
+    "hybrid_report.json": "fccc412e188d888825cd741af063eea89f27da9e9a38b7b99a4105f6d7bdae9f",
+    "hybrid_scores.npz": "edbd5f780c96e8f0e053d877bbdf0db4a0ae9855127a6a5a6f0bbf883c1c8e11",
+    "hybrid_test_events.csv": "be7c07d1c13eec6427683f3f5562820dabcbeb950d2467b0ea4352f4ddbd925b",
+    "fresh_holdout_protocol.json": "967113169fd75416037072a61be0db84d42e940da6d215275e6b6306f9b55019",
+    "fresh_holdout_report.json": "c08ca473a03431483d343d871ca21f02e81092fd53044a6340f4e726ac7587e4",
+    "fresh_holdout_events.csv": "cec7003f94d44f1a40212f67d7453514ab3d216f10bb8256ddde55c60a778c59"
   },
   "advanced_experiment": {
     "report": "advanced_report.json",
     "scores": "advanced_scores.npz",
     "objective": "Behavioral LambdaMART / rank:ndcg",
     "selection": "Validation-household final-order NDCG@5"
-  }
+  },
+  "hybrid_experiment": {
+    "report": "hybrid_report.json",
+    "scores": "hybrid_scores.npz"
+  },
+  "main_ranking_model": "FreshMatch Hybrid"
 }

@@ -1,3 +1,5 @@
+> Current recommendation ranking was upgraded to FreshMatch Hybrid. The latest frozen new-household results, uncertainty and reproduction steps are in [IMPROVEMENT_RESULTS.md](IMPROVEMENT_RESULTS.md). The original experiment below is retained as reference.
+
 # FreshMatch — Real-data project report
 
 **Current source: real Instacart purchase records**, downloaded from the user's Git LFS commit `2fed8b5`. All five required files passed schema checks and SHA-256 verification against their LFS object IDs. The catalogue contains 49,688 products; the experiment samples 3,000 eligible households and selects 320 products across 51 aisles using historical frequency only. There are 49,760 historical and 3,000 held-out final available prior orders.

@@ -16,7 +16,7 @@ OUT=Path(__file__).resolve().parent
 SHOTS=OUT/'screenshots'
 PREVIEW=OUT/'preview'
 PREVIEW.mkdir(exist_ok=True)
-REPORT=json.loads((ROOT/'artifacts/advanced_report.json').read_text())
+REPORT=json.loads((ROOT/'artifacts/fresh_holdout_report.json').read_text())
 META=json.loads((ROOT/'artifacts/manifest.json').read_text())
 assert META['source']==REPORT['source']=='Instacart'
 BG='F6F8F4'; INK='183B2D'; GREEN='0F7B5F'; MINT='E6F0E8'; MUTED='56675F'; LINE='D9E3DA'; WHITE='FFFFFF'; AMBER='A56C23'
@@ -170,38 +170,38 @@ for x,title,body in [(80,'Product information','Category and TF-IDF name similar
     s.text(title,x,672,430,26,GREEN,True);s.text(body,x,715,430,24,MUTED)
 
 # 05 — Models
-s=Slide('Two learning tasks: suitability and behavior','Models',
-'''The six classifiers are Random Forest, Gradient Boosting, Logistic Regression, XGBoost, MLPClassifier and RF/GB/XGB soft voting. Training-CV average precision chooses XGBoost for the main app; sigmoid calibration maps outputs to weak-label frequencies, not acceptance probabilities. LambdaMART uses XGBRanker with rank:ndcg on historical switches. Four configurations compete on validation NDCG@5; depth 2 and 160 trees are selected. No test scores choose either deployed classifier or ranker configuration.''')
+s=Slide('FreshMatch combines learned ranking with popularity','Improved model',
+'The new directional LambdaMART adds absolute candidate popularity, reorder rates, historical switching preferences, relative prices and original XGBoost suitability. Three household-cross-fitted encodings exclude each fitted household from its own transition-evidence features. Four configurations compete on the original validation events; depth 4 with 120 trees wins. Ten predefined rank blends are selected on validation NDCG only. The winner is 75% learned ranking and 25% popularity; direct transition blend weight is zero, but transition preferences remain a model input. Reference suitability classifiers are Random Forest, Gradient Boosting, Logistic Regression, XGBoost, MLP and soft voting. XGBoost supplies the separate displayed suitability score. The original classifier test has only five positive labels, so its scores remain a limited supplementary signal.')
 s.rect(80,230,700,555,WHITE,LINE)
-s.text('SUITABILITY',110,258,640,21,GREEN,True)
-s.text('Six models, the same evaluation rules',110,303,630,35,INK,True)
-s.text('Random Forest  ·  Gradient Boosting\nLogistic Regression  ·  XGBoost\nMLP  ·  Soft voting',110,376,630,27,MUTED,leading=42)
+s.text('DIRECTIONAL LEARNING',110,258,640,21,GREEN,True)
+s.text('Learn what tends to follow an item',110,303,630,35,INK,True)
+s.text('Candidate popularity and repeat rate\nHistorical purchase-switch patterns\nNames, context, price and suitability',110,376,630,27,MUTED,leading=42)
 s.rect(109,557,640,87,MINT,r=12)
-s.text('Main app: calibrated XGBoost',132,582,590,31,GREEN,True)
-s.text('Selected by training-CV average precision.\nScores follow rule-based training labels.',110,676,624,26,MUTED)
+s.text('Directional LambdaMART',132,582,590,31,GREEN,True)
+s.text('Depth 4 · 120 trees\nXGBoost suitability remains a separate signal.',110,676,624,26,MUTED)
 s.rect(820,230,700,555,INK,r=18)
-s.text('BEHAVIORAL RANKING',852,258,630,21,'A9D3BC',True)
-s.text('LambdaMART',852,312,630,55,WHITE,True)
-s.text('Learns which alternatives appear\nin later purchase records.',852,407,625,31,WHITE)
-s.line(852,515,1487,515,'426453')
-s.text('8,840 training groups\n147,340 candidate rows',852,550,625,30,'D4E5D9',leading=43)
-s.text('Selected on validation NDCG@5:\ndepth 2, 160 trees.',852,676,625,26,'D4E5D9')
+s.text('VALIDATION-SELECTED BLEND',852,258,630,21,'A9D3BC',True)
+s.text('FreshMatch Hybrid',852,312,630,49,WHITE,True)
+s.text('75% learned ranking\n25% popularity',852,407,625,38,WHITE,True,leading=52)
+s.line(852,539,1487,539,'426453')
+s.text('Validation NDCG@5: 0.1357\nPopularity reference: 0.1291',852,579,625,29,'D4E5D9',leading=43)
+s.text('Weights are fixed before new-household testing.',852,707,625,25,'D4E5D9')
 
 # 06 — Evaluation
-s=Slide('Train, choose and test on separate groups','Evaluation',
-'''Classifier partitions are product-disjoint at both endpoints and purge crossing pairs. Seeded category-balanced assignments use label counts only to guarantee at least five examples of each class per retained partition. The outer test has 266 pairs but only five positive weak labels, so classification scores are fragile. Behavioral households split 70/15/15: 2,100 train, 450 validation, 450 reserved test. There are 384 validation and 365 test switching events; only 163 reserved test households generate qualifying events. Historical features use all households: transductive rather than fully inductive evaluation.''')
-s.text('Suitability models: keep products separate',80,228,1440,31,INK,True)
-for x,w,label,body in [(80,450,'2,036 train pairs','Training with three validation folds'),(570,450,'266 test pairs','Train and test use different products'),(1060,460,'1,532 pairs removed','Pairs crossing the split are removed')]:
-    s.rect(x,284,w,145,WHITE,LINE);s.text(label,x+24,308,w-48,32,GREEN,True);s.text(body,x+24,367,w-48,23,MUTED)
-s.text('Behavioral ranker: keep households separate',80,480,1440,31,INK,True)
-for x,w,label,body in [(80,450,'2,100 train households','Historical switches fit the ranker'),(570,450,'450 validation households','384 events choose the configuration'),(1060,460,'450 test households','365 events from 163 households')]:
+s=Slide('Freeze the model before checking new households','Evaluation',
+'Model fitting uses the original training households and validation tuning uses 384 events. The old 365-event test had already been inspected, so it is now labelled retrospective development evidence. After selection, the protocol froze the score-file hashes, weights, primary NDCG@5 metric, unchanged candidate rule, random seed and 5,000 new households before reading their outcomes. Those households do not overlap any of the 3,000 development households. Their last two available prior orders yield 4,594 switching examples from 1,888 households. None of these new customers histories fit features, transitions, models or weights. This is a new-household holdout within the same public dataset, not a prospective external retail study.')
+s.text('Develop the model on the original sample',80,228,1440,31,INK,True)
+for x,w,label,body in [(80,450,'2,100 training households','Historical switches fit the model'),(570,450,'384 validation examples','Choose parameters and blend weights'),(1060,460,'75% ML + 25% popularity','Freeze this choice before evaluation')]:
+    s.rect(x,284,w,145,WHITE,LINE);s.text(label,x+24,308,w-48,29,GREEN,True);s.text(body,x+24,367,w-48,23,MUTED)
+s.text('Then check a previously unused group',80,480,1440,31,INK,True)
+for x,w,label,body in [(80,450,'5,000 new households','No overlap with development users'),(570,450,'4,594 test examples','Same candidate rules for every method'),(1060,460,'1,888 active households','Customers with qualifying examples')]:
     s.rect(x,538,w,145,MINT);s.text(label,x+24,561,w-48,30,INK,True);s.text(body,x+24,621,w-48,23,MUTED)
 s.rect(80,728,1440,74,'F3E9D9',r=12)
-s.text('Limits: only 5 test pairs labelled as good swaps; history features still use all households.',103,751,1390,24,'74501F')
+s.text('A new household holdout in the same public dataset—not a prospective retail trial.',103,751,1390,24,'74501F')
 
 # 07 — Shopper experience
 s=Slide('Find a swap, then test a stockout scenario','App demo · shopper pages',
-'''The screenshots are actual captures of the current real-data app. Find Substitutes searches Organic Milk, ranks eligible alternatives and shows model sensitivities, estimated price differences and exports. Out-of-Stock Simulator excludes multiple products and uses an explicitly chosen acceptance assumption to estimate units/revenue; it is not observed recovery. Product Explorer, shown on the data slide, adds category and purchase-frequency views. Main-card scores are suitability, not purchase probabilities.''')
+'''The screenshots are actual captures of the current real-data hybrid app. Find Substitutes searches Organic Milk, ranks eligible alternatives and shows model sensitivities, estimated price differences and exports. Out-of-Stock Simulator excludes multiple products and uses an explicitly chosen acceptance assumption to estimate units/revenue; it is not observed recovery. Product Explorer, shown on the data slide, adds category and purchase-frequency views. Main cards are ordered by FreshMatch Hybrid. Their displayed suitability scores remain a separate XGBoost signal, not purchase probabilities.''')
 s.image('01-find-substitutes.png',88,239,870,576)
 s.image('02-stockout.png',1010,244,502,349)
 s.text('Find Substitutes',1010,628,500,32,GREEN,True)
@@ -220,25 +220,26 @@ s.text('Model Performance',1010,759,500,28,GREEN,True)
 s.text('Compare results, errors and feature influence.',1010,800,500,21,MUTED)
 
 # 09 — Results
-s=Slide('The ranker improves on suitability; popularity still leads','Real-data results',
-'''All five methods below use the same 365 held-out switching events and eligible candidate pools. NDCG@5 rewards placing observed relevant products nearer the top; higher is better. Behavioral LambdaMART is 0.1294 and the weak-label classifier is 0.0647. Their paired household-bootstrap difference is +0.0647 with 95% interval [+0.0437,+0.0859]. Popularity is higher at 0.1409, so we do not claim the learned ranker is best. Only 36.7% of events have any relevant target inside eligibility; excluded targets remain in metric denominators. These are proxy switches, not confirmed substitutions or causal recovered sales.''')
-s.text('Ranking quality (NDCG@5) · higher is better',80,225,760,27,GREEN,True)
-metrics=REPORT['test_metrics']; short=['Behavioral ranker','Suitability model','Name similarity','Shopping context','Popularity']
+s=Slide('Highest measured ranking quality, with a small edge','Fresh-household results',
+'The validation-selected FreshMatch Hybrid scores NDCG@5 0.134397 on 4,594 new-household events; popularity scores 0.132627 and the original LambdaMART 0.117266. This is 14.6% relative improvement over the old ranker on the same examples. The paired hybrid-minus-original interval is [+0.01285,+0.02157]. The hybrid-minus-popularity difference is +0.00177 with 95% household-bootstrap interval [-0.00042,+0.00421], which includes zero: do not claim statistically established superiority over popularity. Hybrid has the highest observed primary NDCG score among the compared methods, but does not win every metric. Candidate coverage remains 36.2%, with ineligible targets retained in denominators. No model or weight was changed after the fresh holdout was inspected.')
+s.text('Ranking quality (NDCG@5) · higher is better',80,225,800,27,GREEN,True)
+metrics=REPORT['test_metrics'];short=['FreshMatch Hybrid','Popularity','Name similarity','Shopping context','Suitability model','Original ranker','Directional ranker']
 for i,(r,label) in enumerate(zip(metrics,short)):
-    y=294+i*83;value=r['ndcg_at_k'];color=GREEN if i==0 else (AMBER if i==4 else '8AA598')
-    s.text(label,80,y+6,265,25,INK,i in [0,4]);s.rect(363,y+6,380,32,'E6ECE5',r=4)
-    s.rect(363,y+6,380*value/.16,32,color,r=4);s.text(f'{value:.4f}',759,y+4,120,26,color,True)
-s.text('Same 365 test events · observed purchase switches',80,746,775,22,MUTED)
+    y=284+i*60;value=r['ndcg_at_k'];color=GREEN if i==0 else (AMBER if i==1 else '8AA598')
+    s.text(label,80,y+6,265,24,INK,i in [0,1]);s.rect(363,y+6,380,29,'E6ECE5',r=4)
+    s.rect(363,y+6,380*value/.16,29,color,r=4);s.text(f'{value:.4f}',759,y+4,120,25,color,True)
+s.text('Same 4,594 events from new households',80,750,790,23,MUTED)
+s.text('The small lead over popularity is not statistically conclusive.',80,790,795,21,MUTED)
 s.image('06-ml-lab.png',940,240,570,396)
 s.rect(940,668,570,126,MINT,r=12)
-s.text('36.7% target coverage',961,688,525,30,INK,True)
-s.text('Better candidate coverage is the next priority.',961,739,525,23,MUTED)
+s.text('14.6% above the old ranker',961,688,525,29,INK,True)
+s.text('Target coverage remains limited: 36.2%.',961,739,525,23,MUTED)
 
 # 10 — Conclusion
-s=Slide('A working research project, with clear next steps','Conclusion',
-'''Conclude with evidence rather than an inflated success claim. All 23 local tests pass, covering all seven app pages plus splits, input data, scores and uncertainty. The project is reproducible and uses real purchase records. The next experiment should address candidate eligibility/coverage; additional expert substitute labels, observed price/pack-size/ingredient information and prospective acceptance testing are needed. Brand tokens and estimated prices are not verified retail data. The About page makes those boundaries visible. Invite questions.''')
+s=Slide('A stronger model, with honest evidence','Conclusion',
+'''Conclude with evidence rather than an inflated success claim. All 29 local tests pass, covering all seven app pages plus splits, input data, scores and uncertainty. The project now serves the validation-approved hybrid and separately displays original suitability scores. It leads on observed NDCG in a fixed new-household test, with uncertainty vs popularity explicitly reported. The next experiment should address candidate eligibility/coverage; additional expert substitute labels, observed price/pack-size/ingredient information and prospective acceptance testing are needed. Brand tokens and estimated prices are not verified retail data. The About page makes those boundaries visible. Invite questions.''')
 s.rect(80,230,700,115,MINT,r=16)
-s.text('23 tests passed',106,252,640,45,GREEN,True)
+s.text('29 tests passed',106,252,640,45,GREEN,True)
 s.text('Seven working pages · reproducible real-data run',108,312,630,23,MUTED)
 s.bullet('What works','Real purchase data, explained suggestions and transparent evaluation.',80,394,700)
 s.bullet('What comes next','Wider candidate coverage, expert labels and real price / ingredient data.',80,531,700)
@@ -259,7 +260,7 @@ html_doc='''<!doctype html><html><head><meta charset="utf-8"><title>FreshMatch p
 @media print{.slide{width:13.333333in;height:7.5in;}}
 </style></head><body>'''+''.join('<section class="slide" id="slide-'+str(s.index)+'">'+s.save_svg()+'</section>' for s in all_slides)+'</body></html>'
 (OUT/'FreshMatch_Presentation_Preview.html').write_text(html_doc)
-(OUT/'Speaker_Notes.md').write_text('# FreshMatch — speaker notes\n\n'+''.join(f'## {i}. {title}\n\n{notes}\n\n' for i,title,notes in content))
+(OUT/'Speaker_Notes.md').write_text(('# FreshMatch — speaker notes\n\n'+''.join(f'## {i}. {title}\n\n{notes}\n\n' for i,title,notes in content)).rstrip()+'\n')
 (OUT/'README.md').write_text('''# FreshMatch presentation
 
 - `FreshMatch_Project_Presentation.pptx`: editable, 10-slide 16:9 PowerPoint.
@@ -275,7 +276,7 @@ screenshots remain images. Check fonts and spacing after import.
 
 All numbers come from the project's current Instacart artifacts. Prices are
 estimates, brand labels are proxies, and observed switches are not confirmed
-substitutions. The popularity baseline leads on the reported real-data test.
+substitutions. The hybrid has the highest observed NDCG on the new-household test; the small lead over popularity is not statistically conclusive.
 ''')
 assert len(prs.slides)==10
 print('Created',PPT,'with',len(prs.slides),'slides')

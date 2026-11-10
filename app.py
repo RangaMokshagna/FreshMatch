@@ -1,5 +1,5 @@
 from pathlib import Path
-import json, html, time, textwrap
+import json, html, time, textwrap, hashlib
 import numpy as np
 import pandas as pd
 import plotly.express as px
@@ -149,6 +149,32 @@ except (OSError,ValueError,KeyError,json.JSONDecodeError) as exc:
     st.caption(f'Details: {type(exc).__name__}: {exc}')
     st.stop()
 
+@st.cache_data(show_spinner=False)
+def load_current_hybrid(report_time,score_time,version):
+    report=json.loads((ART/'hybrid_report.json').read_text())
+    if report['source']!=meta['source']: return None,None,None
+    expected=report['selection'].get('base_files_sha256',{})
+    if set(expected)!={'products.csv','matrices.npz'}: return None,None,None
+    if any(hashlib.sha256((ART/name).read_bytes()).hexdigest()!=digest for name,digest in expected.items()):
+        return None,None,None
+    with np.load(ART/'hybrid_scores.npz',allow_pickle=False) as data:
+        arrays={k:data[k] for k in data.files}
+    if arrays['scores'].shape!=matrices['eligible'].shape or not np.isfinite(arrays['scores']).all():
+        return None,None,None
+    fresh=None
+    if (ART/'fresh_holdout_report.json').exists() and (ART/'fresh_holdout_protocol.json').exists():
+        protocol=json.loads((ART/'fresh_holdout_protocol.json').read_text())
+        if all(hashlib.sha256((ART/name).read_bytes()).hexdigest()==digest for name,digest in protocol['frozen_files_sha256'].items()):
+            fresh=json.loads((ART/'fresh_holdout_report.json').read_text())
+    return report,arrays,fresh
+
+HYBRID_REPORT=HYBRID_DATA=FRESH_REPORT=None
+if (ART/'hybrid_report.json').exists() and (ART/'hybrid_scores.npz').exists():
+    HYBRID_REPORT,HYBRID_DATA,FRESH_REPORT=load_current_hybrid(
+        (ART/'hybrid_report.json').stat().st_mtime_ns,(ART/'hybrid_scores.npz').stat().st_mtime_ns,ARTIFACT_VERSION)
+USE_HYBRID=HYBRID_REPORT is not None and HYBRID_REPORT['selection']['deploy_hybrid']
+RANKING_VALUES=HYBRID_DATA['scores'] if USE_HYBRID else matrices['scores']
+
 if meta.get('source')!='Instacart':
     st.warning('Synthetic demo: recommendations currently use simulated purchase records. Real Instacart training has not been completed.')
 else:
@@ -225,10 +251,12 @@ def recommend(query,max_price,same_brand,same_category,k,unavailable,artifact_ve
     for idx in unavailable:
         if 0<=idx<len(mask): mask[idx]=False
     ids=np.flatnonzero(mask)
-    ids=ids[np.argsort(-matrices['scores'][query,ids],kind='stable')][:k]
+    ids=ids[np.argsort(-RANKING_VALUES[query,ids],kind='stable')][:k]
     if not len(ids): return pd.DataFrame()
     out=products.iloc[ids].copy()
     out['score']=matrices['scores'][query,ids]*100
+    out['ranking_score']=RANKING_VALUES[query,ids]
+    out['ranking_method']='FreshMatch Hybrid' if USE_HYBRID else 'Weak-label suitability'
     out['buyer_context']=matrices['context'][query,ids]*100
     out['price_saving_pct']=(1-out.price/q.price)*100
     reasons=[]
@@ -259,9 +287,9 @@ def cards(result,original_price):
         delta=f'↓ {money(difference)} cheaper' if difference>.005 else (f'↑ {money(-difference)} more' if difference<-.005 else 'Same price')
         direction='higher' if difference<-.005 else ''
         badge_style='cheaper' if badge=='Cheaper' else ''
-        rendered.append(f"""<article class="product-card"><div class="card-top"><span class="rank">{rank+1:02d}</span><span class="tile-icon" aria-hidden="true">{PRODUCT_ICONS.get(row.category,'🛒')}</span><span class="badge {badge_style}">{badge}</span></div><h3>{esc(row['name'])}</h3><div class="category">{esc(row.brand)} · {esc(row.category)}</div><div class="price-row"><span class="price">{money(row.price)}</span><span class="price-difference {direction}">{delta}</span></div><div class="score-label"><span>Match score</span><b>{row.score:.0f} / 100</b></div><div class="score-ring" role="meter" aria-label="Match score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{row.score:.0f}"><svg viewBox="0 0 44 44" aria-hidden="true"><circle class="ring-track" cx="22" cy="22" r="18"/><circle class="ring-value" cx="22" cy="22" r="18" pathLength="100" style="--score:{row.score:.1f}"/></svg><b>{row.score:.0f}</b></div><p class="reason" title="{esc(row.reason)}">{esc(row.reason)}</p><details class="local-explanation"><summary>Why this score?</summary><p>{esc(row.model_explanation)}</p><small>Change vs training-median feature values; sensitivity, not causal or additive.</small></details></article>""")
+        rendered.append(f"""<article class="product-card"><div class="card-top"><span class="rank">{rank+1:02d}</span><span class="tile-icon" aria-hidden="true">{PRODUCT_ICONS.get(row.category,'🛒')}</span><span class="badge {badge_style}">{badge}</span></div><h3>{esc(row['name'])}</h3><div class="category">{esc(row.brand)} · {esc(row.category)}</div><div class="price-row"><span class="price">{money(row.price)}</span><span class="price-difference {direction}">{delta}</span></div><div class="score-label"><span>Suitability score</span><b>{row.score:.0f} / 100</b></div><div class="score-ring" role="meter" aria-label="Suitability score" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{row.score:.0f}"><svg viewBox="0 0 44 44" aria-hidden="true"><circle class="ring-track" cx="22" cy="22" r="18"/><circle class="ring-value" cx="22" cy="22" r="18" pathLength="100" style="--score:{row.score:.1f}"/></svg><b>{row.score:.0f}</b></div><p class="reason" title="{esc(row.reason)}">{esc(row.reason)}</p><details class="local-explanation"><summary>Why this suitability score?</summary><p>{esc(row.model_explanation)}</p><small>Change vs training-median feature values; sensitivity, not causal or additive.</small></details></article>""")
     st.markdown('<div class="product-grid">'+''.join(rendered)+'</div>',unsafe_allow_html=True)
-    st.download_button('↓ Download alternatives',result[['name','category','brand','price','score','reason','model_explanation']].to_csv(index=False).encode(),file_name='freshmatch_alternatives.csv',mime='text/csv')
+    st.download_button('↓ Download alternatives',result[['name','category','brand','price','ranking_method','ranking_score','score','reason','model_explanation']].to_csv(index=False).encode(),file_name='freshmatch_alternatives.csv',mime='text/csv')
 
 PAGES=['Find Substitutes','Out-of-Stock Simulator','Product Explorer','Relationship Explorer','Model Performance','ML Lab','About']
 NAV_ICONS=['🔎','🛒','🧺','🔗','📊','🧪','🌱']
@@ -274,6 +302,39 @@ with st.sidebar:
     data_label='Synthetic data' if meta['source']!='Instacart' else 'Instacart'
     st.markdown(f'<section class="catalogue-card"><div class="catalogue-head">YOUR CATALOGUE <span class="data-badge">{data_label}</span></div><div class="catalogue-stats"><div><strong>{len(products):,}</strong><span>products</span></div><div><strong>{products.category.nunique()}</strong><span>categories</span></div></div></section><p class="sidebar-note">{esc(meta["price_note"])}.<br>{esc(meta["brand_note"])}.</p>',unsafe_allow_html=True)
 page=st.session_state['freshmatch_page']
+
+def show_hybrid_evidence(key):
+    if HYBRID_REPORT is None: return
+    report=FRESH_REPORT if FRESH_REPORT is not None else HYBRID_REPORT
+    label='New-household holdout' if FRESH_REPORT is not None else 'Retrospective development benchmark'
+    st.subheader('FreshMatch Hybrid · '+label)
+    st.caption('Model and blend weights were selected using the original validation households. Every method uses the same candidate pool. NDCG is a ranking measure, not accuracy.')
+    frame=pd.DataFrame(report['test_metrics'])
+    first=frame.iloc[0]
+    cols=st.columns(3)
+    cols[0].metric('Evaluation examples',f"{int(first.events):,}")
+    cols[1].metric('Households with examples',f"{int(first.households):,}")
+    cols[2].metric('Hybrid NDCG@5',f"{first.ndcg_at_k:.4f}")
+    order=frame.assign(upper_error=frame.ndcg_ci_high-frame.ndcg_at_k,lower_error=frame.ndcg_at_k-frame.ndcg_ci_low).sort_values('ndcg_at_k',ascending=False)
+    fig=px.bar(order,x='model',y='ndcg_at_k',color='model',error_y='upper_error',error_y_minus='lower_error',
+        title='Current recommendation ranking · NDCG@5',labels={'model':'Method','ndcg_at_k':'NDCG@5'},
+        color_discrete_map={'FreshMatch Hybrid':ACCENT,'Popularity':'#99620B'})
+    fig.update_layout(showlegend=False)
+    chart(fig,key=key+'_hybrid_evidence')
+    st.dataframe(frame,hide_index=True,width='stretch')
+    delta=next(row for row in report['paired_comparisons'] if row['baseline']=='Popularity')
+    st.caption(f"Hybrid minus popularity: {delta['ndcg_difference']:+.4f} NDCG@5; paired 95% household-bootstrap interval [{delta['ci_low']:+.4f}, {delta['ci_high']:+.4f}]. An interval spanning zero does not establish a winner.")
+    if FRESH_REPORT is None:
+        st.info('These development test outcomes were inspected during earlier project work. They are not a new independent test.')
+    else:
+        st.caption('The new holdout uses households excluded from all 3,000 development households. It is from the same public dataset; it is not a prospective retail trial.')
+    with st.expander('How the improved model is selected'):
+        selection=HYBRID_REPORT['selection']
+        st.write('Directional features include candidate popularity, repeat purchases and historical switching preferences. Training transition encodings exclude the household being fitted.')
+        st.json({'selected_tree_parameters':selection['selected_parameters'],'blend':selection['selected_weights'],
+                 'selection':'Validation NDCG@5 only','main_app_uses_hybrid':USE_HYBRID})
+        st.dataframe(pd.DataFrame(selection['model_trials']),hide_index=True,width='stretch')
+        st.dataframe(pd.DataFrame(selection['hybrid_trials']),hide_index=True,width='stretch')
 
 if page=='Find Substitutes':
     st.markdown('<div class="eyebrow">YOUR NEXT BEST CHOICE</div><section class="hero"><h1>Out of stock? Still in good company.</h1><p>Thoughtful alternatives to your everyday essentials, in one quick search.</p></section>',unsafe_allow_html=True)
@@ -298,11 +359,13 @@ if page=='Find Substitutes':
             max_catalogue=round(float(products.price.max()),2)
             limit=c1.slider('Maximum price ($)',min_value=.1,max_value=max(1.,max_catalogue),value=max(1.,max_catalogue),step=.1)
             same_brand=c2.checkbox('Same brand',value=False,help=meta['brand_note'])
-            same_category=c3.checkbox('Same category',value=True,help='Keep alternatives within the selected product category.')
+            same_category=c3.checkbox('Same category (required)',value=True,disabled=True,help='Candidate products must share an aisle/category.')
             k=c4.selectbox('Results',[3,5,8,10],index=1)
         heading,info=st.columns([3,1],vertical_alignment='center')
         heading.subheader('A good swap starts here')
-        info.caption('Match score ⓘ',help='Calibrated suitability from heuristic pair labels. This is not a purchase probability or a guarantee of dietary equivalence.')
+        if USE_HYBRID:
+            st.caption('Ordered by FreshMatch Hybrid: learned purchase patterns + popularity. Suitability scores below are a separate XGBoost signal, not purchase probabilities.')
+        info.caption('Suitability score ⓘ',help='Calibrated suitability from heuristic pair labels. This is not a purchase probability or a guarantee of dietary equivalence.')
         loading=st.empty()
         loading.markdown('<div class="skeletons"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>',unsafe_allow_html=True)
         with st.spinner('Finding your best alternatives…'):
@@ -320,7 +383,7 @@ elif page=='Out-of-Stock Simulator':
     c1,c2,c3=st.columns(3)
     demand=c1.number_input('Units of demand per unavailable item',min_value=1,max_value=10000,value=10,step=1)
     budget=c2.number_input('Maximum alternative price ($)',min_value=.1,max_value=1000.,value=float(np.ceil(products.price.max())),step=.5)
-    only_cat=c3.checkbox('Keep the same category',value=True)
+    only_cat=c3.checkbox('Same category (required)',value=True,disabled=True)
     st.caption('Scenario estimate ⓘ',help='Recovered units = units of demand × measured conditional top-5 future-switch hit rate, for covered products. It assumes that rate applies to this scenario; it is not a causal forecast.')
     if not unavailable:
         st.info('Choose one or more unavailable products to see how the basket could recover.')
@@ -335,7 +398,7 @@ elif page=='Out-of-Stock Simulator':
         metric_card(cols[0],'🛒','Estimated units recovered',f'{units:,.1f}','From your acceptance assumption',help_text='Scenario only: covered demand multiplied by the chosen acceptance assumption.')
         metric_card(cols[1],'💰','Estimated revenue saved',money(revenue),'Scenario estimate · not actual sales',help_text='Scenario units multiplied by each first-ranked alternative price. Prices are synthetic or estimated; no inventory capacity model is used.')
         metric_card(cols[2],'✓','Alternative coverage',f'{coverage:.0%}','Unavailable items with a suitable swap',help_text='Share of unavailable products with at least one eligible, available alternative.')
-        st.caption(f'Default offline hit rate: {observed.hit_rate:.1%} (95% household-bootstrap interval {observed.hit_ci_low:.1%}–{observed.hit_ci_high:.1%}). Inventory quantities and shopper acceptance are scenario assumptions.')
+        st.caption(f'Reference legacy-classifier hit rate: {observed.hit_rate:.1%} (95% household-bootstrap interval {observed.hit_ci_low:.1%}–{observed.hit_ci_high:.1%}). Inventory quantities and shopper acceptance are scenario assumptions.')
         exports=[]
         for q,r in results.items():
             with st.expander(names[q],expanded=len(unavailable)<=2):
@@ -409,10 +472,13 @@ elif page=='Relationship Explorer':
     with b: chart(px.bar(mc,x='algorithm',y='rules',title='Rules discovered',labels={'algorithm':'Algorithm','rules':'Directed rules'}))
 
 elif page=='Model Performance':
+    show_hybrid_evidence('performance')
+    st.divider()
+    st.subheader('Original six-classifier experiment · reference')
     title('EVIDENCE, NOT GUESSWORK','A closer look at the match.','Weak-label classification and independent next-order ranking measure different things.')
     st.info('Scores below come from '+meta['source']+'. Weak labels are heuristic; the next-order benchmark is conditional on observed switches. These are offline results, not verified sales recovery.')
     comparison=tables['comparison']
-    st.success('★ Deployed: '+meta['selected_model']+' · highest training-CV PR-AUC')
+    st.success('Suitability signal: '+meta['selected_model']+' · highest training-CV PR-AUC. Main ranking uses the validated hybrid when available.')
     st.caption('Proposed methods: Random Forest and Gradient Boosting. Comparators: Logistic Regression, XGBoost, MLPClassifier and soft voting (RF + GB + XGBoost).')
     st.caption('Selection criterion ⓘ',help='All six share the same product-disjoint train/test split and the same three CV folds. Deployment uses mean training-CV average precision, never held-out pair labels or future purchases. Exact ties keep the declared model order.')
     st.subheader('Six models, one evaluation protocol')
@@ -447,11 +513,11 @@ elif page=='Model Performance':
         chart(px.imshow(curves['confusion'][selected],text_auto=True,x=['Predicted no','Predicted yes'],y=['Actual no','Actual yes'],title=selected+' · confusion matrix',color_continuous_scale='Greens'))
         st.caption('Confusion matrix ⓘ',help='Counts of true/false positive/negative predictions at threshold 0.5 on held-out pair groups.')
     st.subheader('Will a shopper buy one of the alternatives next?')
-    rm=tables['ranking_metrics']
+    rm=tables['ranking_metrics'].replace({'model':{'FreshMatch':'Legacy suitability'}})
     st.caption('Ranking metrics ⓘ',help='At K=5: Precision = hits/5; Recall = hits/all relevant next-order products; NDCG rewards higher positions; MAP averages precision at relevant ranks divided by all targets. Hit rate = events with any target in the top 5.')
     chart(px.bar(rm.melt(id_vars='model',value_vars=['precision_at_k','recall_at_k','ndcg_at_k','map_at_k']),x='variable',y='value',color='model',barmode='group',title='Next-order ranking vs identical-pool baselines',labels={'variable':'Metric @ 5','value':'Score'}))
     st.dataframe(rm,hide_index=True,width='stretch')
-    row=rm[rm.model=='FreshMatch'].iloc[0]
+    row=rm[rm.model=='Legacy suitability'].iloc[0]
     st.caption(f'{int(row.events):,} observed switching events · future target eligible in {row.target_coverage:.1%} of events · top-5 hit rate {row.hit_rate:.1%}, 95% household-bootstrap interval {row.hit_ci_low:.1%}–{row.hit_ci_high:.1%}.')
     with st.expander('Evaluation details and limitations'):
         for limitation in meta['limitations']: st.write('• '+limitation)
@@ -460,6 +526,9 @@ elif page=='Model Performance':
     st.download_button('↓ Download ranking evaluation',rm.to_csv(index=False).encode(),file_name='ranking_metrics.csv',mime='text/csv')
 
 elif page=='ML Lab':
+    show_hybrid_evidence('lab')
+    st.divider()
+    st.subheader('Original LambdaMART experiment · reference')
     title('BEHAVIORAL LEARNING TO RANK','From suitability to observed choices.','Compare a LambdaMART ranker with four baselines on held-out households.')
     report_path=ART/'advanced_report.json'
     score_path=ART/'advanced_scores.npz'
@@ -504,7 +573,7 @@ elif page=='ML Lab':
             ids=np.flatnonzero(matrices['eligible'][q] & (products.price.to_numpy()<=price_cap))
             ids=ids[~np.isin(ids,[q]+outages)]
             left,right=st.columns(2)
-            for container,label,values in [(left,'Behavioral LambdaMART',rank_scores),(right,'Weak-label suitability',matrices['scores'])]:
+            for container,label,values in [(left,'FreshMatch Hybrid' if USE_HYBRID else 'Behavioral LambdaMART',RANKING_VALUES if USE_HYBRID else rank_scores),(right,'Weak-label suitability',matrices['scores'])]:
                 with container:
                     st.subheader(label)
                     top=ids[np.argsort(-values[q,ids],kind='stable')][:5]
@@ -512,9 +581,9 @@ elif page=='ML Lab':
                         st.info('No alternatives meet these availability and price filters.')
                     else:
                         shown=products.iloc[top][['name','category','price']].copy()
-                        shown['rank_score' if label=='Behavioral LambdaMART' else 'suitability']=values[q,top]
+                        shown['rank_score' if label!='Weak-label suitability' else 'suitability']=values[q,top]
                         st.dataframe(shown,hide_index=True,width='stretch')
-            st.caption('LambdaMART scores order candidates for a query. They are not percentages, confidence intervals or purchase probabilities. This experimental ranker does not replace the main suitability cards.')
+            st.caption('LambdaMART scores order candidates for a query. They are not percentages, confidence intervals or purchase probabilities. The validation-approved hybrid sets the main-card order when available; card suitability scores remain a separate signal.')
         with tabs[2]:
             st.caption('Four configurations are compared on validation NDCG@5. The best configuration is then fixed before test evaluation.')
             st.dataframe(pd.DataFrame(advanced['trials']),hide_index=True,width='stretch')
@@ -546,6 +615,8 @@ elif page=='ML Lab':
 elif page=='About':
     title('PURPOSE BUILT','A better alternative to an empty basket.','AI-Powered Product Substitution Discovery and Intelligent Alternative Recommendation Using Machine Learning')
     st.markdown('When a product is unavailable or too expensive, shoppers need something that fills the same need. FreshMatch combines product information with purchase patterns to offer useful alternatives and explain each choice.')
+    if USE_HYBRID:
+        st.write('FreshMatch Hybrid combines learned directional purchase patterns with popularity. We choose its weights on validation households and check the frozen model on separate, previously unused households. Suitability scores remain a separate signal.')
     st.subheader('From basket history to a better swap')
     st.graphviz_chart('digraph { rankdir=LR; node [shape=box,style="rounded,filled",fillcolor="#EDF4ED",fontname="Arial",color="#CFE0D2"]; A [label="History + products"]; B [label="Complement rules"]; C [label="Context + text + price"]; D [label="Weak pair labels"]; E [label="Tune + calibrate"]; F [label="Available alternatives"]; A -> B; A -> C; B -> C; C -> D; D -> E; E -> F; }')
     st.markdown('<div class="mobile-method" role="img" aria-label="Historical baskets and products feed complement rules and context, text and price features; weak pair labels train and calibrate models that rank available alternatives."><div class="method-step"><span>01</span>History + products</div><div class="method-arrow" aria-hidden="true">↓</div><div class="method-step"><span>02</span>Complement rules</div><div class="method-arrow" aria-hidden="true">↓</div><div class="method-step"><span>03</span>Context + text + price</div><div class="method-arrow" aria-hidden="true">↓</div><div class="method-step"><span>04</span>Weak pair labels</div><div class="method-arrow" aria-hidden="true">↓</div><div class="method-step"><span>05</span>Tune + calibrate</div><div class="method-arrow" aria-hidden="true">↓</div><div class="method-step"><span>06</span>Available alternatives</div></div>',unsafe_allow_html=True)
@@ -555,7 +626,7 @@ elif page=='About':
         st.subheader('What makes it different')
         st.write('Shared purpose and low co-purchase, rather than co-purchase alone. Price-aware filtering, plain-language reasons, multiple-stockout handling and transparent comparisons against simple baselines.')
         st.subheader('Built with')
-        st.write('Python · pandas · SciPy · scikit-learn · MLxtend · Plotly · Streamlit · TF-IDF · Apriori · FP-Growth · Random Forest · Gradient Boosting · Logistic Regression · XGBoost · MLPClassifier · Soft Voting')
+        st.write('Python · pandas · SciPy · scikit-learn · MLxtend · Plotly · Streamlit · TF-IDF · Apriori · FP-Growth · Random Forest · Gradient Boosting · Logistic Regression · XGBoost · MLPClassifier · Soft Voting · Directional LambdaMART · Validation-tuned hybrid ranking')
     with b:
         st.subheader('The team')
         st.write('**K. Darshan Sai**  \nRA2311027010002')

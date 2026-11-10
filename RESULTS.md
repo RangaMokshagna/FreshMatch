@@ -1,3 +1,5 @@
+> Current recommendation ranking was upgraded to FreshMatch Hybrid. The latest frozen new-household results, uncertainty and reproduction steps are in [IMPROVEMENT_RESULTS.md](IMPROVEMENT_RESULTS.md). The original experiment below is retained as reference.
+
 # FreshMatch · Measured results
 Data: **Instacart**. 320 products; 49,760 history baskets; 3,000 future baskets.
 Selected model: **XGBoost**, chosen by training cross-validation.

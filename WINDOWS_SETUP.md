@@ -62,7 +62,7 @@ is not required. Keep this terminal open for the next steps.
 ```
 
 The first command checks files and sample schemas. The second trains all six
-classifiers and the behavioral ranker, writes inference artifacts, and updates
+classifiers, the original behavioral ranker and the directional hybrid, writes inference artifacts, and updates
 `RESULTS.md`. Wait for `PASS: notebook training, artifact generation and integrity
 assertions`. Training time depends on your laptop. Data loading streams the large
 purchase CSV; the experiment samples up to 3,000 households and 320 products.

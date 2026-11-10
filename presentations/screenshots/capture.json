@@ -1,5 +1,10 @@
 [
   {
+    "page": "Find Substitutes",
+    "exception_count": 0,
+    "screenshot": "01-find-substitutes.png"
+  },
+  {
     "page": "Out-of-Stock Simulator",
     "exception_count": 0,
     "screenshot": "02-stockout.png"

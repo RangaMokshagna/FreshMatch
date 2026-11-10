@@ -1,3 +1,5 @@
+> Current recommendation ranking was upgraded to FreshMatch Hybrid. The latest frozen new-household results, uncertainty and reproduction steps are in [IMPROVEMENT_RESULTS.md](IMPROVEMENT_RESULTS.md). Latest verification: 29 real-data tests passed; all seven updated pages were captured in Chromium without exceptions. The isolated full demo training pipeline passed; its suite completed 29 tests with one real-only holdout check skipped. Detailed current evidence is in assets/hybrid-validation.json. The original experiment below is retained as reference.
+
 # FreshMatch — Current real-data validation
 
 ## Data and provenance

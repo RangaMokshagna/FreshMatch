@@ -123,7 +123,7 @@ def _training_arrays(events, eligible, feature_cube):
 
 def run_experiment(*, products, history, history_orders, final_events, feature_cube,
                    feature_names, eligible, weak_scores, text_scores, context_scores,
-                   models, pair_x, pair_y, artifact_dir, synthetic, seed=42):
+                   models, pair_x, pair_y, artifact_dir, synthetic, seed=42, lift_scores=None):
     """Fit on historical transitions; choose configs on validation final orders only."""
     started = perf_counter()
     output = Path(artifact_dir)
@@ -209,6 +209,10 @@ def run_experiment(*, products, history, history_orders, final_events, feature_c
     (output / 'advanced_report.json').write_text(json.dumps(report, indent=2), encoding='utf-8')
     assert not splits['train'] & splits['validation'] and not splits['train'] & splits['test'] and not splits['validation'] & splits['test']
     assert np.isfinite(scores).all()
+    from hybrid_ranker import run_improvement
+    run_improvement(products,history,history_orders,final_events,
+        dict(eligible=eligible,scores=weak_scores,text=text_scores,context=context_scores,
+             lift=lift_scores if lift_scores is not None else np.expm1(feature_cube[:,:,6])),output,synthetic)
     print(f'Behavioral ranker: {len(group):,} historical training groups; {len(valid):,} validation / {len(test):,} test events.')
     print(pd.DataFrame(summaries).to_string(index=False))
     print('Paired test NDCG@5 difference vs weak labels:', report['paired_comparison'])
