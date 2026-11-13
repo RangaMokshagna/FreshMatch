@@ -1,0 +1,195 @@
+{
+  "pages": 34,
+  "contents": [
+    [
+      "OWN WORK DECLARATION FORM",
+      2
+    ],
+    [
+      "BONAFIDE CERTIFICATE",
+      3
+    ],
+    [
+      "ACKNOWLEDGEMENTS",
+      4
+    ],
+    [
+      "ABSTRACT",
+      5
+    ],
+    [
+      "CHAPTER 1 - INTRODUCTION",
+      10
+    ],
+    [
+      "CHAPTER 2 - BACKGROUND AND RELATED WORK",
+      12
+    ],
+    [
+      "CHAPTER 3 - DATASET AND METHODOLOGY",
+      14
+    ],
+    [
+      "CHAPTER 4 - NOTEBOOK IMPLEMENTATION",
+      16
+    ],
+    [
+      "CHAPTER 5 - EXTENDED EXPERIMENTS",
+      20
+    ],
+    [
+      "CHAPTER 6 - FRESHMATCH APPLICATION",
+      23
+    ],
+    [
+      "CHAPTER 7 - RESULTS AND DISCUSSION",
+      30
+    ],
+    [
+      "CHAPTER 8 - LIMITATIONS AND FUTURE WORK",
+      32
+    ],
+    [
+      "CHAPTER 9 - CONCLUSION",
+      33
+    ],
+    [
+      "REFERENCES",
+      34
+    ]
+  ],
+  "figures": [
+    [
+      "3.1",
+      "FreshMatch end-to-end workflow",
+      15
+    ],
+    [
+      "5.1",
+      "Development, freezing and new-household verification",
+      21
+    ],
+    [
+      "6.1",
+      "Find Substitutes with real-data alternatives and separate suitability scores.",
+      23
+    ],
+    [
+      "6.2",
+      "Multiple-outage scenario with user-controlled demand and acceptance assumptions.",
+      24
+    ],
+    [
+      "6.3",
+      "Catalogue search, category views and historical purchase-frequency exploration.",
+      25
+    ],
+    [
+      "6.4",
+      "Graph view separating candidate substitutes from frequently co-purchased complements.",
+      26
+    ],
+    [
+      "6.5",
+      "Current hybrid holdout results above the labelled original classifier experiment.",
+      27
+    ],
+    [
+      "6.6",
+      "New-household evidence and controls for exploring the ranking model.",
+      28
+    ],
+    [
+      "6.7",
+      "Project methodology, team information, tools and dataset limitations.",
+      29
+    ],
+    [
+      "7.1",
+      "NDCG@5 with household-bootstrap intervals on the same 4,594 events.",
+      31
+    ]
+  ],
+  "tables": [
+    [
+      "3.1",
+      "Required Instacart files and fields used",
+      14
+    ],
+    [
+      "3.2",
+      "Recorded development sample",
+      14
+    ],
+    [
+      "3.3",
+      "Ranking partitions and observed evaluation examples",
+      15
+    ],
+    [
+      "4.1",
+      "Association-mining results from the recorded real-data run",
+      16
+    ],
+    [
+      "4.2",
+      "Six-model suitability comparison (weak-label task)",
+      17
+    ],
+    [
+      "4.3",
+      "Fifteen inputs to the improved directional ranker",
+      18
+    ],
+    [
+      "4.4",
+      "Selected directional and hybrid settings",
+      19
+    ],
+    [
+      "5.1",
+      "Directional ranker configurations on validation data",
+      20
+    ],
+    [
+      "5.2",
+      "Predefined blends evaluated on validation data",
+      20
+    ],
+    [
+      "5.3",
+      "Original-ranker feature-removal study (validation reference)",
+      22
+    ],
+    [
+      "5.4",
+      "Weak-label classifier calibration on 266 retained test pairs",
+      22
+    ],
+    [
+      "7.1",
+      "Ranking results on the fixed new-household holdout",
+      30
+    ],
+    [
+      "7.2",
+      "Hybrid-minus-baseline NDCG differences and 95% bootstrap intervals",
+      31
+    ]
+  ],
+  "authors": [
+    [
+      "K. Darshan Sai",
+      "RA2311027010002"
+    ],
+    [
+      "J. Ranga Mokshagna",
+      "RA2311027010003"
+    ],
+    [
+      "P. Bharat Sai",
+      "RA2311027010007"
+    ]
+  ],
+  "faculty_names_confirmed": false
+}

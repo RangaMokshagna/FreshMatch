@@ -1,0 +1,206 @@
+[
+  {
+    "page": 1,
+    "title": "TITLE PAGE",
+    "end_y": 202.4,
+    "remaining_body_pt": 110.4
+  },
+  {
+    "page": 2,
+    "title": "OWN WORK DECLARATION FORM",
+    "end_y": 142.7,
+    "remaining_body_pt": 50.7
+  },
+  {
+    "page": 3,
+    "title": "BONAFIDE CERTIFICATE",
+    "end_y": 124.8,
+    "remaining_body_pt": 32.8
+  },
+  {
+    "page": 4,
+    "title": "ACKNOWLEDGEMENTS",
+    "end_y": 297.6,
+    "remaining_body_pt": 205.6
+  },
+  {
+    "page": 5,
+    "title": "ABSTRACT",
+    "end_y": 220.1,
+    "remaining_body_pt": 128.1
+  },
+  {
+    "page": 6,
+    "title": "TABLE OF CONTENTS",
+    "end_y": 396.9,
+    "remaining_body_pt": 304.9
+  },
+  {
+    "page": 7,
+    "title": "LIST OF FIGURES",
+    "end_y": 467.3,
+    "remaining_body_pt": 375.3
+  },
+  {
+    "page": 8,
+    "title": "LIST OF TABLES",
+    "end_y": 417.7,
+    "remaining_body_pt": 325.7
+  },
+  {
+    "page": 9,
+    "title": "ABBREVIATIONS",
+    "end_y": 188.9,
+    "remaining_body_pt": 96.9
+  },
+  {
+    "page": 10,
+    "title": "INTRODUCTION",
+    "end_y": 167.5,
+    "remaining_body_pt": 75.5
+  },
+  {
+    "page": 11,
+    "title": "",
+    "end_y": 99.5,
+    "remaining_body_pt": 7.5
+  },
+  {
+    "page": 12,
+    "title": "BACKGROUND AND RELATED WORK",
+    "end_y": 148.3,
+    "remaining_body_pt": 56.3
+  },
+  {
+    "page": 13,
+    "title": "",
+    "end_y": 136.7,
+    "remaining_body_pt": 44.7
+  },
+  {
+    "page": 14,
+    "title": "DATASET AND METHODOLOGY",
+    "end_y": 113.5,
+    "remaining_body_pt": 21.5
+  },
+  {
+    "page": 15,
+    "title": "",
+    "end_y": 100.8,
+    "remaining_body_pt": 8.8
+  },
+  {
+    "page": 16,
+    "title": "NOTEBOOK IMPLEMENTATION",
+    "end_y": 132.9,
+    "remaining_body_pt": 40.9
+  },
+  {
+    "page": 17,
+    "title": "",
+    "end_y": 209.7,
+    "remaining_body_pt": 117.7
+  },
+  {
+    "page": 18,
+    "title": "",
+    "end_y": 96.1,
+    "remaining_body_pt": 4.1
+  },
+  {
+    "page": 19,
+    "title": "",
+    "end_y": 83.7,
+    "remaining_body_pt": -8.3
+  },
+  {
+    "page": 20,
+    "title": "EXTENDED EXPERIMENTS",
+    "end_y": 99.1,
+    "remaining_body_pt": 7.1
+  },
+  {
+    "page": 21,
+    "title": "",
+    "end_y": 118.1,
+    "remaining_body_pt": 26.1
+  },
+  {
+    "page": 22,
+    "title": "",
+    "end_y": 131.5,
+    "remaining_body_pt": 39.5
+  },
+  {
+    "page": 23,
+    "title": "FRESHMATCH APPLICATION",
+    "end_y": 99.1,
+    "remaining_body_pt": 7.1
+  },
+  {
+    "page": 24,
+    "title": "",
+    "end_y": 169.5,
+    "remaining_body_pt": 77.5
+  },
+  {
+    "page": 25,
+    "title": "",
+    "end_y": 169.5,
+    "remaining_body_pt": 77.5
+  },
+  {
+    "page": 26,
+    "title": "",
+    "end_y": 169.5,
+    "remaining_body_pt": 77.5
+  },
+  {
+    "page": 27,
+    "title": "",
+    "end_y": 150.3,
+    "remaining_body_pt": 58.3
+  },
+  {
+    "page": 28,
+    "title": "",
+    "end_y": 169.5,
+    "remaining_body_pt": 77.5
+  },
+  {
+    "page": 29,
+    "title": "",
+    "end_y": 152.7,
+    "remaining_body_pt": 60.7
+  },
+  {
+    "page": 30,
+    "title": "RESULTS AND DISCUSSION",
+    "end_y": 96.5,
+    "remaining_body_pt": 4.5
+  },
+  {
+    "page": 31,
+    "title": "",
+    "end_y": 149.6,
+    "remaining_body_pt": 57.6
+  },
+  {
+    "page": 32,
+    "title": "LIMITATIONS AND FUTURE WORK",
+    "end_y": 148.3,
+    "remaining_body_pt": 56.3
+  },
+  {
+    "page": 33,
+    "title": "CONCLUSION",
+    "end_y": 201.1,
+    "remaining_body_pt": 109.1
+  },
+  {
+    "page": 34,
+    "title": "REFERENCES",
+    "end_y": 273.0,
+    "remaining_body_pt": 181.0
+  }
+]
