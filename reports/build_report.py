@@ -162,7 +162,7 @@ def expand(page):
     return out
 
 DECLARATION_TEXT = "We are aware of and understand the University's policy on academic misconduct and plagiarism. We certify that this assessment is our own work, except where indicated by referencing, and that we have followed the good academic practices noted above."
-DECLARATION_NOTE = "For group work, each student should check the registration number shown above and sign beside their name."
+DECLARATION_NOTE = "For group work, each student should check the name and registration number shown above before submission."
 
 def paragraph(text,style):return Paragraph(markup(text).replace('\n','<br/>'),style)
 def make_table(headers,rows,widths,grid=True,fields=False):
@@ -216,13 +216,13 @@ class PDF:
             return y-3
         if kind=='declaration_table':
             st=ParagraphStyle('declaration_cell',parent=STYLE['p'],fontSize=11.2,leading=16,alignment=TA_LEFT)
-            rows=[[paragraph('<b>DECLARATION:</b>',st),'',''],[paragraph(DECLARATION_TEXT,st),'',''],[paragraph(n+'\n'+r+'\nSignature: __________________',ParagraphStyle('student_cell',parent=st,fontSize=10,leading=14)) for n,r in AUTHORS],[paragraph(DECLARATION_NOTE,st),'','']]
+            rows=[[paragraph('<b>DECLARATION:</b>',st),'',''],[paragraph(DECLARATION_TEXT,st),'',''],[paragraph(n+'\n'+r,ParagraphStyle('student_cell',parent=st,fontSize=10,leading=14)) for n,r in AUTHORS],[paragraph(DECLARATION_NOTE,st),'','']]
             t=Table(rows,colWidths=[CW/3]*3,hAlign='LEFT')
             t.setStyle(TableStyle([('SPAN',(0,0),(-1,0)),('SPAN',(0,1),(-1,1)),('SPAN',(0,3),(-1,3)),('BACKGROUND',(0,0),(-1,0),colors.HexColor('#dedcde')),('BOX',(0,0),(-1,-1),.4,colors.HexColor('#bbbbbb')),('LINEBELOW',(0,0),(-1,0),.4,colors.HexColor('#bbbbbb')),('LINEABOVE',(0,3),(-1,3),.4,colors.HexColor('#bbbbbb')),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),6),('RIGHTPADDING',(0,0),(-1,-1),6),('TOPPADDING',(0,0),(-1,-1),5),('BOTTOMPADDING',(0,0),(-1,-1),6)]))
             return self.draw(t,y,8)
         if kind=='checklist':
             for item in b['items']:
-                self.c.setStrokeColor(colors.black);self.c.setLineWidth(.5);self.c.rect(LEFT+1,y-11,7,7)
+                self.c.setFillColor(colors.black);self.c.setFont('TNR',11);self.c.drawString(LEFT+2,y-11,'•')
                 st=ParagraphStyle('check',parent=STYLE['p'],fontSize=10.9,leading=16,alignment=TA_LEFT)
                 y=self.draw(paragraph(item,st),y,5,x=LEFT+17,width=CW-17)
             return y+1
@@ -248,7 +248,7 @@ class PDF:
         if kind=='student_signatures':
             y-=16;col=CW/3
             for i,(name,reg) in enumerate(AUTHORS):
-                x=LEFT+i*col;self.c.setStrokeColor(colors.black);self.c.setLineWidth(.5);self.c.line(x,y-20,x+col-14,y-20)
+                x=LEFT+i*col
                 st=ParagraphStyle('sig',fontName='TNR',fontSize=9.5,leading=12)
                 para=paragraph(name+'\n'+reg+'',st);para.wrap(col-12,100);para.drawOn(self.c,x,y-72)
             return y-85
@@ -373,7 +373,7 @@ class Word:
             t=self.doc.add_table(rows=4,cols=3);t.autofit=False
             for col in t.columns:col.width=Pt(CW/3)
             for i in [0,1,3]:t.cell(i,0).merge(t.cell(i,2))
-            values=[['DECLARATION:'],[DECLARATION_TEXT],[n+'\n'+r+'\nSignature: __________________' for n,r in AUTHORS],[DECLARATION_NOTE]]
+            values=[['DECLARATION:'],[DECLARATION_TEXT],[n+'\n'+r for n,r in AUTHORS],[DECLARATION_NOTE]]
             for i,row in enumerate(values):
                 for j,value in enumerate(row):
                     cell=t.cell(i,j);set_cell_margins(cell);p=cell.paragraphs[0];p.paragraph_format.line_spacing=Pt(14 if i==2 else 16);p.paragraph_format.space_after=Pt(5)
@@ -385,7 +385,7 @@ class Word:
             pr.append(borders)
         elif kind in ['bullets','checklist']:
             for item in b['items']:
-                p=self.para(('☐  ' if kind=='checklist' else '•  ')+item,align=WD_ALIGN_PARAGRAPH.LEFT,fs=10.9 if kind=='checklist' else 11.7,after=5,leading=16 if kind=='checklist' else 19.2)
+                p=self.para('•  '+item,align=WD_ALIGN_PARAGRAPH.LEFT,fs=10.9 if kind=='checklist' else 11.7,after=5,leading=16 if kind=='checklist' else 19.2)
                 p.paragraph_format.left_indent=Pt(14);p.paragraph_format.first_line_indent=Pt(-14)
         elif kind in ['table','simple_table','fields']:
             if kind=='table':self.para('Table '+b['id']+': '+b['title'],align=WD_ALIGN_PARAGRAPH.LEFT,fs=10.5,after=5,leading=14).runs[0].italic=True
@@ -404,7 +404,7 @@ class Word:
             pr=p._p.get_or_add_pPr();sh=OxmlElement('w:shd');sh.set(qn('w:fill'),'F1F4F6');pr.append(sh)
         elif kind=='student_signatures':
             self.para('',fs=1,after=12,leading=1)
-            self.table(None,[[f'_____________________\n{n}\n{r}' for n,r in AUTHORS]],[CW/3]*3,grid=False)
+            self.table(None,[[f'{n}\n{r}' for n,r in AUTHORS]],[CW/3]*3,grid=False)
         elif kind=='faculty_signatures':
             self.table(None,[[f"SIGNATURE\n\n{b['guide']}\n\nPROJECT GUIDE\n{PROFILE['department']}",f"SIGNATURE\n\n{b['head']}\n\nPROFESSOR & HEAD\n{PROFILE['department']}"]],[CW/2]*2,grid=False)
         else:raise ValueError(kind)
