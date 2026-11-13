@@ -101,7 +101,7 @@ def cover_blocks():
       c('in',12,False,0),c(PROFILE['programme'].upper(),14,True,0),c('with specialization in '+PROFILE['specialisation'],12,False,10),
       {'type':'logo','height':50,'after':15},c(PROFILE['department'].upper(),11.3,True,12),
       c(PROFILE['college'].upper(),12,True,10),c(PROFILE['institution'].upper(),12,True,8),
-      c(PROFILE['location'].upper(),11.5,False,10),c(PROFILE['month_year'].upper(),12.5,True,0)]
+      c(PROFILE['location'].upper(),11.5,False,10)]
 
 def front_blocks(kind):
     if kind=='cover':return cover_blocks()
@@ -110,13 +110,11 @@ def front_blocks(kind):
           {'type':'center','text':PROFILE['department'],'size':11.5,'after':0},
           {'type':'center','text':PROFILE['institution'],'size':12.5,'bold':True,'after':2},
           {'type':'center','text':'Own Work Declaration Form','size':13,'bold':True,'after':10},
-          {'type':'p','text':'This declaration is to be reviewed, completed and signed by the students before submission. Each member should confirm the statements that apply and record the date beside the signature.'},
           {'type':'fields','rows':[['Degree / Course','B.Tech. - Computer Science and Engineering with Big Data Analytics'],['Student Names',', '.join(n for n,r in AUTHORS)],['Registration Numbers',', '.join(r for n,r in AUTHORS)],['Title of Work',TITLE]]},
-          {'type':'p','text':'By signing below, we confirm that the submitted assessment follows the University\'s academic regulations and that the report fairly represents the project work, sources and contributions. We have reviewed the following statements:'},
-          {'type':'checklist','items':['Sources used in the text, methods and data are cited appropriately.','Material reproduced or quoted from other sources is identified.','Data, figures and screenshots are attributed or documented.','The submission does not copy another student\'s work without acknowledgement.','External assistance and contributions are acknowledged as required by course policy.']},
-          {'type':'h','text':'DECLARATION'},
-          {'type':'p','text':'We understand that an inaccurate declaration may be subject to the University\'s academic procedures. Our signatures below record our own review and confirmation of this submission.'},
-          {'type':'student_signatures'}]
+          {'type':'p','text':'By signing below, we confirm that this assessment is our own work, except where sources and assistance are acknowledged. We have met the following conditions:'},
+          {'type':'declaration_bullets','items':['Clearly referenced and listed all sources as appropriate.','Referenced all quoted text and placed it within quotation marks.','Given the sources of pictures, data and other material that are not our own.','Not used the reports or essays of other students, either past or present, as our own work.','Acknowledged help received from others, including fellow students, technicians, statisticians and external sources.','Complied with the academic integrity criteria specified in the course handbook and University policies.']},
+          {'type':'p','text':'We understand that any false claim about this work may be penalised in accordance with University policies and regulations.'},
+          {'type':'declaration_table'}]
     if kind=='certificate':
         guide=PROFILE['guide_name'] or '____________________________'
         head=PROFILE['head_name'] or '____________________________'
@@ -125,7 +123,7 @@ def front_blocks(kind):
          {'type':'center','text':PROFILE['location'].upper(),'size':13,'bold':True,'after':32},
          {'type':'center','text':'BONAFIDE CERTIFICATE','size':16,'bold':True,'after':28},
          {'type':'p','text':'Certified that the Advanced Machine Learning project report entitled <b>“'+TITLE+'”</b> is a record of the project work submitted by <b>'+', '.join(n+' ('+r+')' for n,r in AUTHORS)+'</b>, in partial fulfilment of the requirements for the degree of Bachelor of Technology in Computer Science and Engineering with specialization in Big Data Analytics.'},
-         {'type':'p','text':'The report is presented for departmental review and certification of the project work carried out under the guidance of <b>'+guide+'</b>. The faculty signatures and dates below are to be completed by the authorised signatories after verification.'},
+         {'type':'p','text':'The report is presented for departmental review and certification of the project work carried out under the guidance of <b>'+guide+'</b>. The faculty signatures below are to be completed by the authorised signatories after verification.'},
          {'type':'spacer','height':78},
          {'type':'faculty_signatures','guide':guide,'head':head}]
     if kind=='acknowledgements':
@@ -162,6 +160,9 @@ def expand(page):
         elif kind=='abbreviations':out+=[{'type':'simple_table','headers':['ABBREVIATION','MEANING'],'rows':ABBR,'widths':[113,371]}]
         else:out.append(b)
     return out
+
+DECLARATION_TEXT = "We are aware of and understand the University's policy on academic misconduct and plagiarism. We certify that this assessment is our own work, except where indicated by referencing, and that we have followed the good academic practices noted above."
+DECLARATION_NOTE = "For group work, each student should check the registration number shown above and sign beside their name."
 
 def paragraph(text,style):return Paragraph(markup(text).replace('\n','<br/>'),style)
 def make_table(headers,rows,widths,grid=True,fields=False):
@@ -208,6 +209,17 @@ class PDF:
                 st=ParagraphStyle('bullet',parent=STYLE['p'],leftIndent=14,firstLineIndent=0,bulletIndent=0,spaceAfter=5)
                 para=Paragraph(markup(item),st,bulletText='•');y=self.draw(para,y,5)
             return y+1
+        if kind=='declaration_bullets':
+            for item in b['items']:
+                st=ParagraphStyle('declaration_bullet',parent=STYLE['p'],fontSize=11.2,leading=16,leftIndent=16,bulletIndent=2,alignment=TA_LEFT)
+                y=self.draw(Paragraph(markup(item),st,bulletText='•'),y,4)
+            return y-3
+        if kind=='declaration_table':
+            st=ParagraphStyle('declaration_cell',parent=STYLE['p'],fontSize=11.2,leading=16,alignment=TA_LEFT)
+            rows=[[paragraph('<b>DECLARATION:</b>',st),'',''],[paragraph(DECLARATION_TEXT,st),'',''],[paragraph(n+'\n'+r+'\nSignature: __________________',ParagraphStyle('student_cell',parent=st,fontSize=10,leading=14)) for n,r in AUTHORS],[paragraph(DECLARATION_NOTE,st),'','']]
+            t=Table(rows,colWidths=[CW/3]*3,hAlign='LEFT')
+            t.setStyle(TableStyle([('SPAN',(0,0),(-1,0)),('SPAN',(0,1),(-1,1)),('SPAN',(0,3),(-1,3)),('BACKGROUND',(0,0),(-1,0),colors.HexColor('#dedcde')),('BOX',(0,0),(-1,-1),.4,colors.HexColor('#bbbbbb')),('LINEBELOW',(0,0),(-1,0),.4,colors.HexColor('#bbbbbb')),('LINEABOVE',(0,3),(-1,3),.4,colors.HexColor('#bbbbbb')),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),6),('RIGHTPADDING',(0,0),(-1,-1),6),('TOPPADDING',(0,0),(-1,-1),5),('BOTTOMPADDING',(0,0),(-1,-1),6)]))
+            return self.draw(t,y,8)
         if kind=='checklist':
             for item in b['items']:
                 self.c.setStrokeColor(colors.black);self.c.setLineWidth(.5);self.c.rect(LEFT+1,y-11,7,7)
@@ -238,7 +250,7 @@ class PDF:
             for i,(name,reg) in enumerate(AUTHORS):
                 x=LEFT+i*col;self.c.setStrokeColor(colors.black);self.c.setLineWidth(.5);self.c.line(x,y-20,x+col-14,y-20)
                 st=ParagraphStyle('sig',fontName='TNR',fontSize=9.5,leading=12)
-                para=paragraph(name+'\n'+reg+'\nDate: ______________',st);para.wrap(col-12,100);para.drawOn(self.c,x,y-72)
+                para=paragraph(name+'\n'+reg+'',st);para.wrap(col-12,100);para.drawOn(self.c,x,y-72)
             return y-85
         if kind=='faculty_signatures':
             col=CW/2
@@ -247,7 +259,7 @@ class PDF:
                 st=ParagraphStyle('faculty',fontName='TNR-B',fontSize=11,leading=15)
                 para=paragraph('SIGNATURE\n\n'+name+'\n\n'+role,st);ww,hh=para.wrap(col-22,180);para.drawOn(self.c,x,y-hh)
                 st2=ParagraphStyle('dept',fontName='TNR',fontSize=9.5,leading=12)
-                para=paragraph(PROFILE['department']+'\nDate: ______________',st2);ww,hh2=para.wrap(col-22,90);para.drawOn(self.c,x,y-hh-hh2-8)
+                para=paragraph(PROFILE['department'],st2);ww,hh2=para.wrap(col-22,90);para.drawOn(self.c,x,y-hh-hh2-8)
             return y-170
         raise ValueError(kind)
     def build(self):
@@ -353,6 +365,24 @@ class Word:
             p=self.para('',align=WD_ALIGN_PARAGRAPH.LEFT if b.get('align')=='left' else WD_ALIGN_PARAGRAPH.CENTER,after=b.get('after',8),leading=1)
             p.paragraph_format.line_spacing=1.0
             p.add_run().add_picture(str(ASSETS/'srm-logo.png'),height=Pt(b['height']))
+        elif kind=='declaration_bullets':
+            for item in b['items']:
+                p=self.para('•  '+item,align=WD_ALIGN_PARAGRAPH.LEFT,fs=11.2,after=4,leading=16)
+                p.paragraph_format.left_indent=Pt(16);p.paragraph_format.first_line_indent=Pt(-14)
+        elif kind=='declaration_table':
+            t=self.doc.add_table(rows=4,cols=3);t.autofit=False
+            for col in t.columns:col.width=Pt(CW/3)
+            for i in [0,1,3]:t.cell(i,0).merge(t.cell(i,2))
+            values=[['DECLARATION:'],[DECLARATION_TEXT],[n+'\n'+r+'\nSignature: __________________' for n,r in AUTHORS],[DECLARATION_NOTE]]
+            for i,row in enumerate(values):
+                for j,value in enumerate(row):
+                    cell=t.cell(i,j);set_cell_margins(cell);p=cell.paragraphs[0];p.paragraph_format.line_spacing=Pt(14 if i==2 else 16);p.paragraph_format.space_after=Pt(5)
+                    run=p.add_run(value);run.font.name='Times New Roman';run.font.size=Pt(10 if i==2 else 11.2);run.bold=(i==0)
+                    if i==0:shade(cell,'DEDCDE')
+            pr=t._tbl.tblPr;borders=OxmlElement('w:tblBorders')
+            for edge in ['top','left','bottom','right']:
+                el=OxmlElement('w:'+edge);el.set(qn('w:val'),'single');el.set(qn('w:sz'),'4');el.set(qn('w:color'),'BBBBBB');borders.append(el)
+            pr.append(borders)
         elif kind in ['bullets','checklist']:
             for item in b['items']:
                 p=self.para(('☐  ' if kind=='checklist' else '•  ')+item,align=WD_ALIGN_PARAGRAPH.LEFT,fs=10.9 if kind=='checklist' else 11.7,after=5,leading=16 if kind=='checklist' else 19.2)
@@ -374,9 +404,9 @@ class Word:
             pr=p._p.get_or_add_pPr();sh=OxmlElement('w:shd');sh.set(qn('w:fill'),'F1F4F6');pr.append(sh)
         elif kind=='student_signatures':
             self.para('',fs=1,after=12,leading=1)
-            self.table(None,[[f'_____________________\n{n}\n{r}\nDate: ______________' for n,r in AUTHORS]],[CW/3]*3,grid=False)
+            self.table(None,[[f'_____________________\n{n}\n{r}' for n,r in AUTHORS]],[CW/3]*3,grid=False)
         elif kind=='faculty_signatures':
-            self.table(None,[[f"SIGNATURE\n\n{b['guide']}\n\nPROJECT GUIDE\n{PROFILE['department']}\nDate: ______________",f"SIGNATURE\n\n{b['head']}\n\nPROFESSOR & HEAD\n{PROFILE['department']}\nDate: ______________"]],[CW/2]*2,grid=False)
+            self.table(None,[[f"SIGNATURE\n\n{b['guide']}\n\nPROJECT GUIDE\n{PROFILE['department']}",f"SIGNATURE\n\n{b['head']}\n\nPROFESSOR & HEAD\n{PROFILE['department']}"]],[CW/2]*2,grid=False)
         else:raise ValueError(kind)
     def build(self):
         for i,page in enumerate(PAGES,1):

@@ -9,7 +9,7 @@ Authors:
 
 The report describes the recorded FreshMatch implementation and frozen evaluation at project commit `c767a0c`. It includes actual application screenshots, real Instacart data provenance, model configuration, the improved hybrid, evaluation uncertainty and limitations. Reported results are not invented or adjusted for presentation.
 
-Institutional wording and the SRM logo follow the user-supplied reference. As requested, faculty and department details match the reference: Dr. Archana R (Assistant Professor), Dr. Kavitha V (Professor & Head), and the Department of Data Science and Business Systems. Signatures and signing dates remain blank. Review institutional declarations before signing or submission.
+Institutional wording and the SRM logo follow the user-supplied reference. As requested, faculty and department details match the reference: Dr. Archana R (Assistant Professor), Dr. Kavitha V (Professor & Head), and the Department of Data Science and Business Systems. Signature spaces remain blank. Date fields and the cover date are omitted as requested. The declaration uses bullet points and a shaded declaration table matching the supplied example. Review institutional declarations before signing or submission.
 
 To update faculty details, edit `report_profile.json` and rebuild:
 
